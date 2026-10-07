@@ -1,0 +1,572 @@
+{
+  "artifact": "native3d_v020_multinet_case",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.2 multinet baseline",
+  "units": "um",
+  "case": "two_channel_01_parallel_straights",
+  "mode": "native3d",
+  "channel_count": 2,
+  "order": [
+    "netA",
+    "netB"
+  ],
+  "chip_volume": {
+    "lo": [
+      0.0,
+      0.0,
+      -60.0
+    ],
+    "hi": [
+      600.0,
+      300.0,
+      120.0
+    ]
+  },
+  "obstacles": [],
+  "static_reference_centerlines": [],
+  "config": {
+    "length_unit": "um",
+    "angle_config_unit": "deg",
+    "pos_tol_um": 1e-06,
+    "ang_tol_deg": 1e-06,
+    "radius_tol_um": 1e-06,
+    "zero_tol_um": 1e-09,
+    "parallel_tol": 1e-09,
+    "clearance_decision_tol_um": 1e-09,
+    "max_subdiv_level": 9,
+    "rmin_um": 50.0,
+    "dmin_centerline_um": 5.0,
+    "obstacle_clearance_um": 5.0,
+    "obstacle_clearance_includes_envelope": false,
+    "wg_envelope_radius_um": 2.0,
+    "boundary_margin_um": 2.0,
+    "allow_out_of_plane": true,
+    "state_identity": "pose_float",
+    "pos_resolution_um": 20.0,
+    "dir_resolution_deg": 30.0,
+    "eps_pos_um": 2.0,
+    "eps_ang_deg": 3.0,
+    "source_pos_tol_um": 1e-06,
+    "source_ang_tol_deg": 1e-06,
+    "straight_lengths_um": [
+      10.0,
+      20.0,
+      40.0
+    ],
+    "turn_angles_deg": [
+      30.0,
+      45.0,
+      90.0
+    ],
+    "turn_radii_um": [
+      50.0,
+      75.0
+    ],
+    "skew_axis_tilt_deg": [
+      45.0,
+      135.0
+    ],
+    "connector_radii_um": [
+      50.0,
+      100.0
+    ],
+    "connector_max_length_um": 3000.0,
+    "max_expansions": 100000,
+    "max_runtime_s": 300.0,
+    "reference_spacing_um": 60.0,
+    "finite_spacing_um": 50.0,
+    "finite_straight_steps": [
+      1,
+      2,
+      3
+    ],
+    "finite_turn_radius_steps": [
+      1,
+      2
+    ],
+    "finite_port_attach_um": 150.0,
+    "finite_port_attach_max_nodes": 64,
+    "finite_max_expansions": 200000,
+    "finite_max_runtime_s": 60.0,
+    "effective_boundary_margin_um": 2.0,
+    "effective_obstacle_clearance_um": 5.0
+  },
+  "self_spacing_policy": {
+    "ell_local_um": 10.0,
+    "kind": "two_times_dmin",
+    "note": "local geometric exemption of the assembled-path arclength neighbourhood; not a paper parameter and not an optical safety distance"
+  },
+  "nets": [
+    {
+      "net_id": "netA",
+      "index": 0,
+      "input": {
+        "net_id": "netA",
+        "source_pose": {
+          "position": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            510.0,
+            60.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 450.0,
+      "expansions": 9,
+      "occupancy_revision_before": 0,
+      "occupancy_revision_after": 1,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2
+      ],
+      "path": {
+        "total_length_um": 450.0,
+        "min_radius_um": Infinity,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              60.0,
+              0.0
+            ],
+            "p1": [
+              210.0,
+              60.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              210.0,
+              60.0,
+              0.0
+            ],
+            "p1": [
+              360.0,
+              60.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              360.0,
+              60.0,
+              0.0
+            ],
+            "p1": [
+              510.0,
+              60.0,
+              0.0
+            ],
+            "length_um": 150.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          150.0,
+          300.0,
+          450.0
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            210.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            210.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            360.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            360.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            510.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      ]
+    },
+    {
+      "net_id": "netB",
+      "index": 1,
+      "input": {
+        "net_id": "netB",
+        "source_pose": {
+          "position": [
+            60.0,
+            240.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            510.0,
+            240.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 450.0,
+      "expansions": 9,
+      "occupancy_revision_before": 1,
+      "occupancy_revision_after": 2,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2
+      ],
+      "path": {
+        "total_length_um": 450.0,
+        "min_radius_um": Infinity,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              240.0,
+              0.0
+            ],
+            "p1": [
+              210.0,
+              240.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              210.0,
+              240.0,
+              0.0
+            ],
+            "p1": [
+              360.0,
+              240.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              360.0,
+              240.0,
+              0.0
+            ],
+            "p1": [
+              510.0,
+              240.0,
+              0.0
+            ],
+            "length_um": 150.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          150.0,
+          300.0,
+          450.0
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            210.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            210.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            360.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            360.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            510.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      ]
+    }
+  ],
+  "occupancy": {
+    "revision": 2,
+    "entries": [
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 0,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "823f120e493a16759b61ccb9ae82e736",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            210.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 1,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "08073de7b83f45e1c1b0c051bf359507",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            210.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            360.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 2,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "86b6e52c57749df55bc84986479a8be3",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            360.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            510.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 0,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "e4465693bea69b35525ab42e79556df1",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            210.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 1,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "aa60637a950ed7e4b1ceecfdf332a50d",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            210.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            360.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 2,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "cb82c606ce7b10d5ad0a00768d4ff9cb",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            360.0,
+            240.0,
+            0.0
+          ],
+          "p1": [
+            510.0,
+            240.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      }
+    ],
+    "n_entries": 6,
+    "n_published_entries": 6,
+    "n_static_reference_entries": 0,
+    "per_net_published_curve_counts": {
+      "netA": 3,
+      "netB": 3
+    },
+    "immutability": {
+      "ok": true,
+      "n_curves": 6,
+      "n_changed": 0,
+      "changed": [],
+      "rule": "a published curve is frozen: neither a later net nor the next scene assembly may modify it"
+    },
+    "publication_rule": "published curves are the ACTUAL primitives of a VERIFIED net path: net_id + segment_id + occupancy_revision + full geometry; nodes, control points, chord polylines and AABBs are never the occupancy"
+  },
+  "counts": {
+    "channel_count": 2,
+    "n_nets": 2,
+    "routed_count": 2,
+    "verified_count": 2,
+    "committed_count": 2,
+    "failed_count": 0,
+    "failure_categories": {},
+    "all_verified": true,
+    "partial_success": false,
+    "total_length_um": 900.0,
+    "total_runtime_s": 0.015138400020077825,
+    "max_net_runtime_s": 0.0076497000409290195,
+    "sum_net_expansions": 18
+  },
+  "totals": {
+    "wall_time_s": 0.04068939993157983,
+    "sum_net_wall_time_s": 0.04063819989096373,
+    "max_net_wall_time_s": 0.02072319993749261,
+    "total_path_length_um": 900.0,
+    "sum_search_expansions": 18,
+    "sum_search_runtime_s": 0.015138400020077825,
+    "occupancy_revision_final": 2,
+    "occupancy_immutable": true,
+    "n_nets_attempted": 2,
+    "stopped_after_failure": false
+  },
+  "no_optical_loss_model": "geometry only: no dB, no insertion loss and no crosstalk number is produced"
+}

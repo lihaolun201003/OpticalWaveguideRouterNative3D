@@ -1,0 +1,2497 @@
+{
+  "artifact": "native3d_v020_multinet_case",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.2 multinet baseline",
+  "units": "um",
+  "case": "crosswall_04_channels",
+  "mode": "native3d",
+  "channel_count": 4,
+  "order": [
+    "net00",
+    "net01",
+    "net02",
+    "net03"
+  ],
+  "chip_volume": {
+    "lo": [
+      0.0,
+      0.0,
+      -60.0
+    ],
+    "hi": [
+      600.0,
+      300.0,
+      120.0
+    ]
+  },
+  "obstacles": [
+    {
+      "lo": [
+        290.0,
+        -50.0,
+        -70.0
+      ],
+      "hi": [
+        310.0,
+        350.0,
+        40.0
+      ]
+    }
+  ],
+  "static_reference_centerlines": [],
+  "config": {
+    "length_unit": "um",
+    "angle_config_unit": "deg",
+    "pos_tol_um": 1e-06,
+    "ang_tol_deg": 1e-06,
+    "radius_tol_um": 1e-06,
+    "zero_tol_um": 1e-09,
+    "parallel_tol": 1e-09,
+    "clearance_decision_tol_um": 1e-09,
+    "max_subdiv_level": 9,
+    "rmin_um": 50.0,
+    "dmin_centerline_um": 5.0,
+    "obstacle_clearance_um": 5.0,
+    "obstacle_clearance_includes_envelope": false,
+    "wg_envelope_radius_um": 2.0,
+    "boundary_margin_um": 2.0,
+    "allow_out_of_plane": true,
+    "state_identity": "pose_float",
+    "pos_resolution_um": 20.0,
+    "dir_resolution_deg": 30.0,
+    "eps_pos_um": 2.0,
+    "eps_ang_deg": 3.0,
+    "source_pos_tol_um": 1e-06,
+    "source_ang_tol_deg": 1e-06,
+    "straight_lengths_um": [
+      10.0,
+      20.0,
+      40.0
+    ],
+    "turn_angles_deg": [
+      30.0,
+      45.0,
+      90.0
+    ],
+    "turn_radii_um": [
+      50.0,
+      75.0
+    ],
+    "skew_axis_tilt_deg": [
+      45.0,
+      135.0
+    ],
+    "connector_radii_um": [
+      50.0,
+      100.0
+    ],
+    "connector_max_length_um": 3000.0,
+    "max_expansions": 100000,
+    "max_runtime_s": 300.0,
+    "reference_spacing_um": 60.0,
+    "finite_spacing_um": 50.0,
+    "finite_straight_steps": [
+      1,
+      2,
+      3
+    ],
+    "finite_turn_radius_steps": [
+      1,
+      2
+    ],
+    "finite_port_attach_um": 150.0,
+    "finite_port_attach_max_nodes": 64,
+    "finite_max_expansions": 200000,
+    "finite_max_runtime_s": 60.0,
+    "effective_boundary_margin_um": 2.0,
+    "effective_obstacle_clearance_um": 5.0
+  },
+  "self_spacing_policy": {
+    "ell_local_um": 10.0,
+    "kind": "two_times_dmin",
+    "note": "local geometric exemption of the assembled-path arclength neighbourhood; not a paper parameter and not an optical safety distance"
+  },
+  "nets": [
+    {
+      "net_id": "net00",
+      "index": 0,
+      "input": {
+        "net_id": "net00",
+        "source_pose": {
+          "position": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            60.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {
+          "lane_y_um": 60.0,
+          "index": 0
+        }
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 594.1592653589794,
+      "expansions": 67,
+      "occupancy_revision_before": 0,
+      "occupancy_revision_after": 1,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "path": {
+        "total_length_um": 594.1592653589794,
+        "min_radius_um": 50.0,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              60.0,
+              0.0
+            ],
+            "p1": [
+              160.0,
+              60.0,
+              0.0
+            ],
+            "length_um": 100.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              160.0,
+              60.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              260.0,
+              60.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              260.0,
+              60.0,
+              100.0
+            ],
+            "p1": [
+              410.0,
+              60.0,
+              100.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              410.0,
+              60.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              510.0,
+              60.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              510.0,
+              60.0,
+              0.0
+            ],
+            "p1": [
+              540.0,
+              60.0,
+              0.0
+            ],
+            "length_um": 30.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          100.0,
+          178.53981633974485,
+          257.0796326794897,
+          407.0796326794897,
+          485.61944901923454,
+          564.1592653589794,
+          594.1592653589794
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            60.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            60.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ]
+    },
+    {
+      "net_id": "net01",
+      "index": 1,
+      "input": {
+        "net_id": "net01",
+        "source_pose": {
+          "position": [
+            60.0,
+            70.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            70.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {
+          "lane_y_um": 70.0,
+          "index": 1
+        }
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 594.1592653589794,
+      "expansions": 63,
+      "occupancy_revision_before": 1,
+      "occupancy_revision_after": 2,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "path": {
+        "total_length_um": 594.1592653589794,
+        "min_radius_um": 50.0,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              70.0,
+              0.0
+            ],
+            "p1": [
+              160.0,
+              70.0,
+              0.0
+            ],
+            "length_um": 100.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              160.0,
+              70.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              260.0,
+              70.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              260.0,
+              70.0,
+              100.0
+            ],
+            "p1": [
+              410.0,
+              70.0,
+              100.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              410.0,
+              70.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              510.0,
+              70.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              510.0,
+              70.0,
+              0.0
+            ],
+            "p1": [
+              540.0,
+              70.0,
+              0.0
+            ],
+            "length_um": 30.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          100.0,
+          178.53981633974485,
+          257.0796326794897,
+          407.0796326794897,
+          485.61944901923454,
+          564.1592653589794,
+          594.1592653589794
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            70.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            70.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            70.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            70.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            70.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            70.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ]
+    },
+    {
+      "net_id": "net02",
+      "index": 2,
+      "input": {
+        "net_id": "net02",
+        "source_pose": {
+          "position": [
+            60.0,
+            80.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            80.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {
+          "lane_y_um": 80.0,
+          "index": 2
+        }
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 594.1592653589794,
+      "expansions": 63,
+      "occupancy_revision_before": 2,
+      "occupancy_revision_after": 3,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "path": {
+        "total_length_um": 594.1592653589794,
+        "min_radius_um": 50.0,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              80.0,
+              0.0
+            ],
+            "p1": [
+              160.0,
+              80.0,
+              0.0
+            ],
+            "length_um": 100.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              160.0,
+              80.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              260.0,
+              80.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              260.0,
+              80.0,
+              100.0
+            ],
+            "p1": [
+              410.0,
+              80.0,
+              100.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              410.0,
+              80.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              510.0,
+              80.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              510.0,
+              80.0,
+              0.0
+            ],
+            "p1": [
+              540.0,
+              80.0,
+              0.0
+            ],
+            "length_um": 30.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          100.0,
+          178.53981633974485,
+          257.0796326794897,
+          407.0796326794897,
+          485.61944901923454,
+          564.1592653589794,
+          594.1592653589794
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            80.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            80.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            80.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            80.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            80.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            80.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ]
+    },
+    {
+      "net_id": "net03",
+      "index": 3,
+      "input": {
+        "net_id": "net03",
+        "source_pose": {
+          "position": [
+            60.0,
+            90.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            90.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {
+          "lane_y_um": 90.0,
+          "index": 3
+        }
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 594.1592653589794,
+      "expansions": 63,
+      "occupancy_revision_before": 3,
+      "occupancy_revision_after": 4,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "path": {
+        "total_length_um": 594.1592653589794,
+        "min_radius_um": 50.0,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              90.0,
+              0.0
+            ],
+            "p1": [
+              160.0,
+              90.0,
+              0.0
+            ],
+            "length_um": 100.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              160.0,
+              90.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              260.0,
+              90.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              260.0,
+              90.0,
+              100.0
+            ],
+            "p1": [
+              410.0,
+              90.0,
+              100.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              410.0,
+              90.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              510.0,
+              90.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              510.0,
+              90.0,
+              0.0
+            ],
+            "p1": [
+              540.0,
+              90.0,
+              0.0
+            ],
+            "length_um": 30.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          100.0,
+          178.53981633974485,
+          257.0796326794897,
+          407.0796326794897,
+          485.61944901923454,
+          564.1592653589794,
+          594.1592653589794
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            90.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            90.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            90.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            90.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            90.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            90.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ]
+    }
+  ],
+  "occupancy": {
+    "revision": 4,
+    "entries": [
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 0,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 100.0,
+        "fingerprint": "bb437c26f0bacbfc61d453d2b7b0bc8c",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 100.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 1,
+        "occupancy_revision": 1,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "d983fe4257e4c02797302569ff168353",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            160.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 2,
+        "occupancy_revision": 1,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "6ed13af618138630aeeff2064a5ca6c8",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            260.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 3,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "2b14779cf9d9cf0614c9d2f68ebac1fa",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            260.0,
+            60.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            60.0,
+            100.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 4,
+        "occupancy_revision": 1,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "121c9e0cb0f6cdcc8a58c71005584034",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            410.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 5,
+        "occupancy_revision": 1,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "035d6acb4b55d63259c06560ee16d2cb",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            510.0,
+            60.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net00",
+        "segment_id": 6,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 30.0,
+        "fingerprint": "97c231e7a69e5508437cc8db31f9f3aa",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            510.0,
+            60.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            60.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 0,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 100.0,
+        "fingerprint": "5ad4a138129ed44f3943db606fc2638c",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            70.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            70.0,
+            0.0
+          ],
+          "length_um": 100.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 1,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "2eeb2dfa59e7b93ad63bfa232464908f",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            160.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 2,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "6de3cbc56f30a72e7037817aa4b017ed",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            260.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 3,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "8849039ec8729b09084366e3698e0c78",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            260.0,
+            70.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            70.0,
+            100.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 4,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "04faba8373156a28ddaf2c5f7fbc5b85",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            410.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 5,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "0fa421eef09d0056ffb2ae9c3f6190f8",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            510.0,
+            70.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net01",
+        "segment_id": 6,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 30.0,
+        "fingerprint": "8c627727c85ae36b0f6193765f8ea2fe",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            510.0,
+            70.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            70.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 0,
+        "occupancy_revision": 3,
+        "kind": "line",
+        "length_um": 100.0,
+        "fingerprint": "583fa1b5f9e45e9f34d6ef69217b58b9",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            80.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            80.0,
+            0.0
+          ],
+          "length_um": 100.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 1,
+        "occupancy_revision": 3,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "4f1ea7ac8129664cce5382753c0a90b2",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            160.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 2,
+        "occupancy_revision": 3,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "310f197afc0c87b94d699388218f2629",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            260.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 3,
+        "occupancy_revision": 3,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "0affb231376bc2115af77c6c43bd564d",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            260.0,
+            80.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            80.0,
+            100.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 4,
+        "occupancy_revision": 3,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "ca260552a825697318888c8712d1ce2a",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            410.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 5,
+        "occupancy_revision": 3,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "e3bcb9df28a955a07d1abfe515097ffe",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            510.0,
+            80.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net02",
+        "segment_id": 6,
+        "occupancy_revision": 3,
+        "kind": "line",
+        "length_um": 30.0,
+        "fingerprint": "c9c32c3f1000565d9448d4426e23c120",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            510.0,
+            80.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            80.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 0,
+        "occupancy_revision": 4,
+        "kind": "line",
+        "length_um": 100.0,
+        "fingerprint": "ab4f8dfe975d33790b1fc9f4fd67b1b5",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            90.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            90.0,
+            0.0
+          ],
+          "length_um": 100.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 1,
+        "occupancy_revision": 4,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "c195101bb8dfca1f80c858ab4058d704",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            160.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 2,
+        "occupancy_revision": 4,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "9e8ed0a85e2cc2172dd476f3b8286e15",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            260.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 3,
+        "occupancy_revision": 4,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "2fd8eb4253af24bbd64e36ffaa08cb99",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            260.0,
+            90.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            90.0,
+            100.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 4,
+        "occupancy_revision": 4,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "3fab11fd8c614c502f79f3030aa1a904",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            410.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 5,
+        "occupancy_revision": 4,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "f17b20dbd20e6627ff871ad8f78db161",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            510.0,
+            90.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "net03",
+        "segment_id": 6,
+        "occupancy_revision": 4,
+        "kind": "line",
+        "length_um": 30.0,
+        "fingerprint": "32abd23346558e75f3526b339e5aa4d9",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            510.0,
+            90.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            90.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      }
+    ],
+    "n_entries": 28,
+    "n_published_entries": 28,
+    "n_static_reference_entries": 0,
+    "per_net_published_curve_counts": {
+      "net00": 7,
+      "net01": 7,
+      "net02": 7,
+      "net03": 7
+    },
+    "immutability": {
+      "ok": true,
+      "n_curves": 28,
+      "n_changed": 0,
+      "changed": [],
+      "rule": "a published curve is frozen: neither a later net nor the next scene assembly may modify it"
+    },
+    "publication_rule": "published curves are the ACTUAL primitives of a VERIFIED net path: net_id + segment_id + occupancy_revision + full geometry; nodes, control points, chord polylines and AABBs are never the occupancy"
+  },
+  "counts": {
+    "channel_count": 4,
+    "n_nets": 4,
+    "routed_count": 4,
+    "verified_count": 4,
+    "committed_count": 4,
+    "failed_count": 0,
+    "failure_categories": {},
+    "all_verified": true,
+    "partial_success": false,
+    "total_length_um": 2376.6370614359175,
+    "total_runtime_s": 0.26604749995749444,
+    "max_net_runtime_s": 0.09120729996357113,
+    "sum_net_expansions": 256
+  },
+  "totals": {
+    "wall_time_s": 0.3699711000081152,
+    "sum_net_wall_time_s": 0.3697111998917535,
+    "max_net_wall_time_s": 0.11899569991510361,
+    "total_path_length_um": 2376.6370614359175,
+    "sum_search_expansions": 256,
+    "sum_search_runtime_s": 0.26604749995749444,
+    "occupancy_revision_final": 4,
+    "occupancy_immutable": true,
+    "n_nets_attempted": 4,
+    "stopped_after_failure": false
+  },
+  "no_optical_loss_model": "geometry only: no dB, no insertion loss and no crosstalk number is produced"
+}

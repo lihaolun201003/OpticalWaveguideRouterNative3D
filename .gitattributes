@@ -1,0 +1,3 @@
+# Preserve exact bytes of frozen snapshots and historical evidence on checkout.
+# Do not enable automatic CRLF/LF conversion: regression replays keep provenance.
+* -text

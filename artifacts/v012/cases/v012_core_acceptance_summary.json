@@ -1,0 +1,452 @@
+{
+  "artifact": "native3d_v012_core_acceptance_summary",
+  "results": {
+    "A1": {
+      "status": "success",
+      "cost": 20.0,
+      "expansions": 3,
+      "prefix_status_was": "search_exhausted",
+      "prefix_expansions_was": 2
+    },
+    "A2": {
+      "verdict": "fail",
+      "source_position_out_of_tolerance": 1,
+      "source_tangent_out_of_tolerance": 1,
+      "prefix_verdict_was": "pass"
+    },
+    "A3": {
+      "production_status": "violation",
+      "production_bound_um": 0.0,
+      "validator_verdict": "fail",
+      "validator_sampled_um": 0.0,
+      "validator_lower_bound_um": -49.99999999999999,
+      "validator_arc_only_verdict": "fail",
+      "prefix_verdict_was": "pass",
+      "prefix_arc_only_was": "TypeError"
+    },
+    "A4": {
+      "production_spacing_status": "violation",
+      "production_spacing_bound_um": 3.0146095267863278e-15,
+      "production_obstacle_status": "violation",
+      "production_obstacle_bound_um": 0.0,
+      "validator_status": "violation",
+      "validator_sampled_um": 0.022088195608000186,
+      "validator_lower_bound_um": -49.99999999999999,
+      "validator_verdict": "fail",
+      "prefix_production_spacing_was": "safe (99.005050376)",
+      "prefix_validator_verdict_was": "pass"
+    },
+    "A5": {
+      "status": "violation",
+      "lower_bound_um": 0.0,
+      "upper_bound_um": 0.0,
+      "method": "exact_rational",
+      "validator_analytic_um": 8.470329472543003e-22,
+      "validator_status": "violation",
+      "validator_verdict": "fail",
+      "prefix_production_was": "safe (9.039999999999993e-07)",
+      "prefix_validator_was": "pass"
+    },
+    "C1": {
+      "native3d": {
+        "status": "success",
+        "cost_um": 594.1592653589794,
+        "length_um": 594.1592653589794,
+        "expansions": 75,
+        "wall_s": 0.1666254000738263,
+        "timings": {
+          "graph_build_s": 0.02764390001539141,
+          "search_s": 0.13641669997014105,
+          "end_to_end_s": 0.1647579000564292
+        },
+        "peak_traced_memory_mib": 1.519735336303711,
+        "bounds": {
+          "spacing_um": 50.0,
+          "anchor_um": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "index_ranges": [
+            [
+              -1,
+              10
+            ],
+            [
+              -2,
+              2
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "n_lattice_positions": 240,
+          "n_directions": 6,
+          "node_upper_bound": 1440,
+          "edge_upper_bound": 19936,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "turn_radii_um": [
+            50.0,
+            100.0
+          ],
+          "max_hops": null,
+          "bounds_are_computed_from_the_construction": true
+        },
+        "nodes_visited": 75,
+        "expansion_calls": 75,
+        "generated": 305,
+        "rejected": 521,
+        "edges_validated": 413,
+        "edges_rejected": 108,
+        "edges_rejected_undecided": 0,
+        "cache_hits": 0,
+        "max_curve_end_position_error_um": 7.105427357601002e-15,
+        "max_curve_end_tangent_error_deg": 0.0,
+        "port_attachment_kinds": {
+          "source": "identity",
+          "target": "straight"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "action": "<source>",
+            "kind": "source",
+            "n_segments": 0,
+            "x_um": 60.0,
+            "y_um": 150.0,
+            "z_um": 0.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 0.0,
+            "depth": 0
+          },
+          {
+            "step": 1,
+            "action": "straight_2",
+            "kind": "finite_straight",
+            "n_segments": 1,
+            "x_um": 160.0,
+            "y_um": 150.0,
+            "z_um": 0.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 100.0,
+            "depth": 1
+          },
+          {
+            "step": 2,
+            "action": "turn_+1+0+0_to_+0+0+1_R50",
+            "kind": "finite_turn",
+            "n_segments": 1,
+            "x_um": 210.0,
+            "y_um": 150.0,
+            "z_um": 50.0,
+            "direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 90.0,
+            "g_um_equivalent": 178.53981633974485,
+            "depth": 2
+          },
+          {
+            "step": 3,
+            "action": "turn_+0+0+1_to_+1+0+0_R50",
+            "kind": "finite_turn",
+            "n_segments": 1,
+            "x_um": 260.0,
+            "y_um": 150.0,
+            "z_um": 100.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 257.0796326794897,
+            "depth": 3
+          },
+          {
+            "step": 4,
+            "action": "straight_3",
+            "kind": "finite_straight",
+            "n_segments": 1,
+            "x_um": 410.0,
+            "y_um": 150.0,
+            "z_um": 100.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 407.0796326794897,
+            "depth": 4
+          },
+          {
+            "step": 5,
+            "action": "turn_+1+0+0_to_+0+0-1_R50",
+            "kind": "finite_turn",
+            "n_segments": 1,
+            "x_um": 460.0,
+            "y_um": 150.0,
+            "z_um": 50.0,
+            "direction": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": -90.0,
+            "g_um_equivalent": 485.61944901923454,
+            "depth": 5
+          },
+          {
+            "step": 6,
+            "action": "turn_+0+0-1_to_+1+0+0_R50",
+            "kind": "finite_turn",
+            "n_segments": 1,
+            "x_um": 510.0,
+            "y_um": 150.0,
+            "z_um": 0.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 564.1592653589794,
+            "depth": 6
+          },
+          {
+            "step": 7,
+            "action": "port_target_straight",
+            "kind": "port_attachment",
+            "n_segments": 1,
+            "x_um": 540.0,
+            "y_um": 150.0,
+            "z_um": 0.0,
+            "direction": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "azimuth_deg": 0.0,
+            "elevation_deg": 0.0,
+            "g_um_equivalent": 594.1592653589794,
+            "depth": 7
+          }
+        ],
+        "segments": {
+          "total_length_um": 594.1592653589794,
+          "min_radius_um": 50.0,
+          "segments": [
+            {
+              "kind": "line",
+              "p0": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "p1": [
+                160.0,
+                150.0,
+                0.0
+              ],
+              "length_um": 100.0
+            },
+            {
+              "kind": "arc",
+              "center": [
+                160.0,
+                150.0,
+                50.0
+              ],
+              "u": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "v": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "radius_um": 50.0,
+              "theta_rad": 1.5707963267948966,
+              "theta_deg": 90.0,
+              "normal": [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              "length_um": 78.53981633974483
+            },
+            {
+              "kind": "arc",
+              "center": [
+                260.0,
+                150.0,
+                50.0
+              ],
+              "u": [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              "v": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "radius_um": 50.0,
+              "theta_rad": 1.5707963267948966,
+              "theta_deg": 90.0,
+              "normal": [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              "length_um": 78.53981633974483
+            },
+            {
+              "kind": "line",
+              "p0": [
+                260.0,
+                150.0,
+                100.0
+              ],
+              "p1": [
+                410.0,
+                150.0,
+                100.0
+              ],
+              "length_um": 150.0
+            },
+            {
+              "kind": "arc",
+              "center": [
+                410.0,
+                150.0,
+                50.0
+              ],
+              "u": [
+                0.0,
+                -0.0,
+                1.0
+              ],
+              "v": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "radius_um": 50.0,
+              "theta_rad": 1.5707963267948966,
+              "theta_deg": 90.0,
+              "normal": [
+                -0.0,
+                1.0,
+                0.0
+              ],
+              "length_um": 78.53981633974483
+            },
+            {
+              "kind": "arc",
+              "center": [
+                510.0,
+                150.0,
+                50.0
+              ],
+              "u": [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              "v": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "radius_um": 50.0,
+              "theta_rad": 1.5707963267948966,
+              "theta_deg": 90.0,
+              "normal": [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              "length_um": 78.53981633974483
+            },
+            {
+              "kind": "line",
+              "p0": [
+                510.0,
+                150.0,
+                0.0
+              ],
+              "p1": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "length_um": 30.0
+            }
+          ],
+          "cumulative_lengths_um": [
+            0.0,
+            100.0,
+            178.53981633974485,
+            257.0796326794897,
+            407.0796326794897,
+            485.61944901923454,
+            564.1592653589794,
+            594.1592653589794
+          ]
+        },
+        "assembled_check_ok": true
+      },
+      "independent_dijkstra": {
+        "best_cost_um": 594.1592653589794,
+        "nodes_settled": 678,
+        "n_edges": 7867,
+        "runtime_s": 0.003367000026628375,
+        "astar_cost_um": 594.1592653589794,
+        "difference_um": 0.0
+      },
+      "2d": {
+        "status": "search_exhausted",
+        "budget_exhausted": false,
+        "expansions": 81,
+        "wall_s": 0.04469729994889349
+      },
+      "budget": {
+        "max_runtime_s": 60.0,
+        "max_expansions": 200000
+      }
+    }
+  }
+}

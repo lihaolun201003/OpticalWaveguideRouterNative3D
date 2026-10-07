@@ -1,0 +1,44 @@
+====================================================================================================
+case: two_channel_03_arc_occupancy
+channel_count: 2      order: netA -> netB
+order_rule: input order, one net at a time; no net ordering, no rip-up & reroute
+self-spacing policy: ell_local = 10 um (two_times_dmin)   dmin = 5 um
+per-net fresh finite graph: True   graph= argument never passed: True
+
+routed_count   = 2
+verified_count = 2
+committed_count= 2
+failed_count   = 0   failure_categories = {}
+all_verified   = True   partial_success = False
+total_length_um= 792.699   total_runtime_s(net wall)=3.792   max_net_wall=3.782
+
+net        status                     length     segments expansions occ_rev   z_range  self_sp   inter_net failure_category
+netA       committed                  378.540    3        13        0->1      [0,0]    safe      safe      -
+netB       committed                  414.159    5        44        1->2      [0,0]    safe      safe      -
+
+raw candidate vs published path:
+  netA       routed_candidate=True  n_candidate_segments=3   published=yes (revision 1)
+  netB       routed_candidate=True  n_candidate_segments=5   published=yes (revision 2)
+
+inter-net certified spacing actually achieved (per net, first net has none):
+  netA       status=safe       min_certified_lower_bound=-  n_pairs=0  kinds={"arc-arc": 0, "arc-line": 0, "line-arc": 0, "line-line": 0}
+  netB       status=safe       min_certified_lower_bound=10.000000  n_pairs=15  kinds={"arc-arc": 4, "arc-line": 8, "line-arc": 1, "line-line": 2}
+
+self-spacing certification actually achieved:
+  netA       status=safe       LB=5.854793     UB=10.000000    exempt_pairs=0   undecided=0
+  netB       status=safe       LB=5.854793     UB=10.000000    exempt_pairs=0   undecided=0
+
+occupancy: revision=2 curves=8 (static=0, published=8) immutable=True
+   published netA       3 curve(s)
+   published netB       5 curve(s)
+
+control runs (what the published occupancy is responsible for):
+  netB_without_A_control       committed=1/1  statuses=netB:committed
+
+INDEPENDENT joint validation (re-derived from the written JSON file):
+  overall_verdict = pass
+  independent pass/fail/uncertified = 2/0/0   declared verified=2 committed=2
+  inter-net net-pairs=1 violations=0 undecided=0
+  disagreements with the declared statuses = 0
+  occupancy bookkeeping ok = True
+====================================================================================================

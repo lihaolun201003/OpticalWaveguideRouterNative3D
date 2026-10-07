@@ -1,0 +1,945 @@
+{
+  "artifact": "native3d_v013_zero_length_solution",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.1.3",
+  "strategy": "route_finite_native3d (finite multi-hop integer-node graph)",
+  "self_spacing_check": "NOT IMPLEMENTED in the acceptance path: constraints.checks.path_self_spacing() exists but neither the production router, the result assembly nor this independent validator calls it, so no self-spacing result enters any verdict (v0.1.2 erratum)",
+  "generated_at_utc": "2026-10-07T06:11:46.373683+00:00",
+  "case": "v013_zero_length",
+  "mode": "native3d",
+  "units": "um",
+  "rerun_command": ".venv\\Scripts\\python.exe artifacts\\v013\\probe\\v013_acceptance_probe.py",
+  "input": {
+    "name": "v013_zero_length",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        -60.0,
+        -60.0,
+        -60.0
+      ],
+      "hi": [
+        60.0,
+        60.0,
+        60.0
+      ]
+    },
+    "obstacles": [],
+    "reference_centerlines": [],
+    "source_pose": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "config": {
+      "length_unit": "um",
+      "angle_config_unit": "deg",
+      "pos_tol_um": 1e-06,
+      "ang_tol_deg": 1e-06,
+      "radius_tol_um": 1e-06,
+      "zero_tol_um": 1e-09,
+      "parallel_tol": 1e-09,
+      "clearance_decision_tol_um": 1e-09,
+      "max_subdiv_level": 9,
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "wg_envelope_radius_um": 2.0,
+      "boundary_margin_um": null,
+      "allow_out_of_plane": true,
+      "state_identity": "pose_float",
+      "pos_resolution_um": 10.0,
+      "dir_resolution_deg": 15.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "straight_lengths_um": [
+        10.0,
+        20.0,
+        40.0
+      ],
+      "turn_angles_deg": [
+        15.0,
+        30.0,
+        45.0,
+        60.0,
+        90.0
+      ],
+      "turn_radii_um": [
+        50.0,
+        75.0,
+        100.0
+      ],
+      "skew_axis_tilt_deg": [
+        45.0,
+        135.0
+      ],
+      "connector_radii_um": [
+        50.0,
+        75.0,
+        100.0
+      ],
+      "connector_max_length_um": 3000.0,
+      "max_expansions": 200000,
+      "max_runtime_s": 300.0,
+      "reference_spacing_um": 60.0,
+      "finite_spacing_um": 50.0,
+      "finite_straight_steps": [
+        1,
+        2,
+        3
+      ],
+      "finite_turn_radius_steps": [
+        1,
+        2
+      ],
+      "finite_port_attach_um": 150.0,
+      "finite_port_attach_max_nodes": 64,
+      "finite_max_expansions": 200000,
+      "finite_max_runtime_s": 60.0,
+      "effective_boundary_margin_um": 2.0,
+      "effective_obstacle_clearance_um": 5.0
+    },
+    "metadata": {}
+  },
+  "input_summary": {
+    "name": "v013_zero_length",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        -60.0,
+        -60.0,
+        -60.0
+      ],
+      "hi": [
+        60.0,
+        60.0,
+        60.0
+      ]
+    },
+    "n_obstacles": 0,
+    "obstacles": [],
+    "n_reference_centerlines": 0,
+    "source_pose": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "constraints": {
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "effective_obstacle_clearance_um": 5.0,
+      "wg_envelope_radius_um": 2.0,
+      "effective_boundary_margin_um": 2.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0
+    }
+  },
+  "search": {
+    "status": "success",
+    "reason": "source pose already satisfies the goal test",
+    "mode": "finite_native3d_native3d",
+    "heuristic": "max(0, |target_pos - pos| - eps_pos) [3D Euclidean lower bound]",
+    "expansions": 0,
+    "generated": 0,
+    "rejected": 0,
+    "runtime_s": 7.300055585801601e-06,
+    "cost_um_equivalent": 0.0,
+    "length_um": 0.0,
+    "congestion_cost_um_equivalent": 0.0,
+    "budget": {
+      "max_expansions": 200000,
+      "max_runtime_s": 60.0
+    },
+    "budget_exhausted": false,
+    "state_identity": "finite_lattice_node_id",
+    "approximate_state_identity": false,
+    "reference_graph": null,
+    "finite_graph": {
+      "strategy": "route_finite_native3d (v0.1.3 production finite multi-hop router; three-dimensional geometric contract)",
+      "mode": "native3d",
+      "bounds": {
+        "spacing_um": 50.0,
+        "anchor_um": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "index_ranges": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "n_lattice_positions": 27,
+        "n_directions": 6,
+        "node_upper_bound": 162,
+        "node_upper_bound_includes_virtual_ports": false,
+        "n_virtual_port_nodes_upper": 0,
+        "virtual_port_nodes": {
+          "source": false,
+          "target": false
+        },
+        "total_node_upper_bound_including_virtual_ports": 162,
+        "edge_upper_bound": 1782,
+        "edges_per_canonical_node_upper": 11,
+        "edge_upper_bound_from_canonical_nodes": 1782,
+        "edge_upper_bound_from_port_attachments": 0,
+        "edge_upper_bound_derivation": "node_upper_bound * (len(finite_straight_steps) + 4 * len(finite_turn_radius_steps)) + the number of validated port attachment edges really built (source + target); no hardcoded constant.  A canonical node generates at most one straight per straight step and at most one turn per (perpendicular axis direction, turn radius step) pair, and every port attachment edge is the successor of exactly one node.",
+        "straight_steps": [
+          1,
+          2,
+          3
+        ],
+        "turn_radius_steps": [
+          1,
+          2
+        ],
+        "turn_radii_um": [
+          50.0,
+          100.0
+        ],
+        "max_hops": null,
+        "bounds_are_computed_from_the_construction": true
+      },
+      "port_attachment": {
+        "source": {
+          "kind": "identity",
+          "canonical_node": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "n_edges": 0,
+          "note": "the source pose IS the canonical pose of this node (the lattice is anchored at the source), so the port is the node itself and no attachment curve is needed"
+        },
+        "target": {
+          "kind": "identity",
+          "canonical_node": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "n_edges": 0,
+          "note": "the target pose IS the canonical pose of this node"
+        }
+      },
+      "cache_key_fingerprint": {
+        "spacing_um": 50.0,
+        "straight_steps": [
+          1,
+          2,
+          3
+        ],
+        "turn_radius_steps": [
+          1,
+          2
+        ],
+        "rmin_um": 50.0,
+        "radius_tol_um": 1e-06,
+        "dmin_centerline_um": 5.0,
+        "obstacle_clearance_um": 5.0,
+        "obstacle_clearance_includes_envelope": false,
+        "wg_envelope_radius_um": 2.0,
+        "boundary_margin_um": 2.0,
+        "obstacle_clearance_effective_um": 5.0,
+        "clearance_decision_tol_um": 1e-09,
+        "max_subdiv_level": 9,
+        "port_attach_um": 150.0,
+        "port_attach_max_nodes": 64,
+        "connector_radii_um": [
+          50.0,
+          75.0,
+          100.0
+        ],
+        "pos_tol_um": 1e-06,
+        "ang_tol_deg": 1e-06,
+        "eps_pos_um": 2.0,
+        "eps_ang_deg": 3.0,
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "finite_max_expansions": 200000,
+        "finite_max_runtime_s": 60.0,
+        "mode": "native3d",
+        "congestion": "zero",
+        "contract_version": 1,
+        "chip": [
+          [
+            -60.0,
+            -60.0,
+            -60.0
+          ],
+          [
+            60.0,
+            60.0,
+            60.0
+          ]
+        ],
+        "obstacles": [],
+        "reference_centrelines": [],
+        "source_pose": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "edge_cache_scope": "one search; keyed by node id + the geometry/constraint/cost fingerprint above, never shared across scenes",
+      "graph_reuse": {
+        "accepted": true,
+        "caller_supplied_graph": false,
+        "mismatches": [],
+        "mismatch_detail": {},
+        "graph_cache_state": "cold",
+        "graph_build_count": 1,
+        "graph_build_count_by_this_call": 1,
+        "graph_prebuilt_construction_s": 0.0008500999538227916,
+        "successor_cache_hits": 0,
+        "scene_geometry_fingerprint": "e7cfa3231bf66484f6eda08aef892e9b6114ed46",
+        "graph_scene_geometry_fingerprint": "e7cfa3231bf66484f6eda08aef892e9b6114ed46",
+        "graph_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            75.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              -60.0,
+              -60.0,
+              -60.0
+            ],
+            [
+              60.0,
+              60.0,
+              60.0
+            ]
+          ],
+          "obstacles": [],
+          "reference_centrelines": [],
+          "source_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "expected_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            75.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              -60.0,
+              -60.0,
+              -60.0
+            ],
+            [
+              60.0,
+              60.0,
+              60.0
+            ]
+          ],
+          "obstacles": [],
+          "reference_centrelines": [],
+          "source_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "checked_fields": [
+          "contract_version",
+          "mode",
+          "chip",
+          "obstacles",
+          "reference_centrelines",
+          "source",
+          "source_tangent",
+          "target",
+          "target_tangent",
+          "congestion",
+          "finite_spacing_um",
+          "finite_straight_steps",
+          "finite_turn_radius_steps",
+          "rmin_um",
+          "radius_tol_um",
+          "dmin_centerline_um",
+          "obstacle_clearance_um",
+          "obstacle_clearance_includes_envelope",
+          "wg_envelope_radius_um",
+          "boundary_margin_um",
+          "effective_boundary_margin_um",
+          "effective_obstacle_clearance_um",
+          "clearance_decision_tol_um",
+          "max_subdiv_level",
+          "finite_port_attach_um",
+          "finite_port_attach_max_nodes",
+          "connector_radii_um",
+          "pos_tol_um",
+          "ang_tol_deg",
+          "eps_pos_um",
+          "eps_ang_deg",
+          "source_pos_tol_um",
+          "source_ang_tol_deg",
+          "finite_max_expansions",
+          "finite_max_runtime_s"
+        ],
+        "contract_version": 1,
+        "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+        "note": "the graph is reused only when every contract field is equal; the comparison is by CONTENT (Scene is mutable), and a mismatch is refused before any search expansion"
+      },
+      "graph_branch": "fresh_cold_graph",
+      "cache_hits": 0,
+      "cache_hits_graph_object_total": 0,
+      "cache_hits_this_call": 0,
+      "edge_check_s": 0.0,
+      "edge_check_s_graph_build": 0.0,
+      "edge_check_s_search": 0.0,
+      "edge_check_timing_note": "the per-edge continuous constraint checks are attributed to the phase that really performs them: port attachments are validated while the graph is CONSTRUCTED (edge_check_s_graph_build, inside graph_build_s) and canonical successors lazily during the search (edge_check_s_search, inside search_s).  edge_check_s is their sum for THIS call; graph_object_totals holds the graph object's lifetime totals, which a warm reuse inherits",
+      "edges_validated": 0,
+      "edges_rejected": 0,
+      "edges_rejected_undecided": 0,
+      "edges_end_pose_rejected": 0,
+      "edges_junction_rejected": 0,
+      "max_curve_end_position_error_um": 0.0,
+      "max_curve_end_tangent_error_deg": 0.0,
+      "graph_object_totals": {
+        "edge_check_s": 0.0,
+        "edge_check_s_graph_build": 0.0,
+        "edge_check_s_search": 0.0,
+        "edges_validated": 0,
+        "edges_rejected": 0,
+        "edges_end_pose_rejected": 0,
+        "edges_junction_rejected": 0,
+        "cache_hits": 0,
+        "construction_s": 0.0008500999538227916,
+        "search_count": 1,
+        "note": "lifetime totals of the FiniteGraph OBJECT; for the cold default branch they equal this call's numbers, for a warm reuse they include the earlier call(s)"
+      },
+      "start_node": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "goal_node": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "port_nodes_are_the_ports_themselves": {
+        "source": true,
+        "target": true
+      },
+      "nodes_expanded": 0,
+      "node_expansion_counts_sum": 0,
+      "n_segments": 0,
+      "zero_length_solution": true,
+      "assembled_path_constraint_check": {
+        "ok": true,
+        "checks": {
+          "min_bend_radius": {
+            "name": "min_bend_radius",
+            "status": "safe",
+            "bound_um": Infinity,
+            "detail": {
+              "note": "straight only; straight radius = infinite"
+            }
+          },
+          "boundary": {
+            "name": "boundary",
+            "status": "safe",
+            "bound_um": Infinity,
+            "detail": {}
+          },
+          "obstacle_clearance": {
+            "name": "obstacle_clearance",
+            "status": "safe",
+            "bound_um": Infinity,
+            "detail": {}
+          },
+          "centerline_spacing": {
+            "name": "centerline_spacing",
+            "status": "safe",
+            "bound_um": Infinity,
+            "detail": {}
+          }
+        },
+        "min_radius_um": null,
+        "clearance_required_um": 5.0,
+        "clearance_bound_um": Infinity,
+        "spacing_required_um": 5.0,
+        "spacing_bound_um": Infinity,
+        "total_length_um": 0
+      },
+      "assembled_endpoint_check": {
+        "ok": true,
+        "status": "safe",
+        "failed": [],
+        "n_segments": 0,
+        "zero_length_solution": true,
+        "start_position_error_um": 0.0,
+        "start_tangent_error_deg": 0.0,
+        "end_position_error_um": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "start_ok": true,
+        "end_ok": true,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 0.0,
+        "junction_failures": [],
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0,
+        "pos_tol_um": 1e-06,
+        "ang_tol_deg": 1e-06,
+        "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+        "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+      },
+      "port_assurance": {
+        "verified_against_the_caller_pose": true,
+        "zero_length_solution": true,
+        "n_segments": 0,
+        "source_position_error_um": 0.0,
+        "source_tangent_error_deg": 0.0,
+        "target_position_error_um": 0.0,
+        "target_tangent_error_deg": 0.0,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 0.0,
+        "assembled_path_check": {
+          "ok": true,
+          "status": "safe",
+          "failed": [],
+          "n_segments": 0,
+          "zero_length_solution": true,
+          "start_position_error_um": 0.0,
+          "start_tangent_error_deg": 0.0,
+          "end_position_error_um": 0.0,
+          "end_tangent_error_deg": 0.0,
+          "start_ok": true,
+          "end_ok": true,
+          "max_junction_position_error_um": 0.0,
+          "max_junction_tangent_error_deg": 0.0,
+          "junction_failures": [],
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "target_eps_pos_um": 2.0,
+          "target_eps_ang_deg": 3.0,
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+          "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+        },
+        "hard_constraints_ok": true,
+        "guarantee": "the returned curve was evaluated at its own first/last primitive and compared with the source/target pose the CALLER passed, using the source tolerances at the start and the target acceptance ball at the end, and the whole curve was re-validated by the production constraint stack"
+      },
+      "builder_guarantee": "the graph is only reused when its construction snapshot matches this input field by field; the edge upper bound is derived from the real action and port-attachment construction",
+      "guarantee": "optimality is claimed for THIS constructed finite graph only, up to the documented cost comparison tolerance of astar.py; search_exhausted means this graph was exhausted, not that the continuous pose space is unreachable.  success additionally means the ACTUAL assembled curve was verified against the pose the caller passed (or is the explicit zero-length solution)"
+    },
+    "timings": {
+      "graph_build_s": 0.0008514999644830823,
+      "search_s": 1.7900019884109497e-05,
+      "assembled_path_check_s": 2.450007013976574e-05,
+      "end_to_end_s": 0.0010011999402195215,
+      "graph_branch": "fresh_cold_graph",
+      "graph_prebuilt_construction_s": 0.0
+    },
+    "rejection_summary": {},
+    "trace": [
+      {
+        "step": 0,
+        "action": "<source>",
+        "kind": "source",
+        "n_segments": 0,
+        "x_um": 0.0,
+        "y_um": 0.0,
+        "z_um": 0.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 0.0,
+        "depth": 0
+      }
+    ],
+    "initial_candidates": [],
+    "goal_pos_error_um": 0.0,
+    "goal_tangent_error_deg": 0.0,
+    "zero_length_solution": true,
+    "n_segments": 0,
+    "endpoint_errors": {
+      "ok": true,
+      "status": "safe",
+      "failed": [],
+      "n_segments": 0,
+      "zero_length_solution": true,
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "start_ok": true,
+      "end_ok": true,
+      "max_junction_position_error_um": 0.0,
+      "max_junction_tangent_error_deg": 0.0,
+      "junction_failures": [],
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "target_eps_pos_um": 2.0,
+      "target_eps_ang_deg": 3.0,
+      "pos_tol_um": 1e-06,
+      "ang_tol_deg": 1e-06,
+      "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+      "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+    },
+    "port_assurance": {
+      "verified_against_the_caller_pose": true,
+      "zero_length_solution": true,
+      "n_segments": 0,
+      "source_position_error_um": 0.0,
+      "source_tangent_error_deg": 0.0,
+      "target_position_error_um": 0.0,
+      "target_tangent_error_deg": 0.0,
+      "max_junction_position_error_um": 0.0,
+      "max_junction_tangent_error_deg": 0.0,
+      "assembled_path_check": {
+        "ok": true,
+        "status": "safe",
+        "failed": [],
+        "n_segments": 0,
+        "zero_length_solution": true,
+        "start_position_error_um": 0.0,
+        "start_tangent_error_deg": 0.0,
+        "end_position_error_um": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "start_ok": true,
+        "end_ok": true,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 0.0,
+        "junction_failures": [],
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0,
+        "pos_tol_um": 1e-06,
+        "ang_tol_deg": 1e-06,
+        "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+        "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+      },
+      "hard_constraints_ok": true,
+      "guarantee": "the returned curve was evaluated at its own first/last primitive and compared with the source/target pose the CALLER passed, using the source tolerances at the start and the target acceptance ball at the end, and the whole curve was re-validated by the production constraint stack"
+    },
+    "path": null
+  },
+  "segment_provenance": [],
+  "trace_z_summary": {
+    "n_steps": 1,
+    "z_values_um": [
+      0.0
+    ],
+    "z_min_um": 0.0,
+    "z_max_um": 0.0,
+    "z_varies": false,
+    "n_distinct_z_um": 1,
+    "max_step_z_change_um": 0.0,
+    "action_families": {
+      "<source>": 1
+    },
+    "actions_changing_z": 0,
+    "elevation_range_deg": [
+      0.0,
+      0.0
+    ]
+  },
+  "no_optical_loss_model": "this engine computes geometry only; no dB, no insertion loss and no crosstalk number is produced",
+  "independent_validation": {
+    "validator": "native3d.validation.validate (independent, JSON only)",
+    "units": "um",
+    "zero_length_solution": true,
+    "n_segments": 0,
+    "segment_kinds": [],
+    "pose_contract": {
+      "contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "production_semantics": "identical to production Pose3D.from_dict: exactly 3 finite numbers for the position, exactly 3 finite numbers for the tangent, the tangent must be a non-zero direction whose norm exceeds the shared 1e-12 threshold (geometry.vec.unit default tol), and the stored tangent is the NORMALISED one; everything else (zero direction, NaN, +-Infinity, missing field, 2 or 4 components, non-numeric component) raises ValueError inside the validator and can never yield a verdict of 'pass'",
+      "source": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input_norm": 1.0,
+        "normalised": false
+      },
+      "target": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input_norm": 1.0,
+        "normalised": false
+      }
+    },
+    "endpoint_errors": {
+      "start_position_error_um": 0.0,
+      "end_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "tolerances": {
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0
+      },
+      "note": "the path is the single point source.position, so the start error is exactly 0 and the end error is the source-to-target mismatch of the two serialised poses"
+    },
+    "zero_length_checks": {
+      "source_equals_target_within_acceptance_ball": true,
+      "position_mismatch_um": 0.0,
+      "tangent_mismatch_deg": 0.0,
+      "boundary_margin_um": 58.0,
+      "obstacle_clearance_um": null,
+      "reference_spacing_um": null,
+      "n_reference_centrelines": 0,
+      "method": "exact point distances of the single zero-length point against the chip volume shrunk by the boundary margin, every obstacle and every reference centreline (line or arc); no sampling"
+    },
+    "source_pose_check": {
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "pose_contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "method": "a zero-length path starts AT the source pose, so the source check is the pose contract itself (finite, non-zero, correctly dimensioned, normalised)"
+    },
+    "target_pose_check": {
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "pose_contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "method": "the target acceptance ball is applied to the deviation between the two serialised poses, which is exactly the closed zero-length curve"
+    },
+    "router_claims_cross_check": {
+      "endpoint_errors_present": true,
+      "port_assurance_present": true,
+      "disagreements": []
+    },
+    "violations": [],
+    "violation_counts": {
+      "zero_length_violations": 0
+    },
+    "certification": {
+      "all_checks_certified": true,
+      "n_undecided": 0,
+      "self_check_failed": false,
+      "sampling_is_only_an_estimate": false,
+      "certified_lower_bounds_are_never_above_the_sampled_upper_bounds": true,
+      "notes": "a zero-length solution has no curve, so no sampled estimate and no certified chord lower bound is produced; every check here is an exact point/pose distance, and 'pass' means all of them held",
+      "verdict_is_a_proof_of_pass": true
+    },
+    "method": "zero-length dispatch: the artifact carries no primitive, so the independent validator checks the pose contract, the source/target coincidence inside the acceptance ball and the point against the chip, the obstacles and the reference centrelines",
+    "verdict": "pass"
+  }
+}

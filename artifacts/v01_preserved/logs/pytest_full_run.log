@@ -1,0 +1,91 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouterNative3D\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouterNative3D
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 64 items
+
+tests/test_independent_validation.py::test_validator_accepts_a_real_searched_path PASSED [  1%]
+tests/test_independent_validation.py::test_validator_rejects_a_tampered_radius PASSED [  3%]
+tests/test_independent_validation.py::test_validator_rejects_a_translated_path PASSED [  4%]
+tests/test_independent_validation.py::test_validator_is_an_independent_implementation PASSED [  6%]
+tests/test_independent_validation.py::test_artifact_round_trip_through_json_reproduces_the_validation PASSED [  7%]
+tests/test_phase1_geometry.py::test_pose_normalises_and_stores_true_3d_tangent PASSED [  9%]
+tests/test_phase1_geometry.py::test_pose_rejects_zero_tangent[bad0] PASSED [ 10%]
+tests/test_phase1_geometry.py::test_pose_rejects_zero_tangent[bad1] PASSED [ 12%]
+tests/test_phase1_geometry.py::test_pose_rejects_non_finite PASSED       [ 14%]
+tests/test_phase1_geometry.py::test_line_segment_length_is_euclidean_and_degenerate_rejected PASSED [ 15%]
+tests/test_phase1_geometry.py::test_arc_in_arbitrary_tilted_plane_geometry PASSED [ 17%]
+tests/test_phase1_geometry.py::test_arc_from_pose_sign_conventions_about_the_normal PASSED [ 18%]
+tests/test_phase1_geometry.py::test_arc_rejects_illegal_inputs PASSED    [ 20%]
+tests/test_phase1_geometry.py::test_path_cumulative_length_and_c1_report PASSED [ 21%]
+tests/test_phase1_geometry.py::test_path_reports_non_c1_corner_separately_from_curvature_jump PASSED [ 23%]
+tests/test_phase1_geometry.py::test_pure_straight_path_length_equals_euclidean_distance PASSED [ 25%]
+tests/test_phase2_state.py::test_state_keeps_3d_position_and_unit_3d_direction PASSED [ 26%]
+tests/test_phase2_state.py::test_same_position_different_direction_never_shares_a_dedup_key PASSED [ 28%]
+tests/test_phase2_state.py::test_quantisation_resolution_is_configurable_and_exact_pose_is_kept PASSED [ 29%]
+tests/test_phase2_state.py::test_state_rejects_degenerate_direction PASSED [ 31%]
+tests/test_phase2_state.py::test_azimuth_wraps_in_the_key PASSED         [ 32%]
+tests/test_phase3_actions.py::test_action_families_exist_including_oblique_skew PASSED [ 34%]
+tests/test_phase3_actions.py::test_sign_conventions_from_a_known_pose PASSED [ 35%]
+tests/test_phase3_actions.py::test_skew_action_changes_azimuth_and_elevation_at_once PASSED [ 37%]
+tests/test_phase3_actions.py::test_every_primitive_is_a_real_3d_motion_with_analytic_radius PASSED [ 39%]
+tests/test_phase3_actions.py::test_two_d_mode_generates_only_in_plane_primitives PASSED [ 40%]
+tests/test_phase3_actions.py::test_local_frame_is_orthonormal_and_global_z_anchored PASSED [ 42%]
+tests/test_phase3_actions.py::test_yaw_axis_is_perpendicular_even_for_an_inclined_tangent PASSED [ 43%]
+tests/test_phase4_astar.py::test_astar_matches_uniform_cost_search_and_independent_dijkstra PASSED [ 45%]
+tests/test_phase4_astar.py::test_heuristic_is_an_optimistic_bound_of_the_true_remaining_cost PASSED [ 46%]
+tests/test_phase4_astar.py::test_congestion_penalty_is_non_negative_and_in_length_units PASSED [ 48%]
+tests/test_phase4_astar.py::test_router_cost_equals_length_plus_congestion_and_changes_with_field PASSED [ 50%]
+tests/test_phase4_astar.py::test_invalid_source_and_target_poses_get_distinct_statuses PASSED [ 51%]
+tests/test_phase4_astar.py::test_budget_exhaustion_is_reported_separately_from_exhaustion PASSED [ 53%]
+tests/test_phase4_astar.py::test_no_decibel_or_loss_output_anywhere_in_the_package PASSED [ 54%]
+tests/test_phase5_constraints.py::test_radius_boundary_just_below_at_and_above_rmin PASSED [ 56%]
+tests/test_phase5_constraints.py::test_boundary_checks_the_whole_primitive_not_only_endpoints PASSED [ 57%]
+tests/test_phase5_constraints.py::test_collision_detected_in_the_middle_of_a_curve_with_legal_endpoints PASSED [ 59%]
+tests/test_phase5_constraints.py::test_aabb_overlap_alone_is_not_a_collision PASSED [ 60%]
+tests/test_phase5_constraints.py::test_exact_segment_box_distance_matches_a_dense_sampling_oracle PASSED [ 62%]
+tests/test_phase5_constraints.py::test_spacing_boundary_just_above_and_below_dmin PASSED [ 64%]
+tests/test_phase5_constraints.py::test_spacing_closest_points_between_sampling_nodes_are_found PASSED [ 65%]
+tests/test_phase5_constraints.py::test_arc_to_line_spacing_is_certified_over_all_parameter_pairs PASSED [ 67%]
+tests/test_phase5_constraints.py::test_adjacent_segments_are_exempt_but_wrap_around_re_approach_is_flagged PASSED [ 68%]
+tests/test_phase5_constraints.py::test_shallow_subdivision_depth_reports_undecided_and_rejects PASSED [ 70%]
+tests/test_phase6_cases.py::test_case1_pure_straight_run_has_euclidean_length PASSED [ 71%]
+tests/test_phase6_cases.py::test_case2_arc_in_a_tilted_plane_is_a_true_space_curve PASSED [ 73%]
+tests/test_phase6_cases.py::test_case2_engine_path_contains_a_non_xy_plane_arc PASSED [ 75%]
+tests/test_phase6_cases.py::test_case3_sealed_target_is_search_exhaustion_not_budget PASSED [ 76%]
+tests/test_phase6_cases.py::test_case4_radius_boundary_through_the_full_validator PASSED [ 78%]
+tests/test_phase6_cases.py::test_case5_scene_level_spacing_rejection_and_acceptance PASSED [ 79%]
+tests/test_phase6_cases.py::test_case6_legal_endpoints_but_the_curve_middle_is_illegal PASSED [ 81%]
+tests/test_phase6_cases.py::test_case7_same_position_wrong_tangent_is_not_success PASSED [ 82%]
+tests/test_phase6_cases.py::test_case8_non_zero_congestion_changes_cost_but_not_feasibility PASSED [ 84%]
+tests/test_phase6_core_acceptance.py::test_core_case_inputs_are_identical_for_both_modes PASSED [ 85%]
+tests/test_phase6_core_acceptance.py::test_core_case_geometry_makes_the_z0_slice_disconnected PASSED [ 87%]
+tests/test_phase6_core_acceptance.py::test_core_case_2d_mode_is_unreachable_by_real_search_exhaustion PASSED [ 89%]
+tests/test_phase6_core_acceptance.py::test_core_case_2d_mode_never_leaves_the_plane PASSED [ 90%]
+tests/test_phase6_core_acceptance.py::test_core_case_native3d_mode_is_reachable PASSED [ 92%]
+tests/test_phase6_core_acceptance.py::test_core_case_native3d_z_varies_in_the_search_trace PASSED [ 93%]
+tests/test_phase6_core_acceptance.py::test_core_case_initial_state_already_offers_feasible_z_changing_actions PASSED [ 95%]
+tests/test_phase6_core_acceptance.py::test_core_case_path_is_the_raw_searched_path PASSED [ 96%]
+tests/test_phase6_core_acceptance.py::test_core_case_native3d_full_constraint_evidence PASSED [ 98%]
+tests/test_phase6_core_acceptance.py::test_core_case_artifacts_are_on_disk_and_revalidatable PASSED [100%]
+
+============================ slowest 15 durations =============================
+13.45s setup    tests/test_phase6_core_acceptance.py::test_core_case_inputs_are_identical_for_both_modes
+2.25s call     tests/test_phase4_astar.py::test_budget_exhaustion_is_reported_separately_from_exhaustion
+2.16s call     tests/test_phase6_cases.py::test_case3_sealed_target_is_search_exhaustion_not_budget
+1.76s call     tests/test_phase4_astar.py::test_router_cost_equals_length_plus_congestion_and_changes_with_field
+0.57s call     tests/test_phase6_cases.py::test_case8_non_zero_congestion_changes_cost_but_not_feasibility
+0.55s call     tests/test_independent_validation.py::test_artifact_round_trip_through_json_reproduces_the_validation
+0.48s call     tests/test_phase6_core_acceptance.py::test_core_case_artifacts_are_on_disk_and_revalidatable
+0.28s setup    tests/test_independent_validation.py::test_validator_accepts_a_real_searched_path
+0.27s call     tests/test_independent_validation.py::test_validator_rejects_a_tampered_radius
+0.27s call     tests/test_independent_validation.py::test_validator_accepts_a_real_searched_path
+0.26s call     tests/test_independent_validation.py::test_validator_rejects_a_translated_path
+0.05s call     tests/test_phase4_astar.py::test_no_decibel_or_loss_output_anywhere_in_the_package
+0.05s call     tests/test_phase6_cases.py::test_case7_same_position_wrong_tangent_is_not_success
+0.05s call     tests/test_phase5_constraints.py::test_exact_segment_box_distance_matches_a_dense_sampling_oracle
+0.01s call     tests/test_phase3_actions.py::test_sign_conventions_from_a_known_pose
+============================= 64 passed in 22.60s =============================
+==== PYTEST EXIT CODE: 0   WALL CLOCK: 23.12 s   WORKDIR: C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouterNative3D ====

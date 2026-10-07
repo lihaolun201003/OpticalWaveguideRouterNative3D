@@ -1,0 +1,63 @@
+====================================================================================================
+case: stress_swap_08_channels
+channel_count: 8      order: net00 -> net01 -> net02 -> net03 -> net04 -> net05 -> net06 -> net07
+order_rule: input order, one net at a time; no net ordering, no rip-up & reroute
+self-spacing policy: ell_local = 10 um (two_times_dmin)   dmin = 5 um
+per-net fresh finite graph: True   graph= argument never passed: True
+
+routed_count   = 6
+verified_count = 5
+committed_count= 5
+failed_count   = 3   failure_categories = {"port_attachment_failed": 1, "search_exhausted": 1, "self_spacing_violation": 1}
+all_verified   = False   partial_success = True
+total_length_um= 5667.286   total_runtime_s(net wall)=130.839   max_net_wall=52.502
+
+net        status                     length     segments expansions occ_rev   z_range  self_sp   inter_net failure_category
+net00      self_spacing_violation     1057.073   11       1304      0->0      [0,100]  violation -         self_spacing_violation
+net01      committed                  736.858    9        376       0->1      [0,100]  safe      safe      -
+net02      committed                  972.433    9        1174      1->2      [-50,100] safe      safe      -
+net03      search_exhausted           -          0        1311      2->2      -        -         -         search_exhausted
+net04      committed                  931.401    10       863       2->3      [0,100]  safe      safe      -
+net05      committed                  1132.662   11       1277      3->4      [-50,100] safe      safe      -
+net06      committed                  836.858    10       340       4->5      [0,100]  safe      safe      -
+net07      port_attachment_failed     -          0        0         5->5      -        -         -         port_attachment_failed
+
+raw candidate vs published path:
+  net00      routed_candidate=True  n_candidate_segments=11  published=NO
+  net01      routed_candidate=True  n_candidate_segments=9   published=yes (revision 1)
+  net02      routed_candidate=True  n_candidate_segments=9   published=yes (revision 2)
+  net03      routed_candidate=False n_candidate_segments=0   published=NO
+  net04      routed_candidate=True  n_candidate_segments=10  published=yes (revision 3)
+  net05      routed_candidate=True  n_candidate_segments=11  published=yes (revision 4)
+  net06      routed_candidate=True  n_candidate_segments=10  published=yes (revision 5)
+  net07      routed_candidate=False n_candidate_segments=0   published=NO
+
+inter-net certified spacing actually achieved (per net, first net has none):
+  net01      status=safe       min_certified_lower_bound=-  n_pairs=0  kinds={"arc-arc": 0, "arc-line": 0, "line-arc": 0, "line-line": 0}
+  net02      status=safe       min_certified_lower_bound=5.322968  n_pairs=81  kinds={"arc-arc": 48, "arc-line": 6, "line-arc": 24, "line-line": 3}
+  net04      status=safe       min_certified_lower_bound=7.434165  n_pairs=180  kinds={"arc-arc": 84, "arc-line": 24, "line-arc": 56, "line-line": 16}
+  net05      status=safe       min_certified_lower_bound=7.059892  n_pairs=308  kinds={"arc-arc": 180, "arc-line": 72, "line-arc": 40, "line-line": 16}
+  net06      status=safe       min_certified_lower_bound=5.619584  n_pairs=390  kinds={"arc-arc": 203, "arc-line": 70, "line-arc": 87, "line-line": 30}
+
+self-spacing certification actually achieved:
+  net00      status=violation  LB=0.000000     UB=3.806023     exempt_pairs=0   undecided=0
+  net01      status=safe       LB=5.854793     UB=10.000000    exempt_pairs=0   undecided=0
+  net02      status=safe       LB=5.779492     UB=10.000000    exempt_pairs=0   undecided=0
+  net04      status=safe       LB=5.763875     UB=10.000000    exempt_pairs=0   undecided=0
+  net05      status=safe       LB=5.854793     UB=10.000000    exempt_pairs=0   undecided=0
+  net06      status=safe       LB=5.854793     UB=10.000000    exempt_pairs=0   undecided=0
+
+occupancy: revision=5 curves=49 (static=0, published=49) immutable=True
+   published net01      9 curve(s)
+   published net02      9 curve(s)
+   published net04      10 curve(s)
+   published net05      11 curve(s)
+   published net06      10 curve(s)
+
+INDEPENDENT joint validation (re-derived from the written JSON file):
+  overall_verdict = pass
+  independent pass/fail/uncertified = 5/0/0   declared verified=5 committed=5
+  inter-net net-pairs=10 violations=0 undecided=0
+  disagreements with the declared statuses = 0
+  occupancy bookkeeping ok = True
+====================================================================================================

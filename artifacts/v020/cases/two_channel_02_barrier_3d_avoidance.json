@@ -1,0 +1,940 @@
+{
+  "artifact": "native3d_v020_multinet_case",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.2 multinet baseline",
+  "units": "um",
+  "case": "two_channel_02_barrier_3d_avoidance",
+  "mode": "native3d",
+  "channel_count": 2,
+  "order": [
+    "netA",
+    "netB"
+  ],
+  "chip_volume": {
+    "lo": [
+      0.0,
+      0.0,
+      -60.0
+    ],
+    "hi": [
+      600.0,
+      300.0,
+      120.0
+    ]
+  },
+  "obstacles": [],
+  "static_reference_centerlines": [],
+  "config": {
+    "length_unit": "um",
+    "angle_config_unit": "deg",
+    "pos_tol_um": 1e-06,
+    "ang_tol_deg": 1e-06,
+    "radius_tol_um": 1e-06,
+    "zero_tol_um": 1e-09,
+    "parallel_tol": 1e-09,
+    "clearance_decision_tol_um": 1e-09,
+    "max_subdiv_level": 9,
+    "rmin_um": 50.0,
+    "dmin_centerline_um": 5.0,
+    "obstacle_clearance_um": 5.0,
+    "obstacle_clearance_includes_envelope": false,
+    "wg_envelope_radius_um": 2.0,
+    "boundary_margin_um": 2.0,
+    "allow_out_of_plane": true,
+    "state_identity": "pose_float",
+    "pos_resolution_um": 20.0,
+    "dir_resolution_deg": 30.0,
+    "eps_pos_um": 2.0,
+    "eps_ang_deg": 3.0,
+    "source_pos_tol_um": 1e-06,
+    "source_ang_tol_deg": 1e-06,
+    "straight_lengths_um": [
+      10.0,
+      20.0,
+      40.0
+    ],
+    "turn_angles_deg": [
+      30.0,
+      45.0,
+      90.0
+    ],
+    "turn_radii_um": [
+      50.0,
+      75.0
+    ],
+    "skew_axis_tilt_deg": [
+      45.0,
+      135.0
+    ],
+    "connector_radii_um": [
+      50.0,
+      100.0
+    ],
+    "connector_max_length_um": 3000.0,
+    "max_expansions": 100000,
+    "max_runtime_s": 300.0,
+    "reference_spacing_um": 60.0,
+    "finite_spacing_um": 50.0,
+    "finite_straight_steps": [
+      1,
+      2,
+      3
+    ],
+    "finite_turn_radius_steps": [
+      1,
+      2
+    ],
+    "finite_port_attach_um": 150.0,
+    "finite_port_attach_max_nodes": 64,
+    "finite_max_expansions": 200000,
+    "finite_max_runtime_s": 60.0,
+    "effective_boundary_margin_um": 2.0,
+    "effective_obstacle_clearance_um": 5.0
+  },
+  "self_spacing_policy": {
+    "ell_local_um": 10.0,
+    "kind": "two_times_dmin",
+    "note": "local geometric exemption of the assembled-path arclength neighbourhood; not a paper parameter and not an optical safety distance"
+  },
+  "nets": [
+    {
+      "net_id": "netA",
+      "index": 0,
+      "input": {
+        "net_id": "netA",
+        "source_pose": {
+          "position": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "tangent": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "tangent": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 296.0,
+      "expansions": 6,
+      "occupancy_revision_before": 0,
+      "occupancy_revision_after": 1,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2
+      ],
+      "path": {
+        "total_length_um": 296.0,
+        "min_radius_um": Infinity,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              300.0,
+              2.0,
+              0.0
+            ],
+            "p1": [
+              300.0,
+              52.0,
+              0.0
+            ],
+            "length_um": 50.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              300.0,
+              52.0,
+              0.0
+            ],
+            "p1": [
+              300.0,
+              202.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              300.0,
+              202.0,
+              0.0
+            ],
+            "p1": [
+              300.0,
+              298.0,
+              0.0
+            ],
+            "length_um": 96.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          50.0,
+          200.0,
+          296.0
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            52.0,
+            0.0
+          ],
+          "length_um": 50.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            300.0,
+            52.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            202.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            300.0,
+            202.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "length_um": 96.0
+        }
+      ]
+    },
+    {
+      "net_id": "netB",
+      "index": 1,
+      "input": {
+        "net_id": "netB",
+        "source_pose": {
+          "position": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            150.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 594.1592653589794,
+      "expansions": 91,
+      "occupancy_revision_before": 1,
+      "occupancy_revision_after": 2,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "path": {
+        "total_length_um": 594.1592653589794,
+        "min_radius_um": 50.0,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              60.0,
+              150.0,
+              0.0
+            ],
+            "p1": [
+              160.0,
+              150.0,
+              0.0
+            ],
+            "length_um": 100.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              160.0,
+              150.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              260.0,
+              150.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              260.0,
+              150.0,
+              100.0
+            ],
+            "p1": [
+              410.0,
+              150.0,
+              100.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "arc",
+            "center": [
+              410.0,
+              150.0,
+              50.0
+            ],
+            "u": [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            "v": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "arc",
+            "center": [
+              510.0,
+              150.0,
+              50.0
+            ],
+            "u": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "radius_um": 50.0,
+            "theta_rad": 1.5707963267948966,
+            "theta_deg": 90.0,
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "length_um": 78.53981633974483
+          },
+          {
+            "kind": "line",
+            "p0": [
+              510.0,
+              150.0,
+              0.0
+            ],
+            "p1": [
+              540.0,
+              150.0,
+              0.0
+            ],
+            "length_um": 30.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          100.0,
+          178.53981633974485,
+          257.0796326794897,
+          407.0796326794897,
+          485.61944901923454,
+          564.1592653589794,
+          594.1592653589794
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            150.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            150.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ]
+    }
+  ],
+  "occupancy": {
+    "revision": 2,
+    "entries": [
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 0,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 50.0,
+        "fingerprint": "3106b0736744487e432ffb6dbc4eecd1",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            52.0,
+            0.0
+          ],
+          "length_um": 50.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 1,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "894f98775589fea415bef8014b35e8da",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            300.0,
+            52.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            202.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 2,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 96.0,
+        "fingerprint": "339d1289ce9ebf38e24b6f9961398d6b",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            300.0,
+            202.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "length_um": 96.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 0,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 100.0,
+        "fingerprint": "cfdd45d8f464b96d4cade584d0c8168e",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 100.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 1,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "e21301834af6f831f301a5b54a975908",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            160.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 2,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "49d5d43267666232d8564fcf7f40f4f6",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            260.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 3,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "731ddf93f628b0d857f67e9c14e6679d",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            260.0,
+            150.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            150.0,
+            100.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 4,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "221e1306298c5eafb9a5e412cd69f058",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            410.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 5,
+        "occupancy_revision": 2,
+        "kind": "arc",
+        "length_um": 78.53981633974483,
+        "fingerprint": "778a009f8d375de5c2c322d8d6b05170",
+        "geometry": {
+          "kind": "arc",
+          "center": [
+            510.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netB",
+        "segment_id": 6,
+        "occupancy_revision": 2,
+        "kind": "line",
+        "length_um": 30.0,
+        "fingerprint": "d1913ce88a7f09763dd4a83c91125ff9",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            510.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      }
+    ],
+    "n_entries": 10,
+    "n_published_entries": 10,
+    "n_static_reference_entries": 0,
+    "per_net_published_curve_counts": {
+      "netA": 3,
+      "netB": 7
+    },
+    "immutability": {
+      "ok": true,
+      "n_curves": 10,
+      "n_changed": 0,
+      "changed": [],
+      "rule": "a published curve is frozen: neither a later net nor the next scene assembly may modify it"
+    },
+    "publication_rule": "published curves are the ACTUAL primitives of a VERIFIED net path: net_id + segment_id + occupancy_revision + full geometry; nodes, control points, chord polylines and AABBs are never the occupancy"
+  },
+  "counts": {
+    "channel_count": 2,
+    "n_nets": 2,
+    "routed_count": 2,
+    "verified_count": 2,
+    "committed_count": 2,
+    "failed_count": 0,
+    "failure_categories": {},
+    "all_verified": true,
+    "partial_success": false,
+    "total_length_um": 890.1592653589794,
+    "total_runtime_s": 0.06545689993072301,
+    "max_net_runtime_s": 0.061421899939887226,
+    "sum_net_expansions": 97
+  },
+  "totals": {
+    "wall_time_s": 0.10193760006222874,
+    "sum_net_wall_time_s": 0.10184470005333424,
+    "max_net_wall_time_s": 0.08516570006031543,
+    "total_path_length_um": 890.1592653589794,
+    "sum_search_expansions": 97,
+    "sum_search_runtime_s": 0.06545689993072301,
+    "occupancy_revision_final": 2,
+    "occupancy_immutable": true,
+    "n_nets_attempted": 2,
+    "stopped_after_failure": false
+  },
+  "no_optical_loss_model": "geometry only: no dB, no insertion loss and no crosstalk number is produced"
+}

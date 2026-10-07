@@ -1,0 +1,351 @@
+{
+  "artifact": "native3d_v020_multinet_case",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.2 multinet baseline",
+  "units": "um",
+  "case": "two_channel_04_no_solution_under_occupancy",
+  "mode": "native3d",
+  "channel_count": 2,
+  "order": [
+    "netA",
+    "netB"
+  ],
+  "chip_volume": {
+    "lo": [
+      0.0,
+      0.0,
+      -30.0
+    ],
+    "hi": [
+      600.0,
+      300.0,
+      30.0
+    ]
+  },
+  "obstacles": [],
+  "static_reference_centerlines": [],
+  "config": {
+    "length_unit": "um",
+    "angle_config_unit": "deg",
+    "pos_tol_um": 1e-06,
+    "ang_tol_deg": 1e-06,
+    "radius_tol_um": 1e-06,
+    "zero_tol_um": 1e-09,
+    "parallel_tol": 1e-09,
+    "clearance_decision_tol_um": 1e-09,
+    "max_subdiv_level": 9,
+    "rmin_um": 50.0,
+    "dmin_centerline_um": 5.0,
+    "obstacle_clearance_um": 5.0,
+    "obstacle_clearance_includes_envelope": false,
+    "wg_envelope_radius_um": 2.0,
+    "boundary_margin_um": 2.0,
+    "allow_out_of_plane": true,
+    "state_identity": "pose_float",
+    "pos_resolution_um": 20.0,
+    "dir_resolution_deg": 30.0,
+    "eps_pos_um": 2.0,
+    "eps_ang_deg": 3.0,
+    "source_pos_tol_um": 1e-06,
+    "source_ang_tol_deg": 1e-06,
+    "straight_lengths_um": [
+      10.0,
+      20.0,
+      40.0
+    ],
+    "turn_angles_deg": [
+      30.0,
+      45.0,
+      90.0
+    ],
+    "turn_radii_um": [
+      50.0,
+      75.0
+    ],
+    "skew_axis_tilt_deg": [
+      45.0,
+      135.0
+    ],
+    "connector_radii_um": [
+      50.0,
+      100.0
+    ],
+    "connector_max_length_um": 3000.0,
+    "max_expansions": 100000,
+    "max_runtime_s": 300.0,
+    "reference_spacing_um": 60.0,
+    "finite_spacing_um": 50.0,
+    "finite_straight_steps": [
+      1,
+      2,
+      3
+    ],
+    "finite_turn_radius_steps": [
+      1,
+      2
+    ],
+    "finite_port_attach_um": 150.0,
+    "finite_port_attach_max_nodes": 64,
+    "finite_max_expansions": 200000,
+    "finite_max_runtime_s": 60.0,
+    "effective_boundary_margin_um": 2.0,
+    "effective_obstacle_clearance_um": 5.0
+  },
+  "self_spacing_policy": {
+    "ell_local_um": 10.0,
+    "kind": "two_times_dmin",
+    "note": "local geometric exemption of the assembled-path arclength neighbourhood; not a paper parameter and not an optical safety distance"
+  },
+  "nets": [
+    {
+      "net_id": "netA",
+      "index": 0,
+      "input": {
+        "net_id": "netA",
+        "source_pose": {
+          "position": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "tangent": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "tangent": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "committed",
+      "accepted": true,
+      "search_status": "success",
+      "length_um": 296.0,
+      "expansions": 6,
+      "occupancy_revision_before": 0,
+      "occupancy_revision_after": 1,
+      "committed": true,
+      "committed_segment_ids": [
+        0,
+        1
+      ],
+      "path": {
+        "total_length_um": 296.0,
+        "min_radius_um": Infinity,
+        "segments": [
+          {
+            "kind": "line",
+            "p0": [
+              300.0,
+              2.0,
+              0.0
+            ],
+            "p1": [
+              300.0,
+              152.0,
+              0.0
+            ],
+            "length_um": 150.0
+          },
+          {
+            "kind": "line",
+            "p0": [
+              300.0,
+              152.0,
+              0.0
+            ],
+            "p1": [
+              300.0,
+              298.0,
+              0.0
+            ],
+            "length_um": 146.0
+          }
+        ],
+        "cumulative_lengths_um": [
+          0.0,
+          150.0,
+          296.0
+        ]
+      },
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            152.0,
+            0.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "line",
+          "p0": [
+            300.0,
+            152.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "length_um": 146.0
+        }
+      ]
+    },
+    {
+      "net_id": "netB",
+      "index": 1,
+      "input": {
+        "net_id": "netB",
+        "source_pose": {
+          "position": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "target_pose": {
+          "position": [
+            540.0,
+            150.0,
+            0.0
+          ],
+          "tangent": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "metadata": {}
+      },
+      "status": "search_exhausted",
+      "accepted": false,
+      "search_status": "search_exhausted",
+      "length_um": null,
+      "expansions": 98,
+      "occupancy_revision_before": 1,
+      "occupancy_revision_after": 1,
+      "committed": false,
+      "committed_segment_ids": [],
+      "path": null,
+      "segments": []
+    }
+  ],
+  "occupancy": {
+    "revision": 1,
+    "entries": [
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 0,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 150.0,
+        "fingerprint": "b0cb7077b07665115eab7a35300fdfe8",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            300.0,
+            2.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            152.0,
+            0.0
+          ],
+          "length_um": 150.0
+        }
+      },
+      {
+        "origin": "committed_net_path",
+        "net_id": "netA",
+        "segment_id": 1,
+        "occupancy_revision": 1,
+        "kind": "line",
+        "length_um": 146.0,
+        "fingerprint": "b5fbcb72edadd0372845ca958bbd53dd",
+        "geometry": {
+          "kind": "line",
+          "p0": [
+            300.0,
+            152.0,
+            0.0
+          ],
+          "p1": [
+            300.0,
+            298.0,
+            0.0
+          ],
+          "length_um": 146.0
+        }
+      }
+    ],
+    "n_entries": 2,
+    "n_published_entries": 2,
+    "n_static_reference_entries": 0,
+    "per_net_published_curve_counts": {
+      "netA": 2
+    },
+    "immutability": {
+      "ok": true,
+      "n_curves": 2,
+      "n_changed": 0,
+      "changed": [],
+      "rule": "a published curve is frozen: neither a later net nor the next scene assembly may modify it"
+    },
+    "publication_rule": "published curves are the ACTUAL primitives of a VERIFIED net path: net_id + segment_id + occupancy_revision + full geometry; nodes, control points, chord polylines and AABBs are never the occupancy"
+  },
+  "counts": {
+    "channel_count": 2,
+    "n_nets": 2,
+    "routed_count": 1,
+    "verified_count": 1,
+    "committed_count": 1,
+    "failed_count": 1,
+    "failure_categories": {
+      "search_exhausted": 1
+    },
+    "all_verified": false,
+    "partial_success": true,
+    "total_length_um": 296.0,
+    "total_runtime_s": 0.05873799999244511,
+    "max_net_runtime_s": 0.055191899999044836,
+    "sum_net_expansions": 104
+  },
+  "totals": {
+    "wall_time_s": 0.06731520011089742,
+    "sum_net_wall_time_s": 0.06725930003449321,
+    "max_net_wall_time_s": 0.058610099949873984,
+    "total_path_length_um": 296.0,
+    "sum_search_expansions": 104,
+    "sum_search_runtime_s": 0.05873799999244511,
+    "occupancy_revision_final": 1,
+    "occupancy_immutable": true,
+    "n_nets_attempted": 2,
+    "stopped_after_failure": false
+  },
+  "no_optical_loss_model": "geometry only: no dB, no insertion loss and no crosstalk number is produced"
+}

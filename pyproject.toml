@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "native3d"
+version = "0.2.0"
+description = "Native 3D optical waveguide routing: single-net geometry/search and a 2-16-channel sequential fixed-occupancy baseline"
+readme = "README.md"
+requires-python = ">=3.10"
+# The router itself is pure Python (standard library only).  numpy is present in
+# the environment but is NOT required; pytest is only needed to run the tests.
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+plots = ["matplotlib", "numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --durations=15"

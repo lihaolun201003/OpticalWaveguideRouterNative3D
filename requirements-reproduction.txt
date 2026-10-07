@@ -1,0 +1,5 @@
+# Top-level versions observed in the local v0.2 environment on 2026-10-07.
+# This is a constraints file, not a complete transitive dependency lock.
+pytest==9.1.1
+numpy==2.2.6
+matplotlib==3.10.9

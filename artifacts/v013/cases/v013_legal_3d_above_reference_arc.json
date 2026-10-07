@@ -1,0 +1,304 @@
+{
+  "artifact": "native3d_v013_legal_3d_above_reference_arc",
+  "path": {
+    "segments": [
+      {
+        "kind": "line",
+        "p0": [
+          -10.0,
+          0.0,
+          50.0
+        ],
+        "p1": [
+          10.0,
+          0.0,
+          50.0
+        ]
+      }
+    ]
+  },
+  "scene": {
+    "chip_volume": {
+      "lo": [
+        -2000.0,
+        -2000.0,
+        -2000.0
+      ],
+      "hi": [
+        2000.0,
+        2000.0,
+        2000.0
+      ]
+    },
+    "obstacles": [],
+    "reference_centerlines": [
+      {
+        "kind": "arc",
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_um": 50.0,
+        "theta_rad": 6.283185307179586,
+        "theta_deg": 360.0,
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "length_um": 314.1592653589793
+      }
+    ],
+    "source_pose": {
+      "position": [
+        -10.0,
+        0.0,
+        50.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        10.0,
+        0.0,
+        50.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "true_minimum_distance_um": 64.03124237432849,
+  "production": {
+    "status": "safe",
+    "bound_um": 50.0
+  },
+  "independent_validation": {
+    "validator": "native3d.validation.validate (independent, JSON only)",
+    "units": "um",
+    "n_segments": 1,
+    "segment_kinds": [
+      "line"
+    ],
+    "pose_contract": {
+      "contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "production_semantics": "identical to production Pose3D.from_dict: exactly 3 finite numbers for the position, exactly 3 finite numbers for the tangent, the tangent must be a non-zero direction whose norm exceeds the shared 1e-12 threshold (geometry.vec.unit default tol), and the stored tangent is the NORMALISED one; everything else (zero direction, NaN, +-Infinity, missing field, 2 or 4 components, non-numeric component) raises ValueError inside the validator and can never yield a verdict of 'pass'",
+      "source": {
+        "position": [
+          -10.0,
+          0.0,
+          50.0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input_norm": 1.0,
+        "normalised": false
+      },
+      "target": {
+        "position": [
+          10.0,
+          0.0,
+          50.0
+        ],
+        "tangent": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tangent_input_norm": 1.0,
+        "normalised": false
+      },
+      "note": "both poses were read by read_pose_dict(), which normalises a legal non-zero 3D direction and raises ValueError for every malformed pose; an un-normalised dot product can never enter acos()"
+    },
+    "total_length_um_analytic": 20.0,
+    "total_length_um_independent": 20.0,
+    "length_relative_error": 0.0,
+    "min_radius_um_stored": null,
+    "min_radius_um_refit": null,
+    "radius_refit_max_rel_error": 0.0,
+    "radius_violations": [],
+    "junction_position_errors_um": [],
+    "junction_tangent_errors_deg": [],
+    "max_junction_position_error_um": 0.0,
+    "max_junction_tangent_error_deg": 0.0,
+    "c1_continuous": true,
+    "boundary": {
+      "samples": 81,
+      "violation_samples": 0,
+      "min_margin_um_sampled": 1948.0,
+      "analytic_min_margin_um": 1948.0,
+      "analytic_overshoot_um": 0.0,
+      "worst_extreme": null,
+      "certified_contained": true,
+      "conservative_margin_lower_bound_um": 1948.0,
+      "status": "safe",
+      "method": "exact analytic coordinate extrema per segment (no chord error, no sampling)"
+    },
+    "obstacle_clearance": {
+      "required_um": 5.0,
+      "min_sampled_clearance_um": null,
+      "analytic_min_clearance_um": null,
+      "conservative_clearance_lower_bound_um": Infinity,
+      "sampled_points_inside_obstacle": 0,
+      "sampled_below_required": null,
+      "certified_below_required": false,
+      "witness_keepout_um": null,
+      "status": "safe",
+      "method": "no obstacle in the scene",
+      "per_segment": []
+    },
+    "centerline_spacing": {
+      "required_um": 5.0,
+      "min_sampled_um": 64.03124237432849,
+      "analytic_min_um": null,
+      "conservative_lower_bound_um": 42.800965523585035,
+      "sampled_below_required": false,
+      "certified_below_required": false,
+      "n_reference_curves": 1,
+      "reference_kinds": [
+        "arc"
+      ],
+      "witness_keepout_um": 64.03124237432849,
+      "status": "safe",
+      "method": "certified chord bounds for every kind combination (line/line, line/arc, arc/line, arc/arc); exact segment/segment distance with an exact-rational fallback for line/line pairs; both sagittas subtracted and the sagitta domain dphi <= pi enforced; sampled minima are upper bounds only",
+      "per_segment": [
+        {
+          "segment": 0,
+          "kind": "line",
+          "lower_bound_um": 42.800965523585035,
+          "sampled_min_um": 64.03124237432849,
+          "analytic_min_um": null,
+          "status": "safe"
+        }
+      ]
+    },
+    "endpoint_errors": {
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "tangent_sources": {
+        "source_tangent_input_norm": 1.0,
+        "target_tangent_input_norm": 1.0,
+        "note": "the JSON tangents were normalised by read_pose_dict before any dot product; the reported angles are the true 3D angles between unit directions (POSE_CONTRACT)"
+      },
+      "finite_difference_cross_check": {
+        "start_tangent_error_deg": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "note": "central difference at +-1e-3 um; agreement within the chord error 1e-3/R rad confirms the analytic tangents"
+      },
+      "tolerances": {
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0
+      }
+    },
+    "source_pose_check": {
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "pose_contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "method": "the path start is compared against the SOURCE pose with the source tolerances; the target acceptance ball is not reused; the source tangent is the NORMALISED JSON direction"
+    },
+    "target_pose_check": {
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "pose_contract": "normalise a legal non-zero 3D direction, reject otherwise",
+      "method": "the path end is compared against the TARGET pose acceptance ball; the target tangent is the NORMALISED JSON direction, so a non-unit tangent cannot fake a smaller angle"
+    },
+    "z_profile": {
+      "source_z_um": 50.0,
+      "target_z_um": 50.0,
+      "junction_z_um": [
+        50.0,
+        50.0
+      ],
+      "z_min_um": 50.0,
+      "z_max_um": 50.0,
+      "n_segments_leaving_z0": 0,
+      "z_varies": false
+    },
+    "violation_counts": {
+      "radius_violations": 0,
+      "boundary_violation_samples": 0,
+      "boundary_analytic_violation": 0,
+      "obstacle_points_inside": 0,
+      "obstacle_sampled_below_required": 0,
+      "obstacle_certified_below_required": 0,
+      "spacing_below_required": 0,
+      "spacing_certified_below_required": 0,
+      "non_c1_junctions": 0,
+      "source_position_out_of_tolerance": 0,
+      "source_tangent_out_of_tolerance": 0,
+      "endpoint_position_out_of_tolerance": 0,
+      "endpoint_tangent_out_of_tolerance": 0,
+      "undecided_checks": 0
+    },
+    "verdict": "pass",
+    "certification": {
+      "all_checks_certified": true,
+      "n_undecided": 0,
+      "self_check_failed": false,
+      "self_check_notes": [],
+      "sampling_is_only_an_estimate": true,
+      "certified_lower_bounds_are_never_above_the_sampled_upper_bounds": true,
+      "verdict_is_a_proof_of_pass": true,
+      "notes": "pass = every check was certified safe; fail = a violation witness or a bound that proves the requirement is missed; uncertified = a check could not be decided inside the refinement cap, or the certification self check failed (never reported as pass)"
+    }
+  },
+  "control_crossing_from_x_minus_100": {
+    "production_status": "violation",
+    "validator_verdict": "fail",
+    "validator_sampled_min_um": 0.0
+  },
+  "control_legal_inside_the_circle": {
+    "validator_verdict": "pass",
+    "validator_sampled_min_um": 40.0
+  },
+  "control_too_close_R12": {
+    "production_status": "violation",
+    "validator_verdict": "fail",
+    "validator_sampled_min_um": 2.0
+  },
+  "note": "v0.1.2 rejected this legal path (sampled minimum 0.0) because the point-to-arc distance was the radial difference to the sphere through the arc"
+}

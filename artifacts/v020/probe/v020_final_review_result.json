@@ -1,0 +1,2164 @@
+{
+  "artifact": "native3d_v020_adversarial_final_review",
+  "n_cases": 11,
+  "cases": [
+    {
+      "case": "crosswall_02_channels",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 1188.3185307179588,
+        "total_runtime_s": 0.09974710003007203,
+        "max_net_runtime_s": 0.06080400000791997,
+        "sum_net_expansions": 130
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 2,
+        "n_pass": 2,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 1,
+        "n_inter_net_pairs": 1,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 2,
+        "declared_committed": 2,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net01",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "net00",
+            "net01"
+          ],
+          "brute_min_distance_um": 10.0
+        }
+      ]
+    },
+    {
+      "case": "crosswall_04_channels",
+      "channel_count": 4,
+      "declared_counts": {
+        "channel_count": 4,
+        "n_nets": 4,
+        "routed_count": 4,
+        "verified_count": 4,
+        "committed_count": 4,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 2376.6370614359175,
+        "total_runtime_s": 0.26604749995749444,
+        "max_net_runtime_s": 0.09120729996357113,
+        "sum_net_expansions": 256
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 4,
+        "n_nets_with_a_path": 4,
+        "n_pass": 4,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 6,
+        "n_inter_net_pairs": 6,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 4,
+        "declared_committed": 4,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net01",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net02",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net03",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "net00",
+            "net01"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net02"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net03"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net02"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net03"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net03"
+          ],
+          "brute_min_distance_um": 10.0
+        }
+      ]
+    },
+    {
+      "case": "crosswall_08_channels",
+      "channel_count": 8,
+      "declared_counts": {
+        "channel_count": 8,
+        "n_nets": 8,
+        "routed_count": 8,
+        "verified_count": 8,
+        "committed_count": 8,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 4753.274122871836,
+        "total_runtime_s": 1.0190000999718904,
+        "max_net_runtime_s": 0.22299260005820543,
+        "sum_net_expansions": 517
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 8,
+        "n_nets_with_a_path": 8,
+        "n_pass": 8,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 28,
+        "n_inter_net_pairs": 28,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 8,
+        "declared_committed": 8,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net01",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net02",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net03",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net04",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net05",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net06",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net07",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "net00",
+            "net01"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net02"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net03"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net04"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net05"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net06"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net07"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net02"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net03"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net04"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net05"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net06"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net07"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net03"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net04"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net05"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net06"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net07"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net04"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net05"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net06"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net07"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net05"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net06"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net07"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net06"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net07"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net07"
+          ],
+          "brute_min_distance_um": 10.0
+        }
+      ]
+    },
+    {
+      "case": "crosswall_16_channels",
+      "channel_count": 16,
+      "declared_counts": {
+        "channel_count": 16,
+        "n_nets": 16,
+        "routed_count": 16,
+        "verified_count": 16,
+        "committed_count": 16,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 9506.548245743672,
+        "total_runtime_s": 3.1238722001435235,
+        "max_net_runtime_s": 0.30667110008653253,
+        "sum_net_expansions": 1017
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 16,
+        "n_nets_with_a_path": 16,
+        "n_pass": 16,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 120,
+        "n_inter_net_pairs": 120,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 16,
+        "declared_committed": 16,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net01",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net02",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net03",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net04",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net05",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net06",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net07",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net08",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net09",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net10",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net11",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net12",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net13",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net14",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net15",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "net00",
+            "net01"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net02"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net03"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net04"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net05"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net06"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net07"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net08"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net09"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net10"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net11"
+          ],
+          "brute_min_distance_um": 110.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net12"
+          ],
+          "brute_min_distance_um": 120.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net13"
+          ],
+          "brute_min_distance_um": 130.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net14"
+          ],
+          "brute_min_distance_um": 140.0
+        },
+        {
+          "pair": [
+            "net00",
+            "net15"
+          ],
+          "brute_min_distance_um": 150.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net02"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net03"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net04"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net05"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net06"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net07"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net08"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net09"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net10"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net11"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net12"
+          ],
+          "brute_min_distance_um": 110.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net13"
+          ],
+          "brute_min_distance_um": 120.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net14"
+          ],
+          "brute_min_distance_um": 130.0
+        },
+        {
+          "pair": [
+            "net01",
+            "net15"
+          ],
+          "brute_min_distance_um": 140.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net03"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net04"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net05"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net06"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net07"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net08"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net09"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net10"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net11"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net12"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net13"
+          ],
+          "brute_min_distance_um": 110.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net14"
+          ],
+          "brute_min_distance_um": 120.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net15"
+          ],
+          "brute_min_distance_um": 130.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net04"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net05"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net06"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net07"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net08"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net09"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net10"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net11"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net12"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net13"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net14"
+          ],
+          "brute_min_distance_um": 110.0
+        },
+        {
+          "pair": [
+            "net03",
+            "net15"
+          ],
+          "brute_min_distance_um": 120.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net05"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net06"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net07"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net08"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net09"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net10"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net11"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net12"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net13"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net14"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net04",
+            "net15"
+          ],
+          "brute_min_distance_um": 110.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net06"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net07"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net08"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net09"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net10"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net11"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net12"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net13"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net14"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net05",
+            "net15"
+          ],
+          "brute_min_distance_um": 100.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net07"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net08"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net09"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net10"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net11"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net12"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net13"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net14"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net06",
+            "net15"
+          ],
+          "brute_min_distance_um": 90.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net08"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net09"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net10"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net11"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net12"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net13"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net14"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net07",
+            "net15"
+          ],
+          "brute_min_distance_um": 80.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net09"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net10"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net11"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net12"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net13"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net14"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net08",
+            "net15"
+          ],
+          "brute_min_distance_um": 70.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net10"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net11"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net12"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net13"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net14"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net09",
+            "net15"
+          ],
+          "brute_min_distance_um": 60.0
+        },
+        {
+          "pair": [
+            "net10",
+            "net11"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net10",
+            "net12"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net10",
+            "net13"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net10",
+            "net14"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net10",
+            "net15"
+          ],
+          "brute_min_distance_um": 50.0
+        },
+        {
+          "pair": [
+            "net11",
+            "net12"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net11",
+            "net13"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net11",
+            "net14"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net11",
+            "net15"
+          ],
+          "brute_min_distance_um": 40.0
+        },
+        {
+          "pair": [
+            "net12",
+            "net13"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net12",
+            "net14"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net12",
+            "net15"
+          ],
+          "brute_min_distance_um": 30.0
+        },
+        {
+          "pair": [
+            "net13",
+            "net14"
+          ],
+          "brute_min_distance_um": 10.0
+        },
+        {
+          "pair": [
+            "net13",
+            "net15"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net14",
+            "net15"
+          ],
+          "brute_min_distance_um": 10.0
+        }
+      ]
+    },
+    {
+      "case": "stress_swap_04_channels",
+      "channel_count": 4,
+      "declared_counts": {
+        "channel_count": 4,
+        "n_nets": 4,
+        "routed_count": 4,
+        "verified_count": 0,
+        "committed_count": 0,
+        "failed_count": 4,
+        "failure_categories": {
+          "self_spacing_violation": 4
+        },
+        "all_verified": false,
+        "partial_success": false,
+        "total_length_um": 3654.6297571063797,
+        "total_runtime_s": 2.4641174997668713,
+        "max_net_runtime_s": 0.6375899999402463,
+        "sum_net_expansions": 4105
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 4,
+        "n_nets_with_a_path": 4,
+        "n_pass": 0,
+        "n_rejected_ok": 4,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 0,
+        "n_inter_net_pairs": 0,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 0,
+        "declared_committed": 0,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "self_spacing_violation",
+          "committed": false,
+          "joint_verdict": "rejected_ok",
+          "brute_self_spacing_um": 0.2969197966996633,
+          "brute_self_witness_gap_um": 314.4523347297858,
+          "certified_lower_bound_um": 0.0,
+          "self_spacing_status": "violation"
+        },
+        {
+          "net_id": "net01",
+          "status": "self_spacing_violation",
+          "committed": false,
+          "joint_verdict": "rejected_ok",
+          "brute_self_spacing_um": 0.17074462285616177,
+          "brute_self_witness_gap_um": 313.98852065315896,
+          "certified_lower_bound_um": 0.0,
+          "self_spacing_status": "violation"
+        },
+        {
+          "net_id": "net02",
+          "status": "self_spacing_violation",
+          "committed": false,
+          "joint_verdict": "rejected_ok",
+          "brute_self_spacing_um": 0.6969277296785233,
+          "brute_self_witness_gap_um": 313.92486779100636,
+          "certified_lower_bound_um": 0.4054206983495859,
+          "self_spacing_status": "violation"
+        },
+        {
+          "net_id": "net03",
+          "status": "self_spacing_violation",
+          "committed": false,
+          "joint_verdict": "rejected_ok",
+          "brute_self_spacing_um": 3.8917832940288912,
+          "brute_self_witness_gap_um": 316.4718744792244,
+          "certified_lower_bound_um": 3.005181353102414,
+          "self_spacing_status": "violation"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": []
+    },
+    {
+      "case": "stress_swap_08_channels",
+      "channel_count": 8,
+      "declared_counts": {
+        "channel_count": 8,
+        "n_nets": 8,
+        "routed_count": 6,
+        "verified_count": 5,
+        "committed_count": 5,
+        "failed_count": 3,
+        "failure_categories": {
+          "self_spacing_violation": 1,
+          "search_exhausted": 1,
+          "port_attachment_failed": 1
+        },
+        "all_verified": false,
+        "partial_success": true,
+        "total_length_um": 5667.285795013722,
+        "total_runtime_s": 130.83856690023094,
+        "max_net_runtime_s": 52.502366200089455,
+        "sum_net_expansions": 6645
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 8,
+        "n_nets_with_a_path": 6,
+        "n_pass": 5,
+        "n_rejected_ok": 1,
+        "n_fail": 0,
+        "n_no_path": 2,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 10,
+        "n_inter_net_pairs": 10,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 5,
+        "n_rejected_candidate_evidence_violations": 4,
+        "declared_verified": 5,
+        "declared_committed": 5,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "net00",
+          "status": "self_spacing_violation",
+          "committed": false,
+          "joint_verdict": "rejected_ok",
+          "brute_self_spacing_um": 0.48727704885249074,
+          "brute_self_witness_gap_um": 315.22392847496894,
+          "certified_lower_bound_um": 0.0,
+          "self_spacing_status": "violation"
+        },
+        {
+          "net_id": "net01",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.914138898912041,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501438,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net02",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891206,
+          "brute_self_witness_gap_um": 10.935923794141729,
+          "certified_lower_bound_um": 5.779492175174948,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net04",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.656185977664357,
+          "brute_self_witness_gap_um": 10.660896412766306,
+          "certified_lower_bound_um": 5.7638746982526925,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net05",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.80094372703834,
+          "brute_self_witness_gap_um": 10.822055450796142,
+          "certified_lower_bound_um": 5.854792615501259,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "net06",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.914138898912041,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501244,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "net01",
+            "net02"
+          ],
+          "brute_min_distance_um": 8.57625409967872
+        },
+        {
+          "pair": [
+            "net01",
+            "net04"
+          ],
+          "brute_min_distance_um": 12.408663971807297
+        },
+        {
+          "pair": [
+            "net01",
+            "net05"
+          ],
+          "brute_min_distance_um": 35.85641633891771
+        },
+        {
+          "pair": [
+            "net01",
+            "net06"
+          ],
+          "brute_min_distance_um": 8.128786739204752
+        },
+        {
+          "pair": [
+            "net02",
+            "net04"
+          ],
+          "brute_min_distance_um": 15.794290445819936
+        },
+        {
+          "pair": [
+            "net02",
+            "net05"
+          ],
+          "brute_min_distance_um": 20.0
+        },
+        {
+          "pair": [
+            "net02",
+            "net06"
+          ],
+          "brute_min_distance_um": 22.73290322757189
+        },
+        {
+          "pair": [
+            "net04",
+            "net05"
+          ],
+          "brute_min_distance_um": 9.999999999998707
+        },
+        {
+          "pair": [
+            "net04",
+            "net06"
+          ],
+          "brute_min_distance_um": 19.999999999998778
+        },
+        {
+          "pair": [
+            "net05",
+            "net06"
+          ],
+          "brute_min_distance_um": 6.6956667057069605
+        }
+      ]
+    },
+    {
+      "case": "two_channel_01_parallel_straights",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 900.0,
+        "total_runtime_s": 0.015138400020077825,
+        "max_net_runtime_s": 0.0076497000409290195,
+        "sum_net_expansions": 18
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 2,
+        "n_pass": 2,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 1,
+        "n_inter_net_pairs": 1,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 2,
+        "declared_committed": 2,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "netA",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 11.0,
+          "brute_self_witness_gap_um": 11.0,
+          "certified_lower_bound_um": 9.999999999,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "netB",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 11.0,
+          "brute_self_witness_gap_um": 11.0,
+          "certified_lower_bound_um": 9.999999999,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "netA",
+            "netB"
+          ],
+          "brute_min_distance_um": 180.0
+        }
+      ]
+    },
+    {
+      "case": "two_channel_02_barrier_3d_avoidance",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 890.1592653589794,
+        "total_runtime_s": 0.06545689993072301,
+        "max_net_runtime_s": 0.061421899939887226,
+        "sum_net_expansions": 97
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 2,
+        "n_pass": 2,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 1,
+        "n_inter_net_pairs": 1,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 2,
+        "declared_committed": 2,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "netA",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 11.0,
+          "brute_self_witness_gap_um": 11.0,
+          "certified_lower_bound_um": 9.999999999,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "netB",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.854792615501204,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "netA",
+            "netB"
+          ],
+          "brute_min_distance_um": 98.66163089636102
+        }
+      ]
+    },
+    {
+      "case": "two_channel_03_arc_occupancy",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 792.6990816987243,
+        "total_runtime_s": 3.7915691998787224,
+        "max_net_runtime_s": 3.782191999955103,
+        "sum_net_expansions": 57
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 2,
+        "n_pass": 2,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 1,
+        "n_inter_net_pairs": 1,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 2,
+        "declared_committed": 2,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "netA",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.914138898912045,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.8547926155012515,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "netB",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.914138898912041,
+          "brute_self_witness_gap_um": 10.9359237941417,
+          "certified_lower_bound_um": 5.854792615501248,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "netA",
+            "netB"
+          ],
+          "brute_min_distance_um": 30.0
+        }
+      ]
+    },
+    {
+      "case": "two_channel_04_no_solution_under_occupancy",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 1,
+        "verified_count": 1,
+        "committed_count": 1,
+        "failed_count": 1,
+        "failure_categories": {
+          "search_exhausted": 1
+        },
+        "all_verified": false,
+        "partial_success": true,
+        "total_length_um": 296.0,
+        "total_runtime_s": 0.05873799999244511,
+        "max_net_runtime_s": 0.055191899999044836,
+        "sum_net_expansions": 104
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 1,
+        "n_pass": 1,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 1,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 0,
+        "n_inter_net_pairs": 0,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 1,
+        "declared_committed": 1,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "netA",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 11.0,
+          "brute_self_witness_gap_um": 11.0,
+          "certified_lower_bound_um": 9.999999999,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": []
+    },
+    {
+      "case": "two_channel_05_reversed_order",
+      "channel_count": 2,
+      "declared_counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 890.1592653589794,
+        "total_runtime_s": 0.03571289998944849,
+        "max_net_runtime_s": 0.02811090007890016,
+        "sum_net_expansions": 43
+      },
+      "joint_verdict": "pass",
+      "joint_counts": {
+        "n_nets": 2,
+        "n_nets_with_a_path": 2,
+        "n_pass": 2,
+        "n_rejected_ok": 0,
+        "n_fail": 0,
+        "n_no_path": 0,
+        "n_uncertified": 0,
+        "n_committed_pairs_checked": 1,
+        "n_inter_net_pairs": 1,
+        "n_inter_net_violations": 0,
+        "n_inter_net_undecided": 0,
+        "n_rejected_candidate_evidence_pairs": 0,
+        "n_rejected_candidate_evidence_violations": 0,
+        "declared_verified": 2,
+        "declared_committed": 2,
+        "n_disagreements": 0
+      },
+      "nets": [
+        {
+          "net_id": "netB",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 11.0,
+          "brute_self_witness_gap_um": 11.0,
+          "certified_lower_bound_um": 9.999999999,
+          "self_spacing_status": "safe"
+        },
+        {
+          "net_id": "netA",
+          "status": "committed",
+          "committed": true,
+          "joint_verdict": "pass",
+          "brute_self_spacing_um": 10.91413889891205,
+          "brute_self_witness_gap_um": 10.935923794141672,
+          "certified_lower_bound_um": 5.8547926155011965,
+          "self_spacing_status": "safe"
+        }
+      ],
+      "problems": [],
+      "committed_pair_brute_force": [
+        {
+          "pair": [
+            "netB",
+            "netA"
+          ],
+          "brute_min_distance_um": 22.146361142403833
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "n_cases": 11,
+    "n_problems": 0,
+    "problems": [],
+    "verdict": "PASS"
+  }
+}

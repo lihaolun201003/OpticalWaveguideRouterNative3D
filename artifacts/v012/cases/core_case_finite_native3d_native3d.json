@@ -1,0 +1,1614 @@
+{
+  "artifact": "native3d_v012_case_evidence",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.1.2",
+  "strategy": "route_finite_native3d (finite multi-hop integer-node graph)",
+  "self_spacing_check": "NOT IMPLEMENTED in the acceptance path: constraints.checks.path_self_spacing() exists but neither the production router, the result assembly nor this independent validator calls it, so no self-spacing result enters any verdict (v0.1.2 erratum)",
+  "generated_at_utc": "2026-10-07T06:03:13.650928+00:00",
+  "case": "core_2d_unreachable_vs_native3d_reachable",
+  "mode": "native3d_finite_native3d",
+  "units": "um",
+  "rerun_command": "pytest  (from the project root, with the project venv)",
+  "input": {
+    "name": "core_2d_unreachable_vs_native3d_reachable",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        0.0,
+        0.0,
+        -60.0
+      ],
+      "hi": [
+        600.0,
+        300.0,
+        120.0
+      ]
+    },
+    "obstacles": [
+      {
+        "lo": [
+          290.0,
+          -50.0,
+          -70.0
+        ],
+        "hi": [
+          310.0,
+          350.0,
+          40.0
+        ]
+      }
+    ],
+    "reference_centerlines": [
+      {
+        "kind": "line",
+        "p0": [
+          150.0,
+          120.0,
+          0.0
+        ],
+        "p1": [
+          450.0,
+          120.0,
+          0.0
+        ],
+        "length_um": 300.0
+      }
+    ],
+    "source_pose": {
+      "position": [
+        60.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        540.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "config": {
+      "length_unit": "um",
+      "angle_config_unit": "deg",
+      "pos_tol_um": 1e-06,
+      "ang_tol_deg": 1e-06,
+      "radius_tol_um": 1e-06,
+      "zero_tol_um": 1e-09,
+      "parallel_tol": 1e-09,
+      "clearance_decision_tol_um": 1e-09,
+      "max_subdiv_level": 9,
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "wg_envelope_radius_um": 2.0,
+      "boundary_margin_um": null,
+      "allow_out_of_plane": true,
+      "state_identity": "pose_float",
+      "pos_resolution_um": 20.0,
+      "dir_resolution_deg": 30.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "straight_lengths_um": [
+        10.0,
+        20.0,
+        40.0
+      ],
+      "turn_angles_deg": [
+        30.0,
+        45.0,
+        90.0
+      ],
+      "turn_radii_um": [
+        50.0,
+        75.0
+      ],
+      "skew_axis_tilt_deg": [
+        45.0,
+        135.0
+      ],
+      "connector_radii_um": [
+        50.0,
+        100.0
+      ],
+      "connector_max_length_um": 3000.0,
+      "max_expansions": 50000,
+      "max_runtime_s": 300.0,
+      "reference_spacing_um": 60.0,
+      "finite_spacing_um": 50.0,
+      "finite_straight_steps": [
+        1,
+        2,
+        3
+      ],
+      "finite_turn_radius_steps": [
+        1,
+        2
+      ],
+      "finite_port_attach_um": 150.0,
+      "finite_port_attach_max_nodes": 64,
+      "finite_max_expansions": 200000,
+      "finite_max_runtime_s": 60.0,
+      "effective_boundary_margin_um": 2.0,
+      "effective_obstacle_clearance_um": 5.0
+    },
+    "metadata": {
+      "purpose": "2D mode must be unreachable, Native3D mode must be reachable",
+      "wall_in_plane_separation": {
+        "wall_x_range_um": [
+          290.0,
+          310.0
+        ],
+        "wall_covers_y": "wall y range [-50, 350] contains chip y range [0, 300]",
+        "wall_z_range_um": [
+          -70.0,
+          40.0
+        ],
+        "chip_z_range_um": [
+          -60.0,
+          120.0
+        ],
+        "port_plane_z_um": 0.0,
+        "argument": "in the z = 0 plane the wall plus the chip boundary separates the source region x <= 285 from the target region x >= 315; nothing in that plane connects them"
+      },
+      "free_height_above_wall_um": 80.0,
+      "synthetic": true
+    }
+  },
+  "input_summary": {
+    "name": "core_2d_unreachable_vs_native3d_reachable",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        0.0,
+        0.0,
+        -60.0
+      ],
+      "hi": [
+        600.0,
+        300.0,
+        120.0
+      ]
+    },
+    "n_obstacles": 1,
+    "obstacles": [
+      {
+        "lo": [
+          290.0,
+          -50.0,
+          -70.0
+        ],
+        "hi": [
+          310.0,
+          350.0,
+          40.0
+        ]
+      }
+    ],
+    "n_reference_centerlines": 1,
+    "source_pose": {
+      "position": [
+        60.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        540.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "constraints": {
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "effective_obstacle_clearance_um": 5.0,
+      "wg_envelope_radius_um": 2.0,
+      "effective_boundary_margin_um": 2.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0
+    }
+  },
+  "search": {
+    "status": "success",
+    "reason": "goal state popped with minimal f=594.159265359 after 75 expansions",
+    "mode": "finite_native3d_native3d",
+    "heuristic": "max(0, |target_pos - pos| - eps_pos) [3D Euclidean lower bound]",
+    "expansions": 75,
+    "generated": 305,
+    "rejected": 521,
+    "runtime_s": 0.07528369990177453,
+    "cost_um_equivalent": 594.1592653589794,
+    "length_um": 594.1592653589794,
+    "congestion_cost_um_equivalent": 0.0,
+    "budget": {
+      "max_expansions": 200000,
+      "max_runtime_s": 60.0
+    },
+    "budget_exhausted": false,
+    "state_identity": "finite_lattice_node_id",
+    "approximate_state_identity": false,
+    "reference_graph": null,
+    "finite_graph": {
+      "strategy": "route_finite_native3d (v0.1.2 production finite multi-hop router)",
+      "mode": "native3d",
+      "bounds": {
+        "spacing_um": 50.0,
+        "anchor_um": [
+          60.0,
+          150.0,
+          0.0
+        ],
+        "index_ranges": [
+          [
+            -1,
+            10
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "n_lattice_positions": 240,
+        "n_directions": 6,
+        "node_upper_bound": 1440,
+        "edge_upper_bound": 19936,
+        "straight_steps": [
+          1,
+          2,
+          3
+        ],
+        "turn_radius_steps": [
+          1,
+          2
+        ],
+        "turn_radii_um": [
+          50.0,
+          100.0
+        ],
+        "max_hops": null,
+        "bounds_are_computed_from_the_construction": true
+      },
+      "port_attachment": {
+        "source": {
+          "kind": "identity",
+          "canonical_node": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "n_edges": 0,
+          "note": "the source pose IS the canonical pose of this node (the lattice is anchored at the source), so the port is the node itself and no attachment curve is needed"
+        },
+        "target": {
+          "kind": "straight",
+          "n_candidate_nodes": 64,
+          "n_edges": 1,
+          "n_validated_tries": 1,
+          "attachment_radius_um": 150.0,
+          "note": "validated local attachment curves inside the generic attachment neighbourhood; no case-specific waypoint, height or route is supplied"
+        }
+      },
+      "cache_key_fingerprint": {
+        "spacing_um": 50.0,
+        "straight_steps": [
+          1,
+          2,
+          3
+        ],
+        "turn_radius_steps": [
+          1,
+          2
+        ],
+        "rmin_um": 50.0,
+        "radius_tol_um": 1e-06,
+        "dmin_centerline_um": 5.0,
+        "obstacle_clearance_um": 5.0,
+        "obstacle_clearance_includes_envelope": false,
+        "wg_envelope_radius_um": 2.0,
+        "boundary_margin_um": 2.0,
+        "clearance_decision_tol_um": 1e-09,
+        "max_subdiv_level": 9,
+        "port_attach_um": 150.0,
+        "chip": [
+          [
+            0.0,
+            0.0,
+            -60.0
+          ],
+          [
+            600.0,
+            300.0,
+            120.0
+          ]
+        ],
+        "obstacles": [
+          [
+            [
+              290.0,
+              -50.0,
+              -70.0
+            ],
+            [
+              310.0,
+              350.0,
+              40.0
+            ]
+          ]
+        ],
+        "reference_centrelines": [
+          1
+        ]
+      },
+      "edge_cache_scope": "one search; keyed by node id + the geometry/constraint/cost fingerprint above, never shared across scenes",
+      "cache_hits": 0,
+      "edge_check_s": 0.03860659943893552,
+      "edge_check_timing_note": "the per-edge continuous constraint checks are run lazily during the search, so edge_check_s is a subset of the reported search_s, not an extra term",
+      "edges_validated": 413,
+      "edges_rejected": 108,
+      "edges_rejected_undecided": 0,
+      "max_curve_end_position_error_um": 7.105427357601002e-15,
+      "max_curve_end_tangent_error_deg": 0.0,
+      "start_node": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "goal_node": [
+        "target"
+      ],
+      "port_nodes_are_the_ports_themselves": {
+        "source": true,
+        "target": false
+      },
+      "nodes_expanded": 75,
+      "node_expansion_counts_sum": 75,
+      "assembled_path_constraint_check": {
+        "ok": true,
+        "checks": {
+          "min_bend_radius": {
+            "name": "min_bend_radius",
+            "status": "safe",
+            "bound_um": 50.0,
+            "detail": {
+              "rmin_um": 50.0,
+              "measured_radius_um": 50.0,
+              "tolerance_um": 1e-06
+            }
+          },
+          "boundary": {
+            "name": "boundary",
+            "status": "safe",
+            "bound_um": 18.0,
+            "detail": {
+              "sub": [
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 58.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 58.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 18.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 18.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 18.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 58.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                },
+                {
+                  "name": "boundary",
+                  "status": "safe",
+                  "bound_um": 58.0,
+                  "detail": {
+                    "method": "exact_analytic_extrema"
+                  }
+                }
+              ]
+            }
+          },
+          "obstacle_clearance": {
+            "name": "obstacle_clearance",
+            "status": "safe",
+            "bound_um": 31.622776601683793,
+            "detail": {
+              "sub": [
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 130.0,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 80.0,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 31.622776601683793,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 60.0,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 100.4987562112089,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 150.0,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                },
+                {
+                  "name": "obstacle_clearance",
+                  "status": "safe",
+                  "bound_um": 200.0,
+                  "detail": {
+                    "method": "aabb_gap"
+                  }
+                }
+              ]
+            }
+          },
+          "centerline_spacing": {
+            "name": "centerline_spacing",
+            "status": "safe",
+            "bound_um": 30.0,
+            "detail": {
+              "sub": [
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 30.0,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 30.0,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 30.0,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 30.0,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 58.309518948453004,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 58.309518948453004,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 104.4030650891055,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 104.4030650891055,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 58.309518948453004,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 58.309518948453004,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 31.622776601683793,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 31.622776601683793,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "centerline_spacing",
+                  "status": "safe",
+                  "bound_um": 67.08203932499369,
+                  "detail": {
+                    "sub": [
+                      {
+                        "name": "centerline_spacing",
+                        "status": "safe",
+                        "bound_um": 67.08203932499369,
+                        "detail": {
+                          "method": "aabb_gap"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "min_radius_um": 50.0,
+        "clearance_required_um": 5.0,
+        "clearance_bound_um": 31.622776601683793,
+        "spacing_required_um": 5.0,
+        "spacing_bound_um": 30.0,
+        "total_length_um": 594.1592653589794
+      },
+      "guarantee": "optimality is claimed for THIS constructed finite graph only, up to the documented cost comparison tolerance of astar.py; search_exhausted means this graph was exhausted, not that the continuous pose space is unreachable"
+    },
+    "timings": {
+      "graph_build_s": 0.0124795000301674,
+      "search_s": 0.07549590000417084,
+      "end_to_end_s": 0.08831799996551126
+    },
+    "rejection_summary": {
+      "outside_the_bounded_lattice": 413,
+      "centerline_spacing": 38,
+      "obstacle_clearance": 57,
+      "obstacle_clearance,centerline_spacing": 13
+    },
+    "trace": [
+      {
+        "step": 0,
+        "action": "<source>",
+        "kind": "source",
+        "n_segments": 0,
+        "x_um": 60.0,
+        "y_um": 150.0,
+        "z_um": 0.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 0.0,
+        "depth": 0
+      },
+      {
+        "step": 1,
+        "action": "straight_2",
+        "kind": "finite_straight",
+        "n_segments": 1,
+        "x_um": 160.0,
+        "y_um": 150.0,
+        "z_um": 0.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 100.0,
+        "depth": 1
+      },
+      {
+        "step": 2,
+        "action": "turn_+1+0+0_to_+0+0+1_R50",
+        "kind": "finite_turn",
+        "n_segments": 1,
+        "x_um": 210.0,
+        "y_um": 150.0,
+        "z_um": 50.0,
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 90.0,
+        "g_um_equivalent": 178.53981633974485,
+        "depth": 2
+      },
+      {
+        "step": 3,
+        "action": "turn_+0+0+1_to_+1+0+0_R50",
+        "kind": "finite_turn",
+        "n_segments": 1,
+        "x_um": 260.0,
+        "y_um": 150.0,
+        "z_um": 100.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 257.0796326794897,
+        "depth": 3
+      },
+      {
+        "step": 4,
+        "action": "straight_3",
+        "kind": "finite_straight",
+        "n_segments": 1,
+        "x_um": 410.0,
+        "y_um": 150.0,
+        "z_um": 100.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 407.0796326794897,
+        "depth": 4
+      },
+      {
+        "step": 5,
+        "action": "turn_+1+0+0_to_+0+0-1_R50",
+        "kind": "finite_turn",
+        "n_segments": 1,
+        "x_um": 460.0,
+        "y_um": 150.0,
+        "z_um": 50.0,
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": -90.0,
+        "g_um_equivalent": 485.61944901923454,
+        "depth": 5
+      },
+      {
+        "step": 6,
+        "action": "turn_+0+0-1_to_+1+0+0_R50",
+        "kind": "finite_turn",
+        "n_segments": 1,
+        "x_um": 510.0,
+        "y_um": 150.0,
+        "z_um": 0.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 564.1592653589794,
+        "depth": 6
+      },
+      {
+        "step": 7,
+        "action": "port_target_straight",
+        "kind": "port_attachment",
+        "n_segments": 1,
+        "x_um": 540.0,
+        "y_um": 150.0,
+        "z_um": 0.0,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "g_um_equivalent": 594.1592653589794,
+        "depth": 7
+      }
+    ],
+    "initial_candidates": [
+      {
+        "name": "straight_1",
+        "kind": "finite_straight",
+        "accepted": true,
+        "reason": "",
+        "length_um": 50.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 428.0,
+        "end_position": [
+          110.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "straight_2",
+        "kind": "finite_straight",
+        "accepted": true,
+        "reason": "",
+        "length_um": 100.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 378.0,
+        "end_position": [
+          160.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 130.0
+      },
+      {
+        "name": "straight_3",
+        "kind": "finite_straight",
+        "accepted": true,
+        "reason": "",
+        "length_um": 150.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 328.0,
+        "end_position": [
+          210.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 80.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+1+0_R50",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          200.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+1+0_R100",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 157.07963267948966,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 390.93765408777,
+        "end_position": [
+          160.0,
+          250.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 130.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0-1+0_R50",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          100.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0-1+0_R100",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 157.07963267948966,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 390.93765408777,
+        "end_position": [
+          160.0,
+          50.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 130.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+0+1_R50",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 50.0,
+        "elevation_change_deg": 90.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          150.0,
+          50.0
+        ],
+        "end_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+0+1_R100",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 157.07963267948966,
+        "z_change_um": 100.0,
+        "elevation_change_deg": 90.0,
+        "h_after_um": 390.93765408777,
+        "end_position": [
+          160.0,
+          150.0,
+          100.0
+        ],
+        "end_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 130.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+0-1_R50",
+        "kind": "finite_turn",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": -50.0,
+        "elevation_change_deg": -90.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          150.0,
+          -50.0
+        ],
+        "end_direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "turn_+1+0+0_to_+0+0-1_R100",
+        "kind": "rejected",
+        "accepted": false,
+        "reason": "outside_the_bounded_lattice",
+        "length_um": 0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 478.0,
+        "end_position": [
+          60.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "goal_pos_error_um": 0.0,
+    "goal_tangent_error_deg": 0.0,
+    "path": {
+      "total_length_um": 594.1592653589794,
+      "min_radius_um": 50.0,
+      "segments": [
+        {
+          "kind": "line",
+          "p0": [
+            60.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            160.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 100.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            160.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            260.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            260.0,
+            150.0,
+            100.0
+          ],
+          "p1": [
+            410.0,
+            150.0,
+            100.0
+          ],
+          "length_um": 150.0
+        },
+        {
+          "kind": "arc",
+          "center": [
+            410.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "v": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "arc",
+          "center": [
+            510.0,
+            150.0,
+            50.0
+          ],
+          "u": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "radius_um": 50.0,
+          "theta_rad": 1.5707963267948966,
+          "theta_deg": 90.0,
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "length_um": 78.53981633974483
+        },
+        {
+          "kind": "line",
+          "p0": [
+            510.0,
+            150.0,
+            0.0
+          ],
+          "p1": [
+            540.0,
+            150.0,
+            0.0
+          ],
+          "length_um": 30.0
+        }
+      ],
+      "cumulative_lengths_um": [
+        0.0,
+        100.0,
+        178.53981633974485,
+        257.0796326794897,
+        407.0796326794897,
+        485.61944901923454,
+        564.1592653589794,
+        594.1592653589794
+      ]
+    }
+  },
+  "segment_provenance": [
+    {
+      "segment_index": 0,
+      "search_step": 1,
+      "action": "straight_2",
+      "kind": "finite_straight"
+    },
+    {
+      "segment_index": 1,
+      "search_step": 2,
+      "action": "turn_+1+0+0_to_+0+0+1_R50",
+      "kind": "finite_turn"
+    },
+    {
+      "segment_index": 2,
+      "search_step": 3,
+      "action": "turn_+0+0+1_to_+1+0+0_R50",
+      "kind": "finite_turn"
+    },
+    {
+      "segment_index": 3,
+      "search_step": 4,
+      "action": "straight_3",
+      "kind": "finite_straight"
+    },
+    {
+      "segment_index": 4,
+      "search_step": 5,
+      "action": "turn_+1+0+0_to_+0+0-1_R50",
+      "kind": "finite_turn"
+    },
+    {
+      "segment_index": 5,
+      "search_step": 6,
+      "action": "turn_+0+0-1_to_+1+0+0_R50",
+      "kind": "finite_turn"
+    },
+    {
+      "segment_index": 6,
+      "search_step": 7,
+      "action": "port_target_straight",
+      "kind": "port_attachment"
+    }
+  ],
+  "trace_z_summary": {
+    "n_steps": 8,
+    "z_values_um": [
+      0.0,
+      0.0,
+      50.0,
+      100.0,
+      100.0,
+      50.0,
+      0.0,
+      0.0
+    ],
+    "z_min_um": 0.0,
+    "z_max_um": 100.0,
+    "z_varies": true,
+    "n_distinct_z_um": 3,
+    "max_step_z_change_um": 50.0,
+    "action_families": {
+      "<source>": 1,
+      "straight": 2,
+      "turn": 4,
+      "port": 1
+    },
+    "actions_changing_z": 0,
+    "elevation_range_deg": [
+      -90.0,
+      90.0
+    ]
+  },
+  "no_optical_loss_model": "this engine computes geometry only; no dB, no insertion loss and no crosstalk number is produced",
+  "independent_validation": {
+    "validator": "native3d.validation.validate (independent, JSON only)",
+    "units": "um",
+    "n_segments": 7,
+    "segment_kinds": [
+      "line",
+      "arc",
+      "arc",
+      "line",
+      "arc",
+      "arc",
+      "line"
+    ],
+    "total_length_um_analytic": 594.1592653589794,
+    "total_length_um_independent": 594.1592653589793,
+    "length_relative_error": 1.9134067976357934e-16,
+    "min_radius_um_stored": 50.0,
+    "min_radius_um_refit": 49.99999999999991,
+    "radius_refit_max_rel_error": 2.2737367544323206e-15,
+    "radius_violations": [],
+    "junction_position_errors_um": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "junction_tangent_errors_deg": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_junction_position_error_um": 0.0,
+    "max_junction_tangent_error_deg": 0.0,
+    "c1_continuous": true,
+    "boundary": {
+      "samples": 2387,
+      "violation_samples": 0,
+      "min_margin_um_sampled": 18.0,
+      "analytic_min_margin_um": 18.0,
+      "analytic_overshoot_um": 0.0,
+      "worst_extreme": null,
+      "certified_contained": true,
+      "conservative_margin_lower_bound_um": 18.0,
+      "status": "safe",
+      "method": "exact analytic coordinate extrema per segment (no chord error, no sampling)"
+    },
+    "obstacle_clearance": {
+      "required_um": 5.0,
+      "min_sampled_clearance_um": 60.0,
+      "analytic_min_clearance_um": null,
+      "conservative_clearance_lower_bound_um": 60.0,
+      "sampled_points_inside_obstacle": 0,
+      "sampled_below_required": false,
+      "certified_below_required": false,
+      "witness_keepout_um": 60.0,
+      "status": "safe",
+      "method": "exact segment/segment and segment/AABB distance for lines; adaptive chord subdivision with an explicit sagitta bound inside its proven domain for arcs; a curve point inside the keep-out is a violation witness; sampled minima are upper bounds only",
+      "per_segment": [
+        {
+          "segment": 0,
+          "kind": "line",
+          "lower_bound_um": 130.0,
+          "sampled_min_um": 130.0,
+          "analytic_min_um": 130.0,
+          "status": "safe",
+          "n_chords": null
+        },
+        {
+          "segment": 1,
+          "kind": "arc",
+          "lower_bound_um": 76.81655410854982,
+          "sampled_min_um": 80.38420580598053,
+          "analytic_min_um": null,
+          "status": "safe",
+          "n_chords": 2
+        },
+        {
+          "segment": 2,
+          "kind": "arc",
+          "lower_bound_um": 63.276015950558026,
+          "sampled_min_um": 67.08203932499369,
+          "analytic_min_um": null,
+          "status": "safe",
+          "n_chords": 2
+        },
+        {
+          "segment": 3,
+          "kind": "line",
+          "lower_bound_um": 60.0,
+          "sampled_min_um": 60.0,
+          "analytic_min_um": 60.0,
+          "status": "safe",
+          "n_chords": null
+        },
+        {
+          "segment": 4,
+          "kind": "arc",
+          "lower_bound_um": 112.81301452247034,
+          "sampled_min_um": 116.61903789690601,
+          "analytic_min_um": null,
+          "status": "safe",
+          "n_chords": 2
+        },
+        {
+          "segment": 5,
+          "kind": "arc",
+          "lower_bound_um": 146.52694040929342,
+          "sampled_min_um": 150.2498442260785,
+          "analytic_min_um": null,
+          "status": "safe",
+          "n_chords": 2
+        },
+        {
+          "segment": 6,
+          "kind": "line",
+          "lower_bound_um": 200.0,
+          "sampled_min_um": 200.0,
+          "analytic_min_um": 200.0,
+          "status": "safe",
+          "n_chords": null
+        }
+      ]
+    },
+    "centerline_spacing": {
+      "required_um": 5.0,
+      "min_sampled_um": 30.0,
+      "analytic_min_um": null,
+      "conservative_lower_bound_um": 15.355339057620837,
+      "sampled_below_required": false,
+      "certified_below_required": false,
+      "n_reference_curves": 1,
+      "reference_kinds": [
+        "line"
+      ],
+      "witness_keepout_um": 30.0,
+      "status": "safe",
+      "method": "certified chord bounds for every kind combination (line/line, line/arc, arc/line, arc/arc); exact segment/segment distance with an exact-rational fallback for line/line pairs; both sagittas subtracted and the sagitta domain dphi <= pi enforced; sampled minima are upper bounds only",
+      "per_segment": [
+        {
+          "segment": 0,
+          "kind": "line",
+          "lower_bound_um": 29.9999999985004,
+          "sampled_min_um": 30.0,
+          "analytic_min_um": 30.0,
+          "status": "safe"
+        },
+        {
+          "segment": 1,
+          "kind": "arc",
+          "lower_bound_um": 15.355339057620837,
+          "sampled_min_um": 30.0,
+          "analytic_min_um": null,
+          "status": "safe"
+        },
+        {
+          "segment": 2,
+          "kind": "arc",
+          "lower_bound_um": 43.66485800607384,
+          "sampled_min_um": 58.309518948453004,
+          "analytic_min_um": null,
+          "status": "safe"
+        },
+        {
+          "segment": 3,
+          "kind": "line",
+          "lower_bound_um": 104.4030650876059,
+          "sampled_min_um": 104.4030650891055,
+          "analytic_min_um": 104.4030650891055,
+          "status": "safe"
+        },
+        {
+          "segment": 4,
+          "kind": "arc",
+          "lower_bound_um": 44.516136888601295,
+          "sampled_min_um": 59.16079783099616,
+          "analytic_min_um": null,
+          "status": "safe"
+        },
+        {
+          "segment": 5,
+          "kind": "arc",
+          "lower_bound_um": 37.31686328459295,
+          "sampled_min_um": 41.10669333325448,
+          "analytic_min_um": null,
+          "status": "safe"
+        },
+        {
+          "segment": 6,
+          "kind": "line",
+          "lower_bound_um": 67.08203932339417,
+          "sampled_min_um": 67.08203932499369,
+          "analytic_min_um": 67.08203932499369,
+          "status": "safe"
+        }
+      ]
+    },
+    "endpoint_errors": {
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "finite_difference_cross_check": {
+        "start_tangent_error_deg": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "note": "central difference at +-1e-3 um; agreement within the chord error 1e-3/R rad confirms the analytic tangents"
+      },
+      "tolerances": {
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0
+      }
+    },
+    "source_pose_check": {
+      "start_position_error_um": 0.0,
+      "start_tangent_error_deg": 0.0,
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "method": "the path start is compared against the SOURCE pose with the source tolerances; the target acceptance ball is not reused"
+    },
+    "target_pose_check": {
+      "end_position_error_um": 0.0,
+      "end_tangent_error_deg": 0.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "position_ok": true,
+      "tangent_ok": true,
+      "status": "safe",
+      "method": "the path end is compared against the TARGET pose acceptance ball"
+    },
+    "z_profile": {
+      "source_z_um": 0.0,
+      "target_z_um": 0.0,
+      "junction_z_um": [
+        0.0,
+        0.0,
+        50.0,
+        100.0,
+        100.0,
+        50.0,
+        0.0,
+        0.0
+      ],
+      "z_min_um": 0.0,
+      "z_max_um": 100.0,
+      "n_segments_leaving_z0": 5,
+      "z_varies": true
+    },
+    "violation_counts": {
+      "radius_violations": 0,
+      "boundary_violation_samples": 0,
+      "boundary_analytic_violation": 0,
+      "obstacle_points_inside": 0,
+      "obstacle_sampled_below_required": 0,
+      "obstacle_certified_below_required": 0,
+      "spacing_below_required": 0,
+      "spacing_certified_below_required": 0,
+      "non_c1_junctions": 0,
+      "source_position_out_of_tolerance": 0,
+      "source_tangent_out_of_tolerance": 0,
+      "endpoint_position_out_of_tolerance": 0,
+      "endpoint_tangent_out_of_tolerance": 0,
+      "undecided_checks": 0
+    },
+    "verdict": "pass",
+    "certification": {
+      "all_checks_certified": true,
+      "n_undecided": 0,
+      "self_check_failed": false,
+      "self_check_notes": [],
+      "sampling_is_only_an_estimate": true,
+      "certified_lower_bounds_are_never_above_the_sampled_upper_bounds": true,
+      "verdict_is_a_proof_of_pass": true,
+      "notes": "pass = every check was certified safe; fail = a violation witness or a bound that proves the requirement is missed; uncertified = a check could not be decided inside the refinement cap, or the certification self check failed (never reported as pass)"
+    }
+  }
+}

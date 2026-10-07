@@ -1,0 +1,149 @@
+{
+  "case": "two_channel_02_barrier_3d_avoidance",
+  "channel_count": 2,
+  "order": [
+    "netA",
+    "netB"
+  ],
+  "counts": {
+    "channel_count": 2,
+    "n_nets": 2,
+    "routed_count": 2,
+    "verified_count": 2,
+    "committed_count": 2,
+    "failed_count": 0,
+    "failure_categories": {},
+    "all_verified": true,
+    "partial_success": false,
+    "total_length_um": 890.1592653589794,
+    "total_runtime_s": 0.06545689993072301,
+    "max_net_runtime_s": 0.061421899939887226,
+    "sum_net_expansions": 97
+  },
+  "totals": {
+    "wall_time_s": 0.10193760006222874,
+    "sum_net_wall_time_s": 0.10184470005333424,
+    "max_net_wall_time_s": 0.08516570006031543,
+    "total_path_length_um": 890.1592653589794,
+    "sum_search_expansions": 97,
+    "sum_search_runtime_s": 0.06545689993072301,
+    "occupancy_revision_final": 2,
+    "occupancy_immutable": true,
+    "n_nets_attempted": 2,
+    "stopped_after_failure": false
+  },
+  "wall_s": 0.10211450001224875,
+  "self_spacing_policy": {
+    "ell_local_um": 10.0,
+    "kind": "two_times_dmin",
+    "note": "local geometric exemption of the assembled-path arclength neighbourhood; not a paper parameter and not an optical safety distance"
+  },
+  "occupancy": {
+    "revision": 2,
+    "n_curves": 10,
+    "n_static_reference_curves": 0,
+    "n_published_curves": 10,
+    "per_net_published_curve_counts": {
+      "netA": 3,
+      "netB": 7
+    },
+    "immutable": true
+  },
+  "nets": [
+    {
+      "net_id": "netA",
+      "status": "committed",
+      "search_status": "success",
+      "routed_candidate": true,
+      "length_um": 296.0,
+      "expansions": 6,
+      "generated": 46,
+      "rejected": 22,
+      "runtime_s": 0.004034999990835786,
+      "wall_s": 0.016678999993018806,
+      "n_segments": 3,
+      "kinds": "LLL",
+      "occupancy_revision_before": 0,
+      "occupancy_revision_after": 1,
+      "committed": true,
+      "failure_category": null,
+      "graph_fresh_cold": true,
+      "z_min_um": 0.0,
+      "z_max_um": 0.0,
+      "self_spacing_status": "safe",
+      "self_spacing_lower_bound_um": 9.999999999,
+      "inter_net_status": "safe",
+      "inter_net_min_lower_bound_um": null
+    },
+    {
+      "net_id": "netB",
+      "status": "committed",
+      "search_status": "success",
+      "routed_candidate": true,
+      "length_um": 594.1592653589794,
+      "expansions": 91,
+      "generated": 421,
+      "rejected": 581,
+      "runtime_s": 0.061421899939887226,
+      "wall_s": 0.08516570006031543,
+      "n_segments": 7,
+      "kinds": "LAALAAL",
+      "occupancy_revision_before": 1,
+      "occupancy_revision_after": 2,
+      "committed": true,
+      "failure_category": null,
+      "graph_fresh_cold": true,
+      "z_min_um": 0.0,
+      "z_max_um": 100.0,
+      "self_spacing_status": "safe",
+      "self_spacing_lower_bound_um": 5.854792615501188,
+      "inter_net_status": "safe",
+      "inter_net_min_lower_bound_um": 64.03124237432849
+    }
+  ],
+  "controls": [
+    {
+      "name": "netB_before_A_control",
+      "counts": {
+        "channel_count": 1,
+        "n_nets": 1,
+        "routed_count": 1,
+        "verified_count": 1,
+        "committed_count": 1,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 480.0,
+        "total_runtime_s": 0.008995699929073453,
+        "max_net_runtime_s": 0.008995699929073453,
+        "sum_net_expansions": 10
+      },
+      "statuses": {
+        "netB": "committed"
+      }
+    }
+  ],
+  "joint_validation": {
+    "overall_verdict": "pass",
+    "counts": {
+      "n_nets": 2,
+      "n_nets_with_a_path": 2,
+      "n_pass": 2,
+      "n_rejected_ok": 0,
+      "n_fail": 0,
+      "n_no_path": 0,
+      "n_uncertified": 0,
+      "n_committed_pairs_checked": 1,
+      "n_inter_net_pairs": 1,
+      "n_inter_net_violations": 0,
+      "n_inter_net_undecided": 0,
+      "n_rejected_candidate_evidence_pairs": 0,
+      "n_rejected_candidate_evidence_violations": 0,
+      "declared_verified": 2,
+      "declared_committed": 2,
+      "n_disagreements": 0
+    },
+    "occupancy_bookkeeping_ok": true
+  }
+}

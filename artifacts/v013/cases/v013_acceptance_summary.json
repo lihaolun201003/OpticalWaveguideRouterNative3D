@@ -1,0 +1,1531 @@
+{
+  "artifact": "native3d_v013_acceptance_summary",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.1.3",
+  "probe_wall_s": 1.127865600050427,
+  "results": {
+    "cross_wall": {
+      "status": "success",
+      "cost_um": 594.1592653589794,
+      "length_um": 594.1592653589794,
+      "expansions": 75,
+      "trace_steps": 8,
+      "timings": {
+        "graph_build_s": 0.026876899995841086,
+        "search_s": 0.15303829999174923,
+        "assembled_path_check_s": 0.00042890000622719526,
+        "end_to_end_s": 0.18078880000393838,
+        "graph_branch": "fresh_cold_graph",
+        "graph_prebuilt_construction_s": 0.0,
+        "independent_validation_s": 0.015515899984166026
+      },
+      "wall_cold_s": 0.1826597999315709,
+      "peak_tracked_python_allocation_mib": 1.776412010192871,
+      "memory_scope": "tracemalloc peak of TRACKED PYTHON ALLOCATIONS in the traced region; not process RSS, not the whole interpreter",
+      "bounds": {
+        "spacing_um": 50.0,
+        "anchor_um": [
+          60.0,
+          150.0,
+          0.0
+        ],
+        "index_ranges": [
+          [
+            -1,
+            10
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "n_lattice_positions": 240,
+        "n_directions": 6,
+        "node_upper_bound": 1440,
+        "node_upper_bound_includes_virtual_ports": false,
+        "n_virtual_port_nodes_upper": 1,
+        "virtual_port_nodes": {
+          "source": false,
+          "target": true
+        },
+        "total_node_upper_bound_including_virtual_ports": 1441,
+        "edge_upper_bound": 15841,
+        "edges_per_canonical_node_upper": 11,
+        "edge_upper_bound_from_canonical_nodes": 15840,
+        "edge_upper_bound_from_port_attachments": 1,
+        "edge_upper_bound_derivation": "node_upper_bound * (len(finite_straight_steps) + 4 * len(finite_turn_radius_steps)) + the number of validated port attachment edges really built (source + target); no hardcoded constant.  A canonical node generates at most one straight per straight step and at most one turn per (perpendicular axis direction, turn radius step) pair, and every port attachment edge is the successor of exactly one node.",
+        "straight_steps": [
+          1,
+          2,
+          3
+        ],
+        "turn_radius_steps": [
+          1,
+          2
+        ],
+        "turn_radii_um": [
+          50.0,
+          100.0
+        ],
+        "max_hops": null,
+        "bounds_are_computed_from_the_construction": true
+      },
+      "edges_validated": 413,
+      "edges_rejected": 108,
+      "edges_end_pose_rejected": 0,
+      "cache_hits": 0,
+      "graph_reuse": {
+        "accepted": true,
+        "caller_supplied_graph": false,
+        "mismatches": [],
+        "mismatch_detail": {},
+        "graph_cache_state": "cold",
+        "graph_build_count": 1,
+        "graph_build_count_by_this_call": 1,
+        "graph_prebuilt_construction_s": 0.02687339996919036,
+        "successor_cache_hits": 0,
+        "scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+        "graph_scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+        "graph_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              0.0,
+              0.0,
+              -60.0
+            ],
+            [
+              600.0,
+              300.0,
+              120.0
+            ]
+          ],
+          "obstacles": [
+            [
+              [
+                290.0,
+                -50.0,
+                -70.0
+              ],
+              [
+                310.0,
+                350.0,
+                40.0
+              ]
+            ]
+          ],
+          "reference_centrelines": [
+            {
+              "kind": "line",
+              "p0": [
+                150.0,
+                120.0,
+                0.0
+              ],
+              "p1": [
+                450.0,
+                120.0,
+                0.0
+              ]
+            }
+          ],
+          "source_pose": {
+            "position": [
+              60.0,
+              150.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              540.0,
+              150.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "expected_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              0.0,
+              0.0,
+              -60.0
+            ],
+            [
+              600.0,
+              300.0,
+              120.0
+            ]
+          ],
+          "obstacles": [
+            [
+              [
+                290.0,
+                -50.0,
+                -70.0
+              ],
+              [
+                310.0,
+                350.0,
+                40.0
+              ]
+            ]
+          ],
+          "reference_centrelines": [
+            {
+              "kind": "line",
+              "p0": [
+                150.0,
+                120.0,
+                0.0
+              ],
+              "p1": [
+                450.0,
+                120.0,
+                0.0
+              ]
+            }
+          ],
+          "source_pose": {
+            "position": [
+              60.0,
+              150.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              540.0,
+              150.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "checked_fields": [
+          "contract_version",
+          "mode",
+          "chip",
+          "obstacles",
+          "reference_centrelines",
+          "source",
+          "source_tangent",
+          "target",
+          "target_tangent",
+          "congestion",
+          "finite_spacing_um",
+          "finite_straight_steps",
+          "finite_turn_radius_steps",
+          "rmin_um",
+          "radius_tol_um",
+          "dmin_centerline_um",
+          "obstacle_clearance_um",
+          "obstacle_clearance_includes_envelope",
+          "wg_envelope_radius_um",
+          "boundary_margin_um",
+          "effective_boundary_margin_um",
+          "effective_obstacle_clearance_um",
+          "clearance_decision_tol_um",
+          "max_subdiv_level",
+          "finite_port_attach_um",
+          "finite_port_attach_max_nodes",
+          "connector_radii_um",
+          "pos_tol_um",
+          "ang_tol_deg",
+          "eps_pos_um",
+          "eps_ang_deg",
+          "source_pos_tol_um",
+          "source_ang_tol_deg",
+          "finite_max_expansions",
+          "finite_max_runtime_s"
+        ],
+        "contract_version": 1,
+        "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+        "note": "the graph is reused only when every contract field is equal; the comparison is by CONTENT (Scene is mutable), and a mismatch is refused before any search expansion"
+      },
+      "port_attachment_kinds": {
+        "source": "identity",
+        "target": "straight"
+      },
+      "endpoint_errors": {
+        "ok": true,
+        "status": "safe",
+        "failed": [],
+        "n_segments": 7,
+        "zero_length_solution": false,
+        "start_position_error_um": 0.0,
+        "start_tangent_error_deg": 0.0,
+        "end_position_error_um": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "start_ok": true,
+        "end_ok": true,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 3.508354649267438e-15,
+        "junction_failures": [],
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0,
+        "pos_tol_um": 1e-06,
+        "ang_tol_deg": 1e-06,
+        "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+        "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+      },
+      "port_assurance": {
+        "verified_against_the_caller_pose": true,
+        "zero_length_solution": false,
+        "n_segments": 7,
+        "source_position_error_um": 0.0,
+        "source_tangent_error_deg": 0.0,
+        "target_position_error_um": 0.0,
+        "target_tangent_error_deg": 0.0,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 3.508354649267438e-15,
+        "assembled_path_check": {
+          "ok": true,
+          "status": "safe",
+          "failed": [],
+          "n_segments": 7,
+          "zero_length_solution": false,
+          "start_position_error_um": 0.0,
+          "start_tangent_error_deg": 0.0,
+          "end_position_error_um": 0.0,
+          "end_tangent_error_deg": 0.0,
+          "start_ok": true,
+          "end_ok": true,
+          "max_junction_position_error_um": 0.0,
+          "max_junction_tangent_error_deg": 3.508354649267438e-15,
+          "junction_failures": [],
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "target_eps_pos_um": 2.0,
+          "target_eps_ang_deg": 3.0,
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+          "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+        },
+        "hard_constraints_ok": true,
+        "guarantee": "the returned curve was evaluated at its own first/last primitive and compared with the source/target pose the CALLER passed, using the source tolerances at the start and the target acceptance ball at the end, and the whole curve was re-validated by the production constraint stack"
+      },
+      "zero_length_solution": false,
+      "independent_dijkstra": {
+        "best_cost_um": 594.1592653589794,
+        "nodes_settled": 678,
+        "n_edges": 7867,
+        "runtime_s": 0.003635199973359704,
+        "difference_um": 0.0
+      },
+      "independent_validation_verdict": "pass",
+      "independent_validation_timing_s": 0.015515899984166026,
+      "budget_ok": true,
+      "v012_reference": {
+        "cost_um": 594.1592653589794,
+        "expansions": 75
+      },
+      "two_d": {
+        "status": "search_exhausted",
+        "budget_exhausted": false,
+        "expansions": 81,
+        "wall_s": 0.05317139998078346
+      }
+    },
+    "cold_vs_warm": {
+      "cold": {
+        "status": "success",
+        "wall_s": 0.05214499996509403,
+        "graph_build_s": 0.008804299985058606,
+        "graph_reuse": {
+          "accepted": true,
+          "caller_supplied_graph": false,
+          "mismatches": [],
+          "mismatch_detail": {},
+          "graph_cache_state": "cold",
+          "graph_build_count": 1,
+          "graph_build_count_by_this_call": 1,
+          "graph_prebuilt_construction_s": 0.008802499971352518,
+          "successor_cache_hits": 0,
+          "scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "expected_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "checked_fields": [
+            "contract_version",
+            "mode",
+            "chip",
+            "obstacles",
+            "reference_centrelines",
+            "source",
+            "source_tangent",
+            "target",
+            "target_tangent",
+            "congestion",
+            "finite_spacing_um",
+            "finite_straight_steps",
+            "finite_turn_radius_steps",
+            "rmin_um",
+            "radius_tol_um",
+            "dmin_centerline_um",
+            "obstacle_clearance_um",
+            "obstacle_clearance_includes_envelope",
+            "wg_envelope_radius_um",
+            "boundary_margin_um",
+            "effective_boundary_margin_um",
+            "effective_obstacle_clearance_um",
+            "clearance_decision_tol_um",
+            "max_subdiv_level",
+            "finite_port_attach_um",
+            "finite_port_attach_max_nodes",
+            "connector_radii_um",
+            "pos_tol_um",
+            "ang_tol_deg",
+            "eps_pos_um",
+            "eps_ang_deg",
+            "source_pos_tol_um",
+            "source_ang_tol_deg",
+            "finite_max_expansions",
+            "finite_max_runtime_s"
+          ],
+          "contract_version": 1,
+          "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+          "note": "the graph is reused only when every contract field is equal; the comparison is by CONTENT (Scene is mutable), and a mismatch is refused before any search expansion"
+        }
+      },
+      "warm_1": {
+        "status": "success",
+        "wall_s": 0.04656879999674857,
+        "graph_build_s": 1.00000761449337e-07,
+        "graph_reuse": {
+          "accepted": true,
+          "caller_supplied_graph": true,
+          "mismatches": [],
+          "mismatch_detail": {},
+          "graph_cache_state": "warm",
+          "graph_build_count": 1,
+          "graph_build_count_by_this_call": 0,
+          "graph_prebuilt_construction_s": 0.008749300031922758,
+          "successor_cache_hits": 0,
+          "scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "expected_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "checked_fields": [
+            "contract_version",
+            "mode",
+            "chip",
+            "obstacles",
+            "reference_centrelines",
+            "source",
+            "source_tangent",
+            "target",
+            "target_tangent",
+            "congestion",
+            "finite_spacing_um",
+            "finite_straight_steps",
+            "finite_turn_radius_steps",
+            "rmin_um",
+            "radius_tol_um",
+            "dmin_centerline_um",
+            "obstacle_clearance_um",
+            "obstacle_clearance_includes_envelope",
+            "wg_envelope_radius_um",
+            "boundary_margin_um",
+            "effective_boundary_margin_um",
+            "effective_obstacle_clearance_um",
+            "clearance_decision_tol_um",
+            "max_subdiv_level",
+            "finite_port_attach_um",
+            "finite_port_attach_max_nodes",
+            "connector_radii_um",
+            "pos_tol_um",
+            "ang_tol_deg",
+            "eps_pos_um",
+            "eps_ang_deg",
+            "source_pos_tol_um",
+            "source_ang_tol_deg",
+            "finite_max_expansions",
+            "finite_max_runtime_s"
+          ],
+          "contract_version": 1,
+          "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+          "note": "the graph is reused only when every contract field is equal; the comparison is by CONTENT (Scene is mutable), and a mismatch is refused before any search expansion"
+        }
+      },
+      "warm_2": {
+        "status": "success",
+        "wall_s": 0.006115800002589822,
+        "graph_reuse": {
+          "accepted": true,
+          "caller_supplied_graph": true,
+          "mismatches": [],
+          "mismatch_detail": {},
+          "graph_cache_state": "warm",
+          "graph_build_count": 1,
+          "graph_build_count_by_this_call": 0,
+          "graph_prebuilt_construction_s": 0.008749300031922758,
+          "successor_cache_hits": 75,
+          "scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_scene_geometry_fingerprint": "e22db21975d0783ef32b1a2eff7ba68c6289c71c",
+          "graph_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "expected_config_fingerprint": {
+            "spacing_um": 50.0,
+            "straight_steps": [
+              1,
+              2,
+              3
+            ],
+            "turn_radius_steps": [
+              1,
+              2
+            ],
+            "rmin_um": 50.0,
+            "radius_tol_um": 1e-06,
+            "dmin_centerline_um": 5.0,
+            "obstacle_clearance_um": 5.0,
+            "obstacle_clearance_includes_envelope": false,
+            "wg_envelope_radius_um": 2.0,
+            "boundary_margin_um": 2.0,
+            "obstacle_clearance_effective_um": 5.0,
+            "clearance_decision_tol_um": 1e-09,
+            "max_subdiv_level": 9,
+            "port_attach_um": 150.0,
+            "port_attach_max_nodes": 64,
+            "connector_radii_um": [
+              50.0,
+              100.0
+            ],
+            "pos_tol_um": 1e-06,
+            "ang_tol_deg": 1e-06,
+            "eps_pos_um": 2.0,
+            "eps_ang_deg": 3.0,
+            "source_pos_tol_um": 1e-06,
+            "source_ang_tol_deg": 1e-06,
+            "finite_max_expansions": 200000,
+            "finite_max_runtime_s": 60.0,
+            "mode": "native3d",
+            "congestion": "zero",
+            "contract_version": 1,
+            "chip": [
+              [
+                0.0,
+                0.0,
+                -60.0
+              ],
+              [
+                600.0,
+                300.0,
+                120.0
+              ]
+            ],
+            "obstacles": [
+              [
+                [
+                  290.0,
+                  -50.0,
+                  -70.0
+                ],
+                [
+                  310.0,
+                  350.0,
+                  40.0
+                ]
+              ]
+            ],
+            "reference_centrelines": [
+              {
+                "kind": "line",
+                "p0": [
+                  150.0,
+                  120.0,
+                  0.0
+                ],
+                "p1": [
+                  450.0,
+                  120.0,
+                  0.0
+                ]
+              }
+            ],
+            "source_pose": {
+              "position": [
+                60.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "target_pose": {
+              "position": [
+                540.0,
+                150.0,
+                0.0
+              ],
+              "tangent": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "checked_fields": [
+            "contract_version",
+            "mode",
+            "chip",
+            "obstacles",
+            "reference_centrelines",
+            "source",
+            "source_tangent",
+            "target",
+            "target_tangent",
+            "congestion",
+            "finite_spacing_um",
+            "finite_straight_steps",
+            "finite_turn_radius_steps",
+            "rmin_um",
+            "radius_tol_um",
+            "dmin_centerline_um",
+            "obstacle_clearance_um",
+            "obstacle_clearance_includes_envelope",
+            "wg_envelope_radius_um",
+            "boundary_margin_um",
+            "effective_boundary_margin_um",
+            "effective_obstacle_clearance_um",
+            "clearance_decision_tol_um",
+            "max_subdiv_level",
+            "finite_port_attach_um",
+            "finite_port_attach_max_nodes",
+            "connector_radii_um",
+            "pos_tol_um",
+            "ang_tol_deg",
+            "eps_pos_um",
+            "eps_ang_deg",
+            "source_pos_tol_um",
+            "source_ang_tol_deg",
+            "finite_max_expansions",
+            "finite_max_runtime_s"
+          ],
+          "contract_version": 1,
+          "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+          "note": "the graph is reused only when every contract field is equal; the comparison is by CONTENT (Scene is mutable), and a mismatch is refused before any search expansion"
+        }
+      },
+      "cost_um": {
+        "cold": 594.1592653589794,
+        "warm_1": 594.1592653589794,
+        "warm_2": 594.1592653589794
+      },
+      "scope_note": "the frozen 60 s budget belongs to the cold default branch; warm reuse timings are separate and not extrapolated"
+    },
+    "legal_3d_above_reference_arc": {
+      "true_minimum_distance_um": 64.03124237432849,
+      "production_status": "safe",
+      "production_bound_um": 50.0,
+      "validator_verdict": "pass",
+      "validator_spacing_status": "safe",
+      "validator_sampled_min_um": 64.03124237432849,
+      "validator_lower_bound_um": 42.800965523585035,
+      "self_check_failed": false,
+      "control_crossing_validator_verdict": "fail",
+      "control_crossing_sampled_min_um": 0.0,
+      "control_inside_circle_validator_verdict": "pass",
+      "control_too_close_validator_verdict": "fail",
+      "control_too_close_sampled_min_um": 2.0
+    },
+    "graph_reuse_mismatch": {
+      "status": "graph_scene_mismatch",
+      "path": null,
+      "cost": Infinity,
+      "graph_reuse": {
+        "accepted": false,
+        "caller_supplied_graph": true,
+        "mismatches": [
+          "target"
+        ],
+        "mismatch_detail": {
+          "target": {
+            "expected": [
+              50.0,
+              0.0,
+              0.0
+            ],
+            "graph": [
+              100.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "graph_cache_state": "warm",
+        "graph_build_count": 1,
+        "graph_build_count_by_this_call": 0,
+        "graph_prebuilt_construction_s": 0.003876499948091805,
+        "successor_cache_hits": 0,
+        "scene_geometry_fingerprint": "619eeb2d3b0fca4bef0b15e95c36489bd1f2ada9",
+        "graph_scene_geometry_fingerprint": "8ed5ebde53eca82f2a9110b9c6bc7ca89412c1dc",
+        "graph_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            75.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              -150.0,
+              -150.0,
+              -150.0
+            ],
+            [
+              150.0,
+              150.0,
+              150.0
+            ]
+          ],
+          "obstacles": [],
+          "reference_centrelines": [],
+          "source_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              100.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "expected_config_fingerprint": {
+          "spacing_um": 50.0,
+          "straight_steps": [
+            1,
+            2,
+            3
+          ],
+          "turn_radius_steps": [
+            1,
+            2
+          ],
+          "rmin_um": 50.0,
+          "radius_tol_um": 1e-06,
+          "dmin_centerline_um": 5.0,
+          "obstacle_clearance_um": 5.0,
+          "obstacle_clearance_includes_envelope": false,
+          "wg_envelope_radius_um": 2.0,
+          "boundary_margin_um": 2.0,
+          "obstacle_clearance_effective_um": 5.0,
+          "clearance_decision_tol_um": 1e-09,
+          "max_subdiv_level": 9,
+          "port_attach_um": 150.0,
+          "port_attach_max_nodes": 64,
+          "connector_radii_um": [
+            50.0,
+            75.0,
+            100.0
+          ],
+          "pos_tol_um": 1e-06,
+          "ang_tol_deg": 1e-06,
+          "eps_pos_um": 2.0,
+          "eps_ang_deg": 3.0,
+          "source_pos_tol_um": 1e-06,
+          "source_ang_tol_deg": 1e-06,
+          "finite_max_expansions": 200000,
+          "finite_max_runtime_s": 60.0,
+          "mode": "native3d",
+          "congestion": "zero",
+          "contract_version": 1,
+          "chip": [
+            [
+              -150.0,
+              -150.0,
+              -150.0
+            ],
+            [
+              150.0,
+              150.0,
+              150.0
+            ]
+          ],
+          "obstacles": [],
+          "reference_centrelines": [],
+          "source_pose": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "target_pose": {
+            "position": [
+              50.0,
+              0.0,
+              0.0
+            ],
+            "tangent": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "checked_fields": [
+          "contract_version",
+          "mode",
+          "chip",
+          "obstacles",
+          "reference_centrelines",
+          "source",
+          "source_tangent",
+          "target",
+          "target_tangent",
+          "congestion",
+          "finite_spacing_um",
+          "finite_straight_steps",
+          "finite_turn_radius_steps",
+          "rmin_um",
+          "radius_tol_um",
+          "dmin_centerline_um",
+          "obstacle_clearance_um",
+          "obstacle_clearance_includes_envelope",
+          "wg_envelope_radius_um",
+          "boundary_margin_um",
+          "effective_boundary_margin_um",
+          "effective_obstacle_clearance_um",
+          "clearance_decision_tol_um",
+          "max_subdiv_level",
+          "finite_port_attach_um",
+          "finite_port_attach_max_nodes",
+          "connector_radii_um",
+          "pos_tol_um",
+          "ang_tol_deg",
+          "eps_pos_um",
+          "eps_ang_deg",
+          "source_pos_tol_um",
+          "source_ang_tol_deg",
+          "finite_max_expansions",
+          "finite_max_runtime_s"
+        ],
+        "contract_version": 1,
+        "cache_provenance": "graph_cache_state is 'cold' for the graph this call constructed and 'warm' for a caller-supplied graph; successor_cache_hits is that graph's successor-cache hit counter, read after the search",
+        "note": "the prebuilt graph was built for a different input and is refused BEFORE the search: no goal node, lattice anchor or edge of that graph is used for this call",
+        "rejected_before_search": true,
+        "reason": "the prebuilt FiniteGraph does not match the scene/config/mode/congestion actually passed: mismatching field(s) target.  Refused before the search, because the goal node id, the lattice anchor, the boundary and every cached edge of that graph describe a DIFFERENT input.  Rebuild the graph from this scene (graph=None) to route it."
+      },
+      "fresh_scene_b": {
+        "status": "success",
+        "cost_um": 50.0,
+        "endpoint": [
+          50.0,
+          0.0,
+          0.0
+        ]
+      },
+      "artifact_written": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouterNative3D\\artifacts\\v013\\cases\\v013_graph_reuse_mismatch.json"
+    },
+    "zero_length": {
+      "status": "success",
+      "zero_length_solution": true,
+      "cost_um": 0.0,
+      "length_um": 0.0,
+      "path": null,
+      "n_segments": 0,
+      "expansions": 0,
+      "endpoint_errors": {
+        "ok": true,
+        "status": "safe",
+        "failed": [],
+        "n_segments": 0,
+        "zero_length_solution": true,
+        "start_position_error_um": 0.0,
+        "start_tangent_error_deg": 0.0,
+        "end_position_error_um": 0.0,
+        "end_tangent_error_deg": 0.0,
+        "start_ok": true,
+        "end_ok": true,
+        "max_junction_position_error_um": 0.0,
+        "max_junction_tangent_error_deg": 0.0,
+        "junction_failures": [],
+        "source_pos_tol_um": 1e-06,
+        "source_ang_tol_deg": 1e-06,
+        "target_eps_pos_um": 2.0,
+        "target_eps_ang_deg": 3.0,
+        "pos_tol_um": 1e-06,
+        "ang_tol_deg": 1e-06,
+        "method": "the FIRST and LAST primitive of the assembled path are evaluated at their own endpoints and compared with the source and target poses the caller passed; every junction is measured between the end pose of one primitive and the start pose of the next.  Achieved errors, not certified bounds.",
+        "guarantee": "ok=True means the returned curve really starts at the source pose (source tolerances), really ends on the target acceptance ball, and is C0/C1 continuous inside the C1 tolerances.  It is NOT a proof about any other point of the curve; the hard constraints of the whole curve are checked separately by constraints.checks.validate_segments."
+      },
+      "artifact_verdict": "pass",
+      "wrong_tangent": {
+        "status": "search_exhausted",
+        "zero_length_solution": false
+      },
+      "invalid_source": {
+        "status": "invalid_source_pose"
+      }
+    }
+  }
+}

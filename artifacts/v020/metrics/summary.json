@@ -1,0 +1,926 @@
+{
+  "artifact": "native3d_v020_multichannel_baseline_summary",
+  "started_at_utc": "2026-10-07T07:06:19.808022+00:00",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.2 multinet sequential baseline",
+  "rerun_command": "cd OpticalWaveguideRouterNative3D && .venv\\Scripts\\python.exe examples\\run_multichannel_baseline.py",
+  "cases": [
+    {
+      "case": "two_channel_01_parallel_straights",
+      "channel_count": 2,
+      "order": [
+        "netA",
+        "netB"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 900.0,
+        "total_runtime_s": 0.015138400020077825,
+        "max_net_runtime_s": 0.0076497000409290195,
+        "sum_net_expansions": 18
+      },
+      "totals": {
+        "wall_time_s": 0.04068939993157983,
+        "sum_net_wall_time_s": 0.04063819989096373,
+        "max_net_wall_time_s": 0.02072319993749261,
+        "total_path_length_um": 900.0,
+        "sum_search_expansions": 18,
+        "sum_search_runtime_s": 0.015138400020077825,
+        "occupancy_revision_final": 2,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.04077840002719313,
+      "occupancy": {
+        "revision": 2,
+        "n_curves": 6,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 6,
+        "per_net_published_curve_counts": {
+          "netA": 3,
+          "netB": 3
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 2,
+          "n_pass": 2,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 1,
+          "n_inter_net_pairs": 1,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 2,
+          "declared_committed": 2,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "two_channel_02_barrier_3d_avoidance",
+      "channel_count": 2,
+      "order": [
+        "netA",
+        "netB"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 890.1592653589794,
+        "total_runtime_s": 0.06545689993072301,
+        "max_net_runtime_s": 0.061421899939887226,
+        "sum_net_expansions": 97
+      },
+      "totals": {
+        "wall_time_s": 0.10193760006222874,
+        "sum_net_wall_time_s": 0.10184470005333424,
+        "max_net_wall_time_s": 0.08516570006031543,
+        "total_path_length_um": 890.1592653589794,
+        "sum_search_expansions": 97,
+        "sum_search_runtime_s": 0.06545689993072301,
+        "occupancy_revision_final": 2,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.10211450001224875,
+      "occupancy": {
+        "revision": 2,
+        "n_curves": 10,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 10,
+        "per_net_published_curve_counts": {
+          "netA": 3,
+          "netB": 7
+        },
+        "immutable": true
+      },
+      "controls": [
+        {
+          "name": "netB_before_A_control",
+          "counts": {
+            "channel_count": 1,
+            "n_nets": 1,
+            "routed_count": 1,
+            "verified_count": 1,
+            "committed_count": 1,
+            "failed_count": 0,
+            "failure_categories": {},
+            "all_verified": true,
+            "partial_success": false,
+            "total_length_um": 480.0,
+            "total_runtime_s": 0.008995699929073453,
+            "max_net_runtime_s": 0.008995699929073453,
+            "sum_net_expansions": 10
+          },
+          "statuses": {
+            "netB": "committed"
+          }
+        }
+      ],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 2,
+          "n_pass": 2,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 1,
+          "n_inter_net_pairs": 1,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 2,
+          "declared_committed": 2,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "two_channel_03_arc_occupancy",
+      "channel_count": 2,
+      "order": [
+        "netA",
+        "netB"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 792.6990816987243,
+        "total_runtime_s": 3.7915691998787224,
+        "max_net_runtime_s": 3.782191999955103,
+        "sum_net_expansions": 57
+      },
+      "totals": {
+        "wall_time_s": 3.82223030005116,
+        "sum_net_wall_time_s": 3.822148500010371,
+        "max_net_wall_time_s": 3.8004715000279248,
+        "total_path_length_um": 792.6990816987243,
+        "sum_search_expansions": 57,
+        "sum_search_runtime_s": 3.7915691998787224,
+        "occupancy_revision_final": 2,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 3.822350800037384,
+      "occupancy": {
+        "revision": 2,
+        "n_curves": 8,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 8,
+        "per_net_published_curve_counts": {
+          "netA": 3,
+          "netB": 5
+        },
+        "immutable": true
+      },
+      "controls": [
+        {
+          "name": "netB_without_A_control",
+          "counts": {
+            "channel_count": 1,
+            "n_nets": 1,
+            "routed_count": 1,
+            "verified_count": 1,
+            "committed_count": 1,
+            "failed_count": 0,
+            "failure_categories": {},
+            "all_verified": true,
+            "partial_success": false,
+            "total_length_um": 300.0,
+            "total_runtime_s": 0.004456199938431382,
+            "max_net_runtime_s": 0.004456199938431382,
+            "sum_net_expansions": 6
+          },
+          "statuses": {
+            "netB": "committed"
+          }
+        }
+      ],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 2,
+          "n_pass": 2,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 1,
+          "n_inter_net_pairs": 1,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 2,
+          "declared_committed": 2,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "two_channel_04_no_solution_under_occupancy",
+      "channel_count": 2,
+      "order": [
+        "netA",
+        "netB"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 1,
+        "verified_count": 1,
+        "committed_count": 1,
+        "failed_count": 1,
+        "failure_categories": {
+          "search_exhausted": 1
+        },
+        "all_verified": false,
+        "partial_success": true,
+        "total_length_um": 296.0,
+        "total_runtime_s": 0.05873799999244511,
+        "max_net_runtime_s": 0.055191899999044836,
+        "sum_net_expansions": 104
+      },
+      "totals": {
+        "wall_time_s": 0.06731520011089742,
+        "sum_net_wall_time_s": 0.06725930003449321,
+        "max_net_wall_time_s": 0.058610099949873984,
+        "total_path_length_um": 296.0,
+        "sum_search_expansions": 104,
+        "sum_search_runtime_s": 0.05873799999244511,
+        "occupancy_revision_final": 1,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.06737180007621646,
+      "occupancy": {
+        "revision": 1,
+        "n_curves": 2,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 2,
+        "per_net_published_curve_counts": {
+          "netA": 2
+        },
+        "immutable": true
+      },
+      "controls": [
+        {
+          "name": "netB_alone_control",
+          "counts": {
+            "channel_count": 1,
+            "n_nets": 1,
+            "routed_count": 1,
+            "verified_count": 1,
+            "committed_count": 1,
+            "failed_count": 0,
+            "failure_categories": {},
+            "all_verified": true,
+            "partial_success": false,
+            "total_length_um": 480.0,
+            "total_runtime_s": 0.006296499981544912,
+            "max_net_runtime_s": 0.006296499981544912,
+            "sum_net_expansions": 10
+          },
+          "statuses": {
+            "netB": "committed"
+          }
+        },
+        {
+          "name": "netA_alone_control",
+          "counts": {
+            "channel_count": 1,
+            "n_nets": 1,
+            "routed_count": 1,
+            "verified_count": 1,
+            "committed_count": 1,
+            "failed_count": 0,
+            "failure_categories": {},
+            "all_verified": true,
+            "partial_success": false,
+            "total_length_um": 296.0,
+            "total_runtime_s": 0.002869300078600645,
+            "max_net_runtime_s": 0.002869300078600645,
+            "sum_net_expansions": 6
+          },
+          "statuses": {
+            "netA": "committed"
+          }
+        }
+      ],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 1,
+          "n_pass": 1,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 1,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 0,
+          "n_inter_net_pairs": 0,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 1,
+          "declared_committed": 1,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "two_channel_05_reversed_order",
+      "channel_count": 2,
+      "order": [
+        "netB",
+        "netA"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 890.1592653589794,
+        "total_runtime_s": 0.03571289998944849,
+        "max_net_runtime_s": 0.02811090007890016,
+        "sum_net_expansions": 43
+      },
+      "totals": {
+        "wall_time_s": 0.07341309997718781,
+        "sum_net_wall_time_s": 0.07332640001550317,
+        "max_net_wall_time_s": 0.05155580001883209,
+        "total_path_length_um": 890.1592653589794,
+        "sum_search_expansions": 43,
+        "sum_search_runtime_s": 0.03571289998944849,
+        "occupancy_revision_final": 2,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.07353579998016357,
+      "occupancy": {
+        "revision": 2,
+        "n_curves": 9,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 9,
+        "per_net_published_curve_counts": {
+          "netB": 4,
+          "netA": 5
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 2,
+          "n_pass": 2,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 1,
+          "n_inter_net_pairs": 1,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 2,
+          "declared_committed": 2,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "crosswall_02_channels",
+      "channel_count": 2,
+      "order": [
+        "net00",
+        "net01"
+      ],
+      "counts": {
+        "channel_count": 2,
+        "n_nets": 2,
+        "routed_count": 2,
+        "verified_count": 2,
+        "committed_count": 2,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 1188.3185307179588,
+        "total_runtime_s": 0.09974710003007203,
+        "max_net_runtime_s": 0.06080400000791997,
+        "sum_net_expansions": 130
+      },
+      "totals": {
+        "wall_time_s": 0.14983499993104488,
+        "sum_net_wall_time_s": 0.1497020999668166,
+        "max_net_wall_time_s": 0.08601159998215735,
+        "total_path_length_um": 1188.3185307179588,
+        "sum_search_expansions": 130,
+        "sum_search_runtime_s": 0.09974710003007203,
+        "occupancy_revision_final": 2,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 2,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.1500125000020489,
+      "occupancy": {
+        "revision": 2,
+        "n_curves": 14,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 14,
+        "per_net_published_curve_counts": {
+          "net00": 7,
+          "net01": 7
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 2,
+          "n_nets_with_a_path": 2,
+          "n_pass": 2,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 1,
+          "n_inter_net_pairs": 1,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 2,
+          "declared_committed": 2,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "crosswall_04_channels",
+      "channel_count": 4,
+      "order": [
+        "net00",
+        "net01",
+        "net02",
+        "net03"
+      ],
+      "counts": {
+        "channel_count": 4,
+        "n_nets": 4,
+        "routed_count": 4,
+        "verified_count": 4,
+        "committed_count": 4,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 2376.6370614359175,
+        "total_runtime_s": 0.26604749995749444,
+        "max_net_runtime_s": 0.09120729996357113,
+        "sum_net_expansions": 256
+      },
+      "totals": {
+        "wall_time_s": 0.3699711000081152,
+        "sum_net_wall_time_s": 0.3697111998917535,
+        "max_net_wall_time_s": 0.11899569991510361,
+        "total_path_length_um": 2376.6370614359175,
+        "sum_search_expansions": 256,
+        "sum_search_runtime_s": 0.26604749995749444,
+        "occupancy_revision_final": 4,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 4,
+        "stopped_after_failure": false
+      },
+      "wall_s": 0.37028489995282143,
+      "occupancy": {
+        "revision": 4,
+        "n_curves": 28,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 28,
+        "per_net_published_curve_counts": {
+          "net00": 7,
+          "net01": 7,
+          "net02": 7,
+          "net03": 7
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 4,
+          "n_nets_with_a_path": 4,
+          "n_pass": 4,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 6,
+          "n_inter_net_pairs": 6,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 4,
+          "declared_committed": 4,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "crosswall_08_channels",
+      "channel_count": 8,
+      "order": [
+        "net00",
+        "net01",
+        "net02",
+        "net03",
+        "net04",
+        "net05",
+        "net06",
+        "net07"
+      ],
+      "counts": {
+        "channel_count": 8,
+        "n_nets": 8,
+        "routed_count": 8,
+        "verified_count": 8,
+        "committed_count": 8,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 4753.274122871836,
+        "total_runtime_s": 1.0190000999718904,
+        "max_net_runtime_s": 0.22299260005820543,
+        "sum_net_expansions": 517
+      },
+      "totals": {
+        "wall_time_s": 1.2507030999986455,
+        "sum_net_wall_time_s": 1.2497190999565646,
+        "max_net_wall_time_s": 0.2560079999966547,
+        "total_path_length_um": 4753.274122871836,
+        "sum_search_expansions": 517,
+        "sum_search_runtime_s": 1.0190000999718904,
+        "occupancy_revision_final": 8,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 8,
+        "stopped_after_failure": false
+      },
+      "wall_s": 1.2514227000065148,
+      "occupancy": {
+        "revision": 8,
+        "n_curves": 56,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 56,
+        "per_net_published_curve_counts": {
+          "net00": 7,
+          "net01": 7,
+          "net02": 7,
+          "net03": 7,
+          "net04": 7,
+          "net05": 7,
+          "net06": 7,
+          "net07": 7
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 8,
+          "n_nets_with_a_path": 8,
+          "n_pass": 8,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 28,
+          "n_inter_net_pairs": 28,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 8,
+          "declared_committed": 8,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "crosswall_16_channels",
+      "channel_count": 16,
+      "order": [
+        "net00",
+        "net01",
+        "net02",
+        "net03",
+        "net04",
+        "net05",
+        "net06",
+        "net07",
+        "net08",
+        "net09",
+        "net10",
+        "net11",
+        "net12",
+        "net13",
+        "net14",
+        "net15"
+      ],
+      "counts": {
+        "channel_count": 16,
+        "n_nets": 16,
+        "routed_count": 16,
+        "verified_count": 16,
+        "committed_count": 16,
+        "failed_count": 0,
+        "failure_categories": {},
+        "all_verified": true,
+        "partial_success": false,
+        "total_length_um": 9506.548245743672,
+        "total_runtime_s": 3.1238722001435235,
+        "max_net_runtime_s": 0.30667110008653253,
+        "sum_net_expansions": 1017
+      },
+      "totals": {
+        "wall_time_s": 3.611791900009848,
+        "sum_net_wall_time_s": 3.610634300042875,
+        "max_net_wall_time_s": 0.34092920005787164,
+        "total_path_length_um": 9506.548245743672,
+        "sum_search_expansions": 1017,
+        "sum_search_runtime_s": 3.1238722001435235,
+        "occupancy_revision_final": 16,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 16,
+        "stopped_after_failure": false
+      },
+      "wall_s": 3.6130707999691367,
+      "occupancy": {
+        "revision": 16,
+        "n_curves": 112,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 112,
+        "per_net_published_curve_counts": {
+          "net00": 7,
+          "net01": 7,
+          "net02": 7,
+          "net03": 7,
+          "net04": 7,
+          "net05": 7,
+          "net06": 7,
+          "net07": 7,
+          "net08": 7,
+          "net09": 7,
+          "net10": 7,
+          "net11": 7,
+          "net12": 7,
+          "net13": 7,
+          "net14": 7,
+          "net15": 7
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 16,
+          "n_nets_with_a_path": 16,
+          "n_pass": 16,
+          "n_rejected_ok": 0,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 120,
+          "n_inter_net_pairs": 120,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 16,
+          "declared_committed": 16,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "stress_swap_04_channels",
+      "channel_count": 4,
+      "order": [
+        "net00",
+        "net01",
+        "net02",
+        "net03"
+      ],
+      "counts": {
+        "channel_count": 4,
+        "n_nets": 4,
+        "routed_count": 4,
+        "verified_count": 0,
+        "committed_count": 0,
+        "failed_count": 4,
+        "failure_categories": {
+          "self_spacing_violation": 4
+        },
+        "all_verified": false,
+        "partial_success": false,
+        "total_length_um": 3654.6297571063797,
+        "total_runtime_s": 2.4641174997668713,
+        "max_net_runtime_s": 0.6375899999402463,
+        "sum_net_expansions": 4105
+      },
+      "totals": {
+        "wall_time_s": 2.7109722999157384,
+        "sum_net_wall_time_s": 2.7109492000890896,
+        "max_net_wall_time_s": 0.6942562999902293,
+        "total_path_length_um": 3654.6297571063797,
+        "sum_search_expansions": 4105,
+        "sum_search_runtime_s": 2.4641174997668713,
+        "occupancy_revision_final": 0,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 4,
+        "stopped_after_failure": false
+      },
+      "wall_s": 2.7110424999846146,
+      "occupancy": {
+        "revision": 0,
+        "n_curves": 0,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 0,
+        "per_net_published_curve_counts": {},
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 4,
+          "n_nets_with_a_path": 4,
+          "n_pass": 0,
+          "n_rejected_ok": 4,
+          "n_fail": 0,
+          "n_no_path": 0,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 0,
+          "n_inter_net_pairs": 0,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 0,
+          "n_rejected_candidate_evidence_violations": 0,
+          "declared_verified": 0,
+          "declared_committed": 0,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    },
+    {
+      "case": "stress_swap_08_channels",
+      "channel_count": 8,
+      "order": [
+        "net00",
+        "net01",
+        "net02",
+        "net03",
+        "net04",
+        "net05",
+        "net06",
+        "net07"
+      ],
+      "counts": {
+        "channel_count": 8,
+        "n_nets": 8,
+        "routed_count": 6,
+        "verified_count": 5,
+        "committed_count": 5,
+        "failed_count": 3,
+        "failure_categories": {
+          "self_spacing_violation": 1,
+          "search_exhausted": 1,
+          "port_attachment_failed": 1
+        },
+        "all_verified": false,
+        "partial_success": true,
+        "total_length_um": 5667.285795013722,
+        "total_runtime_s": 130.83856690023094,
+        "max_net_runtime_s": 52.502366200089455,
+        "sum_net_expansions": 6645
+      },
+      "totals": {
+        "wall_time_s": 136.76611000008415,
+        "sum_net_wall_time_s": 136.76552490028553,
+        "max_net_wall_time_s": 54.08643900009338,
+        "total_path_length_um": 5667.285795013722,
+        "sum_search_expansions": 6645,
+        "sum_search_runtime_s": 130.83856690023094,
+        "occupancy_revision_final": 5,
+        "occupancy_immutable": true,
+        "n_nets_attempted": 8,
+        "stopped_after_failure": false
+      },
+      "wall_s": 136.76677079999354,
+      "occupancy": {
+        "revision": 5,
+        "n_curves": 49,
+        "n_static_reference_curves": 0,
+        "n_published_curves": 49,
+        "per_net_published_curve_counts": {
+          "net01": 9,
+          "net02": 9,
+          "net04": 10,
+          "net05": 11,
+          "net06": 10
+        },
+        "immutable": true
+      },
+      "controls": [],
+      "joint_validation": {
+        "overall_verdict": "pass",
+        "counts": {
+          "n_nets": 8,
+          "n_nets_with_a_path": 6,
+          "n_pass": 5,
+          "n_rejected_ok": 1,
+          "n_fail": 0,
+          "n_no_path": 2,
+          "n_uncertified": 0,
+          "n_committed_pairs_checked": 10,
+          "n_inter_net_pairs": 10,
+          "n_inter_net_violations": 0,
+          "n_inter_net_undecided": 0,
+          "n_rejected_candidate_evidence_pairs": 5,
+          "n_rejected_candidate_evidence_violations": 4,
+          "declared_verified": 5,
+          "declared_committed": 5,
+          "n_disagreements": 0
+        },
+        "occupancy_bookkeeping_ok": true
+      }
+    }
+  ],
+  "wall_s": 150.12515969993547,
+  "finished_at_utc": "2026-10-07T07:08:49.933039+00:00"
+}

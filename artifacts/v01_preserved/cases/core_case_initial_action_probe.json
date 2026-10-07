@@ -1,0 +1,1773 @@
+{
+  "artifact": "native3d_v01_initial_state_action_probe",
+  "note": "candidate actions generated from the INITIAL state, before any search expansion: proof that the initial state already has feasible actions that change z / pitch",
+  "2d_mode": {
+    "status": "search_exhausted",
+    "n_candidates": 17,
+    "n_accepted_z_changing": 0,
+    "candidates": [
+      {
+        "name": "straight_10",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 10.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 468.0,
+        "end_position": [
+          70.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 220.0
+      },
+      {
+        "name": "straight_20",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 20.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 458.0,
+        "end_position": [
+          80.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 210.0
+      },
+      {
+        "name": "straight_40",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 40.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 438.0,
+        "end_position": [
+          100.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 190.0
+      },
+      {
+        "name": "yaw_left_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          156.69872981077805,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "yaw_right_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          143.30127018922195,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "yaw_left_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          164.64466094067262,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "yaw_right_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          135.35533905932738,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "yaw_left_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          200.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "yaw_right_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          100.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "yaw_left_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          160.0480947161671,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "yaw_right_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          139.9519052838329,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "yaw_left_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          171.96699141100893,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "yaw_right_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          128.03300858899107,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "yaw_left_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          225.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "yaw_right_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          75.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "connector_R50",
+        "kind": "connector",
+        "accepted": false,
+        "reason": "obstacle_clearance",
+        "length_um": 480.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 0.0,
+        "end_position": [
+          540.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "obstacle_clearance"
+        ],
+        "clearance_bound_um": 0.0
+      },
+      {
+        "name": "connector_R100",
+        "kind": "connector",
+        "accepted": false,
+        "reason": "obstacle_clearance",
+        "length_um": 480.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 0.0,
+        "end_position": [
+          540.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "obstacle_clearance"
+        ],
+        "clearance_bound_um": 0.0
+      }
+    ]
+  },
+  "native3d_mode": {
+    "status": "success",
+    "n_candidates": 53,
+    "n_accepted_z_changing": 13,
+    "candidates": [
+      {
+        "name": "straight_10",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 10.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 468.0,
+        "end_position": [
+          70.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 220.0
+      },
+      {
+        "name": "straight_20",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 20.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 458.0,
+        "end_position": [
+          80.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 210.0
+      },
+      {
+        "name": "straight_40",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 40.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 438.0,
+        "end_position": [
+          100.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 190.0
+      },
+      {
+        "name": "yaw_left_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          156.69872981077805,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "yaw_right_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          143.30127018922195,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "pitch_up_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 6.698729810778062,
+        "elevation_change_deg": 29.999999999999996,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          150.0,
+          6.698729810778062
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.0,
+          0.49999999999999994
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "skew_tilt45_plus_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 4.73671727453765,
+        "elevation_change_deg": 20.704811054635428,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          154.73671727453765,
+          4.73671727453765
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.35355339059327373,
+          0.35355339059327373
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "skew_tilt135_plus_30_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 26.17993877991494,
+        "z_change_um": 4.73671727453765,
+        "elevation_change_deg": 20.704811054635428,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          145.26328272546235,
+          4.73671727453765
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.3535533905932737,
+          0.35355339059327373
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "skew_tilt45_plus_30_75",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.26990816987241,
+        "z_change_um": 7.105075911806473,
+        "elevation_change_deg": 20.704811054635428,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          157.10507591180647,
+          7.105075911806473
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.35355339059327373,
+          0.35355339059327373
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "skew_tilt135_plus_30_75",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.26990816987241,
+        "z_change_um": 7.105075911806473,
+        "elevation_change_deg": 20.704811054635428,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          142.89492408819353,
+          7.105075911806473
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.3535533905932737,
+          0.35355339059327373
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "yaw_left_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          164.64466094067262,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "yaw_right_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          135.35533905932738,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "pitch_up_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 14.644660940672622,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          150.0,
+          14.644660940672622
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "skew_tilt45_plus_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 10.35533905932737,
+        "elevation_change_deg": 30.000000000000004,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          160.35533905932738,
+          10.35533905932737
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.5000000000000001,
+          0.5000000000000001
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "skew_tilt135_plus_45_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 39.269908169872416,
+        "z_change_um": 10.35533905932737,
+        "elevation_change_deg": 30.000000000000004,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          139.64466094067262,
+          10.35533905932737
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.5,
+          0.5000000000000001
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "skew_tilt45_plus_45_75",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 58.90486225480862,
+        "z_change_um": 15.53300858899106,
+        "elevation_change_deg": 30.000000000000004,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          165.53300858899107,
+          15.53300858899106
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.5000000000000001,
+          0.5000000000000001
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "skew_tilt135_plus_45_75",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 58.90486225480862,
+        "z_change_um": 15.53300858899106,
+        "elevation_change_deg": 30.000000000000004,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          134.46699141100893,
+          15.53300858899106
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.5,
+          0.5000000000000001
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "yaw_left_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          200.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "yaw_right_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          100.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "pitch_up_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 50.0,
+        "elevation_change_deg": 90.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          150.0,
+          50.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "skew_tilt45_plus_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 35.35533905932738,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          185.35533905932738,
+          35.35533905932738
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "skew_tilt135_plus_90_50",
+        "kind": "motion",
+        "accepted": true,
+        "reason": "",
+        "length_um": 78.53981633974483,
+        "z_change_um": 35.35533905932738,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          114.64466094067262,
+          35.35533905932738
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -0.7071067811865475,
+          0.7071067811865476
+        ],
+        "validation_ok": true,
+        "validation_failed": [],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "pitch_down_30_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 26.17993877991494,
+        "z_change_um": -6.698729810778062,
+        "elevation_change_deg": -29.999999999999996,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          150.0,
+          -6.698729810778062
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.0,
+          -0.49999999999999994
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "skew_tilt45_minus_30_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 26.17993877991494,
+        "z_change_um": -4.73671727453765,
+        "elevation_change_deg": -20.704811054635428,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          145.26328272546235,
+          -4.73671727453765
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.35355339059327373,
+          -0.35355339059327373
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "skew_tilt135_minus_30_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 26.17993877991494,
+        "z_change_um": -4.73671727453765,
+        "elevation_change_deg": -20.704811054635428,
+        "h_after_um": 453.04930829645025,
+        "end_position": [
+          85.0,
+          154.73671727453765,
+          -4.73671727453765
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.3535533905932737,
+          -0.35355339059327373
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 205.0
+      },
+      {
+        "name": "yaw_left_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          160.0480947161671,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "yaw_right_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          139.9519052838329,
+          0.0
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.49999999999999994,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "pitch_up_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": 10.0480947161671,
+        "elevation_change_deg": 29.999999999999996,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          150.0,
+          10.0480947161671
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.0,
+          0.49999999999999994
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "pitch_down_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": -10.0480947161671,
+        "elevation_change_deg": -29.999999999999996,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          150.0,
+          -10.0480947161671
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.0,
+          -0.49999999999999994
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "skew_tilt45_minus_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": -7.105075911806473,
+        "elevation_change_deg": -20.704811054635428,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          142.89492408819353,
+          -7.105075911806473
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          -0.35355339059327373,
+          -0.35355339059327373
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "skew_tilt135_minus_30_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.26990816987241,
+        "z_change_um": -7.105075911806473,
+        "elevation_change_deg": -20.704811054635428,
+        "h_after_um": 440.61406914763234,
+        "end_position": [
+          97.5,
+          157.10507591180647,
+          -7.105075911806473
+        ],
+        "end_direction": [
+          0.8660254037844387,
+          0.3535533905932737,
+          -0.35355339059327373
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 192.5
+      },
+      {
+        "name": "pitch_down_45_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.269908169872416,
+        "z_change_um": -14.644660940672622,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          150.0,
+          -14.644660940672622
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.0,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "skew_tilt45_minus_45_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.269908169872416,
+        "z_change_um": -10.35533905932737,
+        "elevation_change_deg": -30.000000000000004,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          139.64466094067262,
+          -10.35533905932737
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.5000000000000001,
+          -0.5000000000000001
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "skew_tilt135_minus_45_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 39.269908169872416,
+        "z_change_um": -10.35533905932737,
+        "elevation_change_deg": -30.000000000000004,
+        "h_after_um": 442.885761288348,
+        "end_position": [
+          95.35533905932738,
+          160.35533905932738,
+          -10.35533905932737
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.5,
+          -0.5000000000000001
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 194.64466094067262
+      },
+      {
+        "name": "yaw_left_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          171.96699141100893,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "yaw_right_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          128.03300858899107,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "pitch_up_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": 21.966991411008934,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          150.0,
+          21.966991411008934
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "pitch_down_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": -21.966991411008934,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          150.0,
+          -21.966991411008934
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.0,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "skew_tilt45_minus_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": -15.53300858899106,
+        "elevation_change_deg": -30.000000000000004,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          134.46699141100893,
+          -15.53300858899106
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.5000000000000001,
+          -0.5000000000000001
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "skew_tilt135_minus_45_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 58.90486225480862,
+        "z_change_um": -15.53300858899106,
+        "elevation_change_deg": -30.000000000000004,
+        "h_after_um": 425.5317069717987,
+        "end_position": [
+          113.03300858899107,
+          165.53300858899107,
+          -15.53300858899106
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.5,
+          -0.5000000000000001
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 176.96699141100893
+      },
+      {
+        "name": "pitch_down_90_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 78.53981633974483,
+        "z_change_um": -50.0,
+        "elevation_change_deg": -90.0,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          150.0,
+          -50.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.0,
+          -1.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "skew_tilt45_minus_90_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 78.53981633974483,
+        "z_change_um": -35.35533905932738,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          114.64466094067262,
+          -35.35533905932738
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "skew_tilt135_minus_90_50",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 78.53981633974483,
+        "z_change_um": -35.35533905932738,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 430.89721643826726,
+        "end_position": [
+          110.0,
+          185.35533905932738,
+          -35.35533905932738
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.7071067811865475,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 180.0
+      },
+      {
+        "name": "yaw_left_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          225.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "yaw_right_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          75.0,
+          0.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -1.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "pitch_up_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 75.0,
+        "elevation_change_deg": 90.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          150.0,
+          75.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "pitch_down_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": -75.0,
+        "elevation_change_deg": -90.0,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          150.0,
+          -75.0
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.0,
+          -1.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "skew_tilt45_plus_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 53.033008588991066,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          203.03300858899107,
+          53.033008588991066
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "skew_tilt45_minus_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": -53.033008588991066,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          96.96699141100893,
+          -53.033008588991066
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "skew_tilt135_plus_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": 53.033008588991066,
+        "elevation_change_deg": 45.00000000000001,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          96.96699141100893,
+          53.033008588991066
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          -0.7071067811865475,
+          0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "skew_tilt135_minus_90_75",
+        "kind": "motion",
+        "accepted": false,
+        "reason": "boundary",
+        "length_um": 117.80972450961724,
+        "z_change_um": -53.033008588991066,
+        "elevation_change_deg": -45.00000000000001,
+        "h_after_um": 409.8859065323794,
+        "end_position": [
+          135.0,
+          203.03300858899107,
+          -53.033008588991066
+        ],
+        "end_direction": [
+          6.123233995736766e-17,
+          0.7071067811865475,
+          -0.7071067811865476
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "boundary"
+        ],
+        "clearance_bound_um": 155.0
+      },
+      {
+        "name": "connector_R50",
+        "kind": "connector",
+        "accepted": false,
+        "reason": "obstacle_clearance",
+        "length_um": 480.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 0.0,
+        "end_position": [
+          540.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "obstacle_clearance"
+        ],
+        "clearance_bound_um": 0.0
+      },
+      {
+        "name": "connector_R100",
+        "kind": "connector",
+        "accepted": false,
+        "reason": "obstacle_clearance",
+        "length_um": 480.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 0.0,
+        "end_position": [
+          540.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "validation_ok": false,
+        "validation_failed": [
+          "obstacle_clearance"
+        ],
+        "clearance_bound_um": 0.0
+      }
+    ]
+  },
+  "input": {
+    "name": "core_2d_unreachable_vs_native3d_reachable",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        0.0,
+        0.0,
+        -60.0
+      ],
+      "hi": [
+        600.0,
+        300.0,
+        120.0
+      ]
+    },
+    "n_obstacles": 1,
+    "obstacles": [
+      {
+        "lo": [
+          290.0,
+          -50.0,
+          -70.0
+        ],
+        "hi": [
+          310.0,
+          350.0,
+          40.0
+        ]
+      }
+    ],
+    "n_reference_centerlines": 1,
+    "source_pose": {
+      "position": [
+        60.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        540.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "constraints": {
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "effective_obstacle_clearance_um": 5.0,
+      "wg_envelope_radius_um": 2.0,
+      "effective_boundary_margin_um": 2.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0
+    }
+  }
+}

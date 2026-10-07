@@ -1,0 +1,42 @@
+====================================================================================================
+case: stress_swap_04_channels
+channel_count: 4      order: net00 -> net01 -> net02 -> net03
+order_rule: input order, one net at a time; no net ordering, no rip-up & reroute
+self-spacing policy: ell_local = 10 um (two_times_dmin)   dmin = 5 um
+per-net fresh finite graph: True   graph= argument never passed: True
+
+routed_count   = 4
+verified_count = 0
+committed_count= 0
+failed_count   = 4   failure_categories = {"self_spacing_violation": 4}
+all_verified   = False   partial_success = False
+total_length_um= 3654.630   total_runtime_s(net wall)=2.464   max_net_wall=0.638
+
+net        status                     length     segments expansions occ_rev   z_range  self_sp   inter_net failure_category
+net00      self_spacing_violation     914.966    10       1054      0->0      [0,100]  violation -         self_spacing_violation
+net01      self_spacing_violation     908.978    10       1028      0->0      [0,100]  violation -         self_spacing_violation
+net02      self_spacing_violation     909.941    9        1010      0->0      [0,100]  violation -         self_spacing_violation
+net03      self_spacing_violation     920.745    9        1013      0->0      [0,100]  violation -         self_spacing_violation
+
+raw candidate vs published path:
+  net00      routed_candidate=True  n_candidate_segments=10  published=NO
+  net01      routed_candidate=True  n_candidate_segments=10  published=NO
+  net02      routed_candidate=True  n_candidate_segments=9   published=NO
+  net03      routed_candidate=True  n_candidate_segments=9   published=NO
+
+
+self-spacing certification actually achieved:
+  net00      status=violation  LB=0.000000     UB=1.748810     exempt_pairs=0   undecided=0
+  net01      status=violation  LB=0.000000     UB=1.829752     exempt_pairs=1   undecided=0
+  net02      status=violation  LB=0.405421     UB=2.326893     exempt_pairs=0   undecided=0
+  net03      status=violation  LB=3.005181     UB=4.926653     exempt_pairs=0   undecided=0
+
+occupancy: revision=0 curves=0 (static=0, published=0) immutable=True
+
+INDEPENDENT joint validation (re-derived from the written JSON file):
+  overall_verdict = pass
+  independent pass/fail/uncertified = 0/0/0   declared verified=0 committed=0
+  inter-net net-pairs=0 violations=0 undecided=0
+  disagreements with the declared statuses = 0
+  occupancy bookkeeping ok = True
+====================================================================================================

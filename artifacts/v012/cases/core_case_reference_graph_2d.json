@@ -1,0 +1,2561 @@
+{
+  "artifact": "native3d_v012_case_evidence",
+  "engine": "OpticalWaveguideRouterNative3D / native3d v0.1.2",
+  "strategy": "reference_search (v0.1.1 two-hop finite reference graph)",
+  "self_spacing_check": "NOT IMPLEMENTED in the acceptance path: constraints.checks.path_self_spacing() exists but neither the production router, the result assembly nor this independent validator calls it, so no self-spacing result enters any verdict (v0.1.2 erratum)",
+  "generated_at_utc": "2026-10-07T06:03:13.610459+00:00",
+  "case": "core_2d_unreachable_vs_native3d_reachable",
+  "mode": "2d_reference_graph",
+  "units": "um",
+  "rerun_command": "pytest  (from the project root, with the project venv)",
+  "input": {
+    "name": "core_2d_unreachable_vs_native3d_reachable",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        0.0,
+        0.0,
+        -60.0
+      ],
+      "hi": [
+        600.0,
+        300.0,
+        120.0
+      ]
+    },
+    "obstacles": [
+      {
+        "lo": [
+          290.0,
+          -50.0,
+          -70.0
+        ],
+        "hi": [
+          310.0,
+          350.0,
+          40.0
+        ]
+      }
+    ],
+    "reference_centerlines": [
+      {
+        "kind": "line",
+        "p0": [
+          150.0,
+          120.0,
+          0.0
+        ],
+        "p1": [
+          450.0,
+          120.0,
+          0.0
+        ],
+        "length_um": 300.0
+      }
+    ],
+    "source_pose": {
+      "position": [
+        60.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        540.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "config": {
+      "length_unit": "um",
+      "angle_config_unit": "deg",
+      "pos_tol_um": 1e-06,
+      "ang_tol_deg": 1e-06,
+      "radius_tol_um": 1e-06,
+      "zero_tol_um": 1e-09,
+      "parallel_tol": 1e-09,
+      "clearance_decision_tol_um": 1e-09,
+      "max_subdiv_level": 9,
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "wg_envelope_radius_um": 2.0,
+      "boundary_margin_um": null,
+      "allow_out_of_plane": true,
+      "state_identity": "pose_float",
+      "pos_resolution_um": 20.0,
+      "dir_resolution_deg": 30.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0,
+      "source_pos_tol_um": 1e-06,
+      "source_ang_tol_deg": 1e-06,
+      "straight_lengths_um": [
+        10.0,
+        20.0,
+        40.0
+      ],
+      "turn_angles_deg": [
+        30.0,
+        45.0,
+        90.0
+      ],
+      "turn_radii_um": [
+        50.0,
+        75.0
+      ],
+      "skew_axis_tilt_deg": [
+        45.0,
+        135.0
+      ],
+      "connector_radii_um": [
+        50.0,
+        100.0
+      ],
+      "connector_max_length_um": 3000.0,
+      "max_expansions": 50000,
+      "max_runtime_s": 300.0,
+      "reference_spacing_um": 60.0,
+      "finite_spacing_um": 50.0,
+      "finite_straight_steps": [
+        1,
+        2,
+        3
+      ],
+      "finite_turn_radius_steps": [
+        1,
+        2
+      ],
+      "finite_port_attach_um": 150.0,
+      "finite_port_attach_max_nodes": 64,
+      "finite_max_expansions": 200000,
+      "finite_max_runtime_s": 60.0,
+      "effective_boundary_margin_um": 2.0,
+      "effective_obstacle_clearance_um": 5.0
+    },
+    "metadata": {
+      "purpose": "2D mode must be unreachable, Native3D mode must be reachable",
+      "wall_in_plane_separation": {
+        "wall_x_range_um": [
+          290.0,
+          310.0
+        ],
+        "wall_covers_y": "wall y range [-50, 350] contains chip y range [0, 300]",
+        "wall_z_range_um": [
+          -70.0,
+          40.0
+        ],
+        "chip_z_range_um": [
+          -60.0,
+          120.0
+        ],
+        "port_plane_z_um": 0.0,
+        "argument": "in the z = 0 plane the wall plus the chip boundary separates the source region x <= 285 from the target region x >= 315; nothing in that plane connects them"
+      },
+      "free_height_above_wall_um": 80.0,
+      "synthetic": true
+    }
+  },
+  "input_summary": {
+    "name": "core_2d_unreachable_vs_native3d_reachable",
+    "units": "um",
+    "chip_volume": {
+      "lo": [
+        0.0,
+        0.0,
+        -60.0
+      ],
+      "hi": [
+        600.0,
+        300.0,
+        120.0
+      ]
+    },
+    "n_obstacles": 1,
+    "obstacles": [
+      {
+        "lo": [
+          290.0,
+          -50.0,
+          -70.0
+        ],
+        "hi": [
+          310.0,
+          350.0,
+          40.0
+        ]
+      }
+    ],
+    "n_reference_centerlines": 1,
+    "source_pose": {
+      "position": [
+        60.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_pose": {
+      "position": [
+        540.0,
+        150.0,
+        0.0
+      ],
+      "tangent": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "constraints": {
+      "rmin_um": 50.0,
+      "dmin_centerline_um": 5.0,
+      "obstacle_clearance_um": 5.0,
+      "obstacle_clearance_includes_envelope": false,
+      "effective_obstacle_clearance_um": 5.0,
+      "wg_envelope_radius_um": 2.0,
+      "effective_boundary_margin_um": 2.0,
+      "eps_pos_um": 2.0,
+      "eps_ang_deg": 3.0
+    }
+  },
+  "search": {
+    "status": "search_exhausted",
+    "reason": "open set empty after 115 expansions: the FINITE canonical reference graph is exhausted (nodes are canonical poses, edges are exact Dubins connectors that end on canonical poses).  No connector route with at most two hops of this reference graph reaches the goal. This is a real exhaustion, not a budget stop; it is a statement about the reference graph, not about the continuous pose space.",
+    "mode": "native3d_reference_graph",
+    "heuristic": "max(0, |target_pos - pos| - eps_pos) [3D Euclidean, admissible]",
+    "expansions": 115,
+    "generated": 114,
+    "rejected": 0,
+    "runtime_s": 1.9327840999467298,
+    "cost_um_equivalent": null,
+    "length_um": null,
+    "congestion_cost_um_equivalent": 0.0,
+    "budget": {
+      "max_expansions": 20000,
+      "max_runtime_s": 600.0
+    },
+    "budget_exhausted": false,
+    "state_identity": "canonical_reference_graph",
+    "approximate_state_identity": false,
+    "reference_graph": {
+      "n_canonical_mids": 2338,
+      "spacing_um": 60.0,
+      "directions": 26,
+      "max_hops": 2,
+      "note": "finite canonical reference graph: nodes are canonical poses, edges are exact Dubins connectors ending on canonical poses; optimality is claimed for THIS finite graph only"
+    },
+    "finite_graph": null,
+    "timings": {},
+    "rejection_summary": {},
+    "trace": [],
+    "initial_candidates": [
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 167.3097677953602,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 177.07963267948963,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 245.8495664220238,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 413.26415872492714,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 414.09849740564835,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 434.1592653589793,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 660.1021703427575,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 511.23889803846896,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 358.2628945981397,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 357.4836996524257,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 374.1592653589793,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 332.39680697769126,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 602.8967594594701,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 478.0,
+        "end_position": [
+          60.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 627.3169657845951,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 478.0,
+        "end_position": [
+          60.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 554.0161988998536,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 511.23889803846896,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 660.1021703427575,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 286.60964415516236,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 358.2628945981397,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 332.39680697769126,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 374.1592653589793,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 357.4836996524257,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 481.735464897913,
+        "end_position": [
+          60.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 245.8495664220238,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 177.07963267948963,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 167.3097677953602,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 413.26415872492714,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 434.1592653589793,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 414.09849740564835,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 492.77267507411926,
+        "end_position": [
+          60.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 160.32574319169612,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 149.2504944583996,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 152.8232386338877,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 448.32334400896667,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 490.3106698412073,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 399.04329364081644,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 579.3987490962802,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 92.68195196347578,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 503.15269187059675,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 396.01843461154067,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 399.012079101365,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 380.4817218198217,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 520.810946278918,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 520.810946278918,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 443.689276834652,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 443.689276834652,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 371.4299258420283,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 60.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 382.09667092482226,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 418.0,
+        "end_position": [
+          120.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 579.3987490962802,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 399.0432936408165,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 346.07305919110706,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 92.68195196347578,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 380.4817218198217,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 399.012079101365,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 396.01843461154067,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 422.26406871192853,
+        "end_position": [
+          120.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 297.80343786082955,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 220.32518588285726,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 160.32574319169612,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 149.25049445839963,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 490.3106698412073,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 448.32334400896667,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 152.8232386338877,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 434.8065933568311,
+        "end_position": [
+          120.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 177.5347657058615,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 174.4387159716137,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 182.2874208397828,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 512.4697449110942,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 418.6098512231767,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 600.1739042403635,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 523.0831298027771,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 135.30024403801346,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 136.4584405813329,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 466.2854716814556,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 552.1781930590935,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 376.3009929295368,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 478.7223343691504,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 125.27149226570549,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 120.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 125.27149226570549,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 358.0,
+        "end_position": [
+          180.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 600.1739042403635,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 418.6098512231767,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 405.9133126784985,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 149.2504944583996,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 436.72998297702554,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 136.45844058133292,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 135.30024403801346,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 362.9657518178932,
+        "end_position": [
+          180.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 355.5209387383444,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 278.73488328545403,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 209.26994076485906,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 177.5347657058615,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 512.4697449110942,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 182.2874208397828,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 174.4387159716137,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 377.4733192202055,
+        "end_position": [
+          180.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 226.1880469420788,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 218.21633983853678,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 220.55740294726894,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 246.61568188665,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          30.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 334.160491279957,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 257.29280468189353,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 204.3654949940865,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          90.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 289.0992988966643,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 298.0,
+        "end_position": [
+          240.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 218.86248483335095,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 298.0,
+        "end_position": [
+          240.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 184.67210380601057,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 298.0,
+        "end_position": [
+          240.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 180.0,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 298.0,
+        "end_position": [
+          240.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 184.67210380601057,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 298.0,
+        "end_position": [
+          240.0,
+          150.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 334.160491279957,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 257.29280468189353,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 208.92386444379778,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 204.3654949940865,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 190.37277017098793,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 190.858775570578,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 303.9411708155671,
+        "end_position": [
+          240.0,
+          210.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 266.54549851955846,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 226.1880469420788,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 246.61568188665,
+        "z_change_um": 0.0,
+        "elevation_change_deg": -0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 220.55740294726894,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ref_connector_R50",
+        "kind": "connector",
+        "accepted": true,
+        "reason": "",
+        "length_um": 218.2163398385368,
+        "z_change_um": 0.0,
+        "elevation_change_deg": 0.0,
+        "h_after_um": 321.10988842807024,
+        "end_position": [
+          240.0,
+          270.0,
+          0.0
+        ],
+        "end_direction": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ]
+      }
+    ],
+    "goal_pos_error_um": null,
+    "goal_tangent_error_deg": null
+  },
+  "segment_provenance": [],
+  "trace_z_summary": {
+    "n_steps": 0,
+    "z_values_um": [],
+    "z_varies": false,
+    "note": "no trace (failure result)"
+  },
+  "no_optical_loss_model": "this engine computes geometry only; no dB, no insertion loss and no crosstalk number is produced",
+  "independent_validation": null
+}
