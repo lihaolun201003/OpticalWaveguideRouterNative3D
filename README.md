@@ -23,6 +23,8 @@
 
 完整结果：[v0.2 多通道报告](docs/reports/native3d_v02_multichannel_baseline_report.md)。历史全量日志记录 **617 passed**：[01_pytest_full.log](artifacts/v020/logs/01_pytest_full.log)。
 
+独立仓库发布前复跑：**617 passed，145.59 s，exit 0**；全新环境安装包运行2通道并通过独立验收。[发布验证记录](docs/verification/publication_validation.json) · [可读测试日志](docs/verification/publication_pytest_full.log)。
+
 ## 安装与运行
 
 需要 Python **3.10 或更新版本**。核心搜索只使用标准库；测试需要 pytest，绘图需要 matplotlib 和 numpy。以下为 Windows PowerShell 命令：

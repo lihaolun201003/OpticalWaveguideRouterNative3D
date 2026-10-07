@@ -1,0 +1,20 @@
+{
+  "source_commit_tested": "f06d015",
+  "test_summary": "617 passed in 145.59s",
+  "test_exit_code": 0,
+  "test_process_wall_s": 146.263921,
+  "tested_method": "independent local Git clone; original v0.2 environment; pytest -q -p no:cacheprovider",
+  "source_tests_examples_evidence_files_unchanged": 289,
+  "source_tests_examples_evidence_differences": [],
+  "distribution_version": "0.2.0",
+  "single_net_kernel_version": "0.1.3",
+  "installed_wheel_smoke": {
+    "case": "crosswall_02_channels",
+    "requested": 2,
+    "committed": 2,
+    "independent_verdict": "pass"
+  },
+  "wheel_sha256": "4520c001f3ab4712504ee2d1db790b5aaaf135e571de50517742e41aaf8d6581",
+  "historical_evidence_preserved": true,
+  "post_test_changes": "build requirement wheel, ignore rules, publication documentation only; no router algorithm changes"
+}

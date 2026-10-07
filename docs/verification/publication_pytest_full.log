@@ -1,0 +1,26 @@
+........................................................................ [ 11%]
+........................................................................ [ 23%]
+........................................................................ [ 35%]
+........................................................................ [ 46%]
+........................................................................ [ 58%]
+........................................................................ [ 70%]
+........................................................................ [ 81%]
+........................................................................ [ 93%]
+.........................................                                [100%]
+============================ slowest 15 durations =============================
+64.90s call     tests/test_phase4_astar.py::test_router_cost_equals_length_plus_congestion_and_changes_with_field
+13.78s setup    tests/test_phase6_core_acceptance.py::test_core_case_inputs_are_identical_for_both_modes
+8.89s call     tests/test_phase6_cases.py::test_case3_sealed_target_is_search_exhaustion_not_budget
+8.85s call     tests/test_phase4_astar.py::test_budget_exhaustion_is_reported_separately_from_exhaustion
+8.32s call     tests/test_phase6_cases.py::test_case7_same_position_wrong_tangent_is_not_success
+5.54s call     tests/test_phase7_reference_graph.py::test_production_search_reports_a_budget_stop_never_unreachability
+5.51s call     tests/test_v020_joint_validate.py::test_the_exact_segment_box_distance_matches_dense_sampling
+5.02s call     tests/test_repair_b_state_identity.py::test_approximate_mode_is_explicit_and_its_exhaustion_is_not_unreachability
+3.48s call     tests/test_phase7_reference_graph.py::test_reference_graph_route_is_optimal_for_its_finite_graph
+1.70s call     tests/test_phase6_cases.py::test_case2_engine_path_contains_a_non_xy_plane_arc
+1.50s call     tests/test_v012_finite_graph.py::test_the_three_strategies_are_explicitly_named
+1.47s call     tests/test_phase7_reference_graph.py::test_reference_graph_finds_a_native3d_route_over_the_wall
+1.12s call     tests/test_phase6_cases.py::test_case8_non_zero_congestion_changes_cost_but_not_feasibility
+1.12s call     tests/test_phase7_reference_graph.py::test_reference_graph_really_exhausts_in_2d_mode_over_the_wall
+0.96s call     tests/test_v012_dijkstra_crosscheck.py::test_two_wall_case_astar_cost_equals_independent_dijkstra
+617 passed in 145.59s (0:02:25)
